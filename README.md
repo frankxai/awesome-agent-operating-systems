@@ -1,11 +1,28 @@
-# Awesome Agent Operating Systems
+<p align="center">
+  <img src="assets/hero.svg" alt="Awesome Agent Operating Systems" width="100%">
+</p>
+
+<h1 align="center">Awesome Agent Operating Systems</h1>
+
+<p align="center">
+  <strong>A curated landscape of runtimes, coding agents, MCP, memory, safety, deployment, and managed agent platforms.</strong>
+</p>
+
+<p align="center">
+  <a href="#top-picks-by-job">Top Picks</a> ·
+  <a href="docs/landscape-map.md">Landscape Map</a> ·
+  <a href="docs/frankxai-awesome-repos-audit.md">FrankX Audit</a> ·
+  <a href="#contents">Contents</a> ·
+  <a href="docs/inclusion-policy.md">Inclusion Policy</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a>
+</p>
 
 [![Validate](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml/badge.svg)](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](LICENSE)
 [![Landscape](https://img.shields.io/badge/Landscape-Agent%20OS-0b7285)](docs/landscape-map.md)
 
-A curated landscape of agent operating systems: local runtimes, coding agents, MCP, orchestration, memory, safety, dashboards, deployment surfaces, and managed-agent products.
+> A curated landscape of agent operating systems: local runtimes, coding agents, MCP, orchestration, memory, safety, dashboards, deployment surfaces, and managed-agent products.
 
 This is an independent index. It does not claim ownership of Hermes Agent, OpenClaw, DeepAgents, Claude Code, Codex, LiteLLM, or any listed project.
 
@@ -26,6 +43,7 @@ An agent OS is not just a chatbot or a model. It is the operating layer that giv
 - [Agentic Architecture Field Guide](https://github.com/frankxai/agentic-architecture-field-guide) - vendor-neutral "when to use what" architecture guide.
 - [Starlight Agent Army Architecture](https://github.com/frankxai/starlight-agent-army-architecture) - Starlight-specific implementation playbook.
 - [Awesome Hermes Agents](https://github.com/frankxai/awesome-hermes-agents) - Hermes-specific resources.
+- [FrankX awesome repositories visual audit](docs/frankxai-awesome-repos-audit.md) - consistency checklist for the broader FrankX awesome layer.
 
 ## Contents
 
@@ -52,6 +70,13 @@ An agent OS is not just a chatbot or a model. It is the operating layer that giv
 | Repo-native coding | Codex, Claude Code | Hooks, skills, MCP, GitHub Actions |
 | Team agent platform | GitHub, Vercel, Railway, MCP, LiteLLM | Observability, evals, policy, secrets manager |
 | Public app generation | v0, Replit Agent, Cursor | Human review, CI, deploy previews |
+
+<details>
+<summary><strong>How to read this list</strong></summary>
+
+This is organized by operating layer, not popularity. A strong agent OS usually combines several categories: coding agent, MCP/tool layer, memory/provenance, safety/evals, and deployment.
+
+</details>
 
 ## Local Agent Runtimes
 

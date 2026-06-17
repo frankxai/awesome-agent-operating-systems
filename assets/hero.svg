@@ -1,0 +1,52 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Awesome Agent Operating Systems</title>
+  <desc id="desc">A curated constellation of agent operating system layers and tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="500">
+      <stop stop-color="#081018"/>
+      <stop offset="0.48" stop-color="#0A1E29"/>
+      <stop offset="1" stop-color="#102319"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="200" y1="100" x2="1420" y2="420">
+      <stop stop-color="#66D9EF"/>
+      <stop offset="0.45" stop-color="#40C4AA"/>
+      <stop offset="1" stop-color="#C9F861"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <g opacity="0.32" stroke="url(#accent)" stroke-width="2">
+    <path d="M990 252L1128 160L1276 214L1346 342L1188 384L1048 330L990 252Z"/>
+    <path d="M962 116L1128 160M1276 214L1410 132M1346 342L1460 404M1048 330L916 390M990 252L820 214"/>
+    <path d="M1128 160L1048 330M1276 214L1188 384"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="990" cy="252" r="11" fill="#66D9EF"/>
+    <circle cx="1128" cy="160" r="12" fill="#40C4AA"/>
+    <circle cx="1276" cy="214" r="11" fill="#C9F861"/>
+    <circle cx="1346" cy="342" r="10" fill="#66D9EF"/>
+    <circle cx="1188" cy="384" r="10" fill="#40C4AA"/>
+    <circle cx="1048" cy="330" r="10" fill="#C9F861"/>
+  </g>
+  <g>
+    <rect x="942" y="88" width="120" height="42" rx="21" fill="#0F2C34" stroke="#66D9EF"/>
+    <rect x="1100" y="52" width="128" height="42" rx="21" fill="#0F2C34" stroke="#40C4AA"/>
+    <rect x="1268" y="88" width="116" height="42" rx="21" fill="#0F2C34" stroke="#C9F861"/>
+    <rect x="1342" y="388" width="120" height="42" rx="21" fill="#0F2C34" stroke="#66D9EF"/>
+    <rect x="890" y="386" width="136" height="42" rx="21" fill="#0F2C34" stroke="#C9F861"/>
+  </g>
+  <text x="110" y="248" fill="#F4FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="0">Awesome Agent</text>
+  <text x="112" y="312" fill="#B8F7E0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="0">Operating Systems</text>
+  <text x="114" y="368" fill="#D8E8E3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" letter-spacing="0">A curated landscape of runtimes, coding agents, MCP, memory, safety, and deployment</text>
+  <text x="974" y="116" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">MCP</text>
+  <text x="1128" y="80" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">CODE</text>
+  <text x="1294" y="116" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">RUN</text>
+  <text x="1366" y="416" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">DEPLOY</text>
+  <text x="920" y="414" fill="#D9FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">MEMORY</text>
+</svg>
