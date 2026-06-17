@@ -60,6 +60,7 @@ An agent OS is not just a chatbot or a model. It is the operating layer that giv
 - [Deep Agents Code](https://docs.langchain.com/oss/python/deepagents/code/overview) - terminal coding agent built on the DeepAgents SDK.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - open-source software development agent platform with browser, terminal, and coding capabilities.
 - [Starlight Swarm](https://github.com/frankxai/starlight-swarm) - Starlight dashboard and audit surface for local swarms.
+- [Paperclip](https://github.com/paperclipai/paperclip) - open-source orchestration server and UI dashboard for coordinating "zero-human companies" and AI agent teams.
 
 ## Coding Agents
 
@@ -78,6 +79,17 @@ An agent OS is not just a chatbot or a model. It is the operating layer that giv
 - [CrewAI](https://github.com/crewAIInc/crewAI) - role-based multi-agent orchestration framework.
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - SDK for building agentic systems.
 - [LlamaIndex Workflows](https://docs.llamaindex.ai/) - event-driven orchestration for retrieval and agents.
+- [Mastra](https://github.com/mastra-ai/mastra) - TypeScript-native agent framework for building stateful, lightweight agents with workflows, integrations, and tools.
+- [Agno](https://github.com/agno-ai/agno) - high-performance, lightweight Python framework for building agents with minimal overhead, supporting tools, semantic memory, and structured outputs.
+
+## Swarm Topology Design Standards
+
+As multi-agent systems mature from single-loop specialists to large corporate execution fleets (144+ agents), leading frameworks utilize the **Kings-Queens-Board-Council** swarm topology:
+
+- **Kings (Sovereign Intent Anchors / Policy Locks):** Immutable rules, cryptographic permission boundaries, or spending limits configured directly by the human owner. Agents cannot override these (e.g., direct main-branch push block, PII screening filters).
+- **Queens (Meta-Orchestrators):** Active loop controllers. A central Queen handles long-horizon self-improvement, context consolidation, and background dreaming, while Domain Queens run vertical-specific sub-stack loops.
+- **Starlight Board (Governance review):** A pressure-testing body checking high-stakes proposals using multiple challenge angles (Sovereign, Seer, Harmonizer, Strategist, Verifier, Overseer).
+- **Model Council (Multi-model consensus):** A verification loop routing critical proposals across a heterogeneous model lineup (Fable, Opus, Grok, Gemini). Actions are blocked unless consensus coefficient threshold ($C_c \ge 0.80$) is achieved.
 
 ## MCP And Tool Protocols
 
