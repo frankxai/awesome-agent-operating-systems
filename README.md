@@ -3,10 +3,23 @@
 [![Validate](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml/badge.svg)](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](LICENSE)
+[![Landscape](https://img.shields.io/badge/Landscape-Agent%20OS-0b7285)](docs/landscape-map.md)
 
-A curated public index of agent operating systems, coding agents, MCP ecosystems, orchestration frameworks, memory layers, deployment surfaces, and managed-agent offerings.
+A curated landscape of agent operating systems: local runtimes, coding agents, MCP, orchestration, memory, safety, dashboards, deployment surfaces, and managed-agent products.
 
 This is an independent index. It does not claim ownership of Hermes Agent, OpenClaw, DeepAgents, Claude Code, Codex, LiteLLM, or any listed project.
+
+## What Counts As An Agent OS?
+
+An agent OS is not just a chatbot or a model. It is the operating layer that gives agents:
+
+- Instructions and rules
+- Tool access
+- Memory and provenance
+- Runtime isolation
+- Human approvals
+- Deployment and observability
+- Review, rollback, and audit paths
 
 ## Companion Guides
 
@@ -16,6 +29,7 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 
 ## Contents
 
+- [Top Picks By Job](#top-picks-by-job)
 - [Local Agent Runtimes](#local-agent-runtimes)
 - [Coding Agents](#coding-agents)
 - [Orchestration And Agent Harnesses](#orchestration-and-agent-harnesses)
@@ -26,12 +40,25 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 - [Safety And Evaluation](#safety-and-evaluation)
 - [Deployment](#deployment)
 - [Managed Offerings And Platforms](#managed-offerings-and-platforms)
+- [Inclusion Policy](#inclusion-policy)
+
+## Top Picks By Job
+
+| Job | Start with | Add when needed |
+| --- | --- | --- |
+| Local personal agent fleet | Hermes Agent, Codex, MCP memory | OpenClaw, Starlight Swarm |
+| Chat-controlled local agents | OpenClaw | Hermes profiles, owner allowlists, MCP |
+| Long research/coding runs | DeepAgents | Browser automation, memory, Codex implementation pass |
+| Repo-native coding | Codex, Claude Code | Hooks, skills, MCP, GitHub Actions |
+| Team agent platform | GitHub, Vercel, Railway, MCP, LiteLLM | Observability, evals, policy, secrets manager |
+| Public app generation | v0, Replit Agent, Cursor | Human review, CI, deploy previews |
 
 ## Local Agent Runtimes
 
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent) - local-first agent by Nous Research with profiles, tools, and a durable kanban-style multi-agent board.
 - [OpenClaw](https://github.com/openclaw/openclaw) - self-hosted gateway connecting chat apps and channel plugins to coding agents.
 - [Deep Agents Code](https://docs.langchain.com/oss/python/deepagents/code/overview) - terminal coding agent built on the DeepAgents SDK.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - open-source software development agent platform with browser, terminal, and coding capabilities.
 - [Starlight Swarm](https://github.com/frankxai/starlight-swarm) - Starlight dashboard and audit surface for local swarms.
 
 ## Coding Agents
@@ -39,8 +66,9 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 - [Codex](https://developers.openai.com/codex/) - OpenAI coding agent across CLI, app, cloud, GitHub, rules, skills, hooks, MCP, and worktrees.
 - [Claude Code](https://code.claude.com/docs/) - Anthropic coding agent with CLAUDE.md, skills, MCP, subagents, and team workflows.
 - [Aider](https://github.com/Aider-AI/aider) - terminal pair-programming agent.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - open-source software development agent platform.
+- [Cursor](https://cursor.com/) - AI code editor with agentic workflows.
 - [Continue](https://github.com/continuedev/continue) - open-source AI code assistant and IDE extension platform.
+- [Cline](https://github.com/cline/cline) - autonomous coding agent extension for VS Code.
 
 ## Orchestration And Agent Harnesses
 
@@ -49,17 +77,21 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 - [AutoGen](https://github.com/microsoft/autogen) - Microsoft framework for multi-agent applications.
 - [CrewAI](https://github.com/crewAIInc/crewAI) - role-based multi-agent orchestration framework.
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - SDK for building agentic systems.
+- [LlamaIndex Workflows](https://docs.llamaindex.ai/) - event-driven orchestration for retrieval and agents.
 
 ## MCP And Tool Protocols
 
 - [Model Context Protocol](https://modelcontextprotocol.io/) - open protocol for connecting agents to tools and data.
 - [MCP servers](https://github.com/modelcontextprotocol/servers) - reference and community MCP servers.
+- [GitHub MCP Server](https://github.com/github/github-mcp-server) - official GitHub MCP server.
 - [mcp-doctor](https://github.com/frankxai/mcp-doctor) - local MCP and agent-environment audit tool.
 
 ## Skills, Rules, And Prompts
 
 - [Claude Code skills](https://code.claude.com/docs/) - reusable workflows for Claude Code.
 - [Codex skills, rules, hooks, and AGENTS.md](https://developers.openai.com/codex/) - repo and user-level operating instructions for Codex.
+- [agents.md](https://github.com/agentsmd/agents.md) - cross-agent instruction-file convention.
+- [Vercel agent skills](https://github.com/vercel-labs/agent-skills) - coding-agent skill patterns from Vercel Labs.
 - [Starlight Agent Skills](https://github.com/frankxai/starlight-agent-skills) - Starlight-specific skill library.
 - [Claude Skills Library](https://github.com/frankxai/claude-skills-library) - Claude-oriented skill patterns.
 
@@ -68,19 +100,22 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 - [Letta](https://github.com/letta-ai/letta) - stateful agent memory platform.
 - [Zep](https://www.getzep.com/) - memory layer for AI agents.
 - [Mem0](https://github.com/mem0ai/mem0) - memory layer for personalized agents.
+- [LangSmith](https://www.langchain.com/langsmith) - traces, observability, datasets, and evals.
 - [Starlight Intelligence System](https://github.com/frankxai/Starlight-Intelligence-System) - Starlight memory, provenance, health, and operating substrate.
 
 ## Dashboards And Cockpits
 
 - [Hermes Cockpit](https://github.com/frankxai/hermes-cockpit) - local operator cockpit for Hermes profiles.
 - [Deep Agents UI](https://github.com/langchain-ai/deep-agents-ui) - UI for DeepAgents workflows.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - includes a web UI for software agent work.
 - [Starlight Command Center](https://github.com/frankxai/starlight-command-center) - Starlight command surface.
 
 ## Safety And Evaluation
 
 - [OpenAI Evals](https://github.com/openai/evals) - evaluation framework.
-- [LangSmith](https://www.langchain.com/langsmith) - observability and evaluation for agent runs.
 - [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) - evaluation framework for large language models.
+- [promptfoo](https://github.com/promptfoo/promptfoo) - evals and red-teaming for prompts and agents.
+- [AgentOps](https://github.com/AgentOps-AI/agentops) - agent observability and debugging.
 
 ## Deployment
 
@@ -88,6 +123,7 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 - [Railway](https://docs.railway.com/) - always-on services, containers, and simple managed infrastructure.
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/) - edge compute, Workers, Durable Objects, and static docs/apps.
 - [LiteLLM](https://github.com/BerriAI/litellm) - model gateway, proxy, and provider routing layer.
+- [Docker](https://docs.docker.com/) - container packaging and local service isolation.
 
 ## Managed Offerings And Platforms
 
@@ -96,8 +132,14 @@ This is an independent index. It does not claim ownership of Hermes Agent, OpenC
 - [Replit Agent](https://replit.com/ai) - managed agentic app-building environment.
 - [Cursor](https://cursor.com/) - managed AI code editor.
 - [Cognition Devin](https://devin.ai/) - managed software engineering agent.
+- [Lovable](https://lovable.dev/) - managed app generation platform.
+- [Bolt](https://bolt.new/) - managed browser-based app generation environment.
 
-## Contribution Rules
+## Inclusion Policy
+
+This list prefers projects that are useful for operating agents, not merely prompting models. See [inclusion policy](docs/inclusion-policy.md).
+
+Contribution rules:
 
 - Prefer official docs, GitHub repositories, or project-owned pages.
 - Say what the project is good for; do not imply endorsement or ownership.
