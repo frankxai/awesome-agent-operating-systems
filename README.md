@@ -129,6 +129,7 @@ As multi-agent systems mature from single-loop specialists to large corporate ex
 - [Codex skills, rules, hooks, and AGENTS.md](https://developers.openai.com/codex/) - repo and user-level operating instructions for Codex.
 - [agents.md](https://github.com/agentsmd/agents.md) - cross-agent instruction-file convention.
 - [Vercel agent skills](https://github.com/vercel-labs/agent-skills) - coding-agent skill patterns from Vercel Labs.
+- [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) - Hermes Agent plugin that adds X/Twitter search, monitoring, and posting workflows through Xquik.
 - [Starlight Agent Skills](https://github.com/frankxai/starlight-agent-skills) - Starlight-specific skill library.
 - [Claude Skills Library](https://github.com/frankxai/claude-skills-library) - Claude-oriented skill patterns.
 
