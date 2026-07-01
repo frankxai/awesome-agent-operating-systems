@@ -84,13 +84,14 @@ This is organized by operating layer, not popularity. A strong agent OS usually 
 - [OpenClaw](https://github.com/openclaw/openclaw) - self-hosted gateway connecting chat apps and channel plugins to coding agents.
 - [Deep Agents Code](https://docs.langchain.com/oss/python/deepagents/code/overview) - terminal coding agent built on the DeepAgents SDK.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - open-source software development agent platform with browser, terminal, and coding capabilities.
+- [Agentic Creator OS](https://github.com/frankxai/agentic-creator-os) - ACOS: the operating system for autonomous creators, with multi-agent orchestration, structured memory, and self-improving loops.
 - [Starlight Swarm](https://github.com/frankxai/starlight-swarm) - Starlight dashboard and audit surface for local swarms.
 - [Paperclip](https://github.com/paperclipai/paperclip) - open-source orchestration server and UI dashboard for coordinating "zero-human companies" and AI agent teams.
 
 ## Coding Agents
 
 - [Codex](https://developers.openai.com/codex/) - OpenAI coding agent across CLI, app, cloud, GitHub, rules, skills, hooks, MCP, and worktrees.
-- [Claude Code](https://code.claude.com/docs/) - Anthropic coding agent with CLAUDE.md, skills, MCP, subagents, and team workflows.
+- [Claude Code](https://docs.claude.com/en/docs/claude-code/) - Anthropic coding agent with CLAUDE.md, skills, MCP, subagents, and team workflows.
 - [Aider](https://github.com/Aider-AI/aider) - terminal pair-programming agent.
 - [Cursor](https://cursor.com/) - AI code editor with agentic workflows.
 - [Continue](https://github.com/continuedev/continue) - open-source AI code assistant and IDE extension platform.
@@ -105,7 +106,7 @@ This is organized by operating layer, not popularity. A strong agent OS usually 
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - SDK for building agentic systems.
 - [LlamaIndex Workflows](https://docs.llamaindex.ai/) - event-driven orchestration for retrieval and agents.
 - [Mastra](https://github.com/mastra-ai/mastra) - TypeScript-native agent framework for building stateful, lightweight agents with workflows, integrations, and tools.
-- [Agno](https://github.com/agno-ai/agno) - high-performance, lightweight Python framework for building agents with minimal overhead, supporting tools, semantic memory, and structured outputs.
+- [Agno](https://github.com/agno-agi/agno) - high-performance, lightweight Python framework for building agents with minimal overhead, supporting tools, semantic memory, and structured outputs.
 
 ## Swarm Topology Design Standards
 
@@ -125,12 +126,23 @@ As multi-agent systems mature from single-loop specialists to large corporate ex
 
 ## Skills, Rules, And Prompts
 
-- [Claude Code skills](https://code.claude.com/docs/) - reusable workflows for Claude Code.
+- [Claude Code skills](https://docs.claude.com/en/docs/claude-code/) - reusable workflows for Claude Code.
 - [Codex skills, rules, hooks, and AGENTS.md](https://developers.openai.com/codex/) - repo and user-level operating instructions for Codex.
 - [agents.md](https://github.com/agentsmd/agents.md) - cross-agent instruction-file convention.
 - [Vercel agent skills](https://github.com/vercel-labs/agent-skills) - coding-agent skill patterns from Vercel Labs.
 - [Starlight Agent Skills](https://github.com/frankxai/starlight-agent-skills) - Starlight-specific skill library.
 - [Claude Skills Library](https://github.com/frankxai/claude-skills-library) - Claude-oriented skill patterns.
+
+### Recommended Claude Code Skills & Safety Gates
+
+| Skill / Reference | Primary Workflow | Security Posture & Safety Checkup | Status |
+| :--- | :--- | :--- | :--- |
+| **`gstack`** | Headless browser QA, visual regression audits, form validation | **Safe (Local Sandbox)**: Executes via Chromium page contexts. Restrict to localhost/staging; never input production passwords. | `Active` (Verified) |
+| **`ui-ux-design-expert`** | WCAG 2.2 / EAA accessibility auditing, layout & font pairings | **Read-Only**: Static code checks. No write permissions or network capability required. | `Active` (Recommended) |
+| **`mcp-architecture`** | Model Context Protocol server construction, routing, and tool design | **Architecture Gate**: Enforces standard read/write separation and limits shell command access. | `Active` (Developer Essential) |
+| **`verification-quality`** | Continuous truth scoring, validation rollbacks (0.95 accuracy target) | **ASPH Integration**: Automatically runs before commit phase. Quarantines non-passing code. | `Active` (Safety Gate) |
+| **`greek-philosopher`** | Stoic wisdom, assumptions testing, cognitive grounding | **Fully Sandboxed**: Text-level reflection helper. Zero system or network access. | `Active` (Free Tier) |
+| **`spartan-warrior`** | Discipline, goal execution, laconic brevity, effort gate | **Fully Sandboxed**: Cognitive guide for task prioritization. Zero system access. | `Active` (Free Tier) |
 
 ## Memory And Provenance
 
@@ -153,6 +165,7 @@ As multi-agent systems mature from single-loop specialists to large corporate ex
 - [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) - evaluation framework for large language models.
 - [promptfoo](https://github.com/promptfoo/promptfoo) - evals and red-teaming for prompts and agents.
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - agent observability and debugging.
+- [agentic-ops](https://github.com/frankxai/agentic-ops) - central security and operations repository for prompt guardrails, secrets management, and ASPH lifecycle hooks.
 
 ## Deployment
 
@@ -160,6 +173,7 @@ As multi-agent systems mature from single-loop specialists to large corporate ex
 - [Railway](https://docs.railway.com/) - always-on services, containers, and simple managed infrastructure.
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/) - edge compute, Workers, Durable Objects, and static docs/apps.
 - [LiteLLM](https://github.com/BerriAI/litellm) - model gateway, proxy, and provider routing layer.
+- [litellm-agent-platform](https://github.com/frankxai/litellm-agent-platform) - Starlight-aligned model proxy, budget control, and observability provider routing layer.
 - [Docker](https://docs.docker.com/) - container packaging and local service isolation.
 
 ## Managed Offerings And Platforms
