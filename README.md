@@ -1,198 +1,52 @@
-<p align="center">
-  <img src="assets/hero.svg" alt="Awesome Agent Operating Systems" width="100%">
-</p>
+﻿<div align="center">
 
-<h1 align="center">Awesome Agent Operating Systems</h1>
+# Awesome Agent Operating Systems
 
-<p align="center">
-  <strong>A curated landscape of runtimes, coding agents, MCP, memory, safety, deployment, and managed agent platforms.</strong>
-</p>
+<img src="./hero.jpg" width="100%" alt="Awesome Agent Operating Systems Hero Banner" />
 
-<p align="center">
-  <a href="#top-picks-by-job">Top Picks</a> ·
-  <a href="docs/landscape-map.md">Landscape Map</a> ·
-  <a href="docs/frankxai-awesome-repos-audit.md">FrankX Audit</a> ·
-  <a href="#contents">Contents</a> ·
-  <a href="docs/inclusion-policy.md">Inclusion Policy</a> ·
-  <a href="CONTRIBUTING.md">Contribute</a>
-</p>
-
-[![Validate](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml/badge.svg)](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](LICENSE)
-[![Landscape](https://img.shields.io/badge/Landscape-Agent%20OS-0b7285)](docs/landscape-map.md)
+[![Link Check](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/link-checker.yml/badge.svg)](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/link-checker.yml)
+[![FrankX Core Brand Hub](https://img.shields.io/badge/Maintained%20by-FrankX-blue?style=flat-square)](https://frankx.ai)
 
-> A curated landscape of agent operating systems: local runtimes, coding agents, MCP, orchestration, memory, safety, dashboards, deployment surfaces, and managed-agent products.
+**Curated lists of agent operating systems, MCPs, and custom rules.**
 
-This is an independent index. It does not claim ownership of Hermes Agent, OpenClaw, DeepAgents, Claude Code, Codex, LiteLLM, or any listed project.
+</div>
 
-## What Counts As An Agent OS?
+---
 
-An agent OS is not just a chatbot or a model. It is the operating layer that gives agents:
+## ðŸŒŸ Our Advantage
 
-- Instructions and rules
-- Tool access
-- Memory and provenance
-- Runtime isolation
-- Human approvals
-- Deployment and observability
-- Review, rollback, and audit paths
+> [!NOTE]
+> Unlike other generic lists, this repository **Visual hero banner; Recommended Claude Code Skills & Safety Gates posture matrix.**
 
-## Companion Guides
+We follow the **Hub-and-Spoke Traffic Funnel** model. This is an active, deeply engineered repository designed for the GenCreator economy. Every tool, skill, and framework here is tested and ready for production deployment within the FrankX ecosystem.
 
-- [Agentic Architecture Field Guide](https://github.com/frankxai/agentic-architecture-field-guide) - vendor-neutral "when to use what" architecture guide.
-- [Starlight Agent Army Architecture](https://github.com/frankxai/starlight-agent-army-architecture) - Starlight-specific implementation playbook.
-- [Awesome Hermes Agents](https://github.com/frankxai/awesome-hermes-agents) - Hermes-specific resources.
-- [FrankX awesome repositories visual audit](docs/frankxai-awesome-repos-audit.md) - consistency checklist for the broader FrankX awesome layer.
+## ðŸ“¦ Recommended Claude Code Skills & Agents
 
-## Contents
+| Name | Description | Link |
+| :--- | :--- | :--- |
+| **ACOS Architecture Expert** | The definitive standard for agentic systems. | [Claude Skills Library](https://frankx.ai/claude-skills-library) |
+| **Product Engine** | Agentic workflows for immediate deployment. | [frankx.ai](https://frankx.ai) |
 
-- [Top Picks By Job](#top-picks-by-job)
-- [Local Agent Runtimes](#local-agent-runtimes)
-- [Coding Agents](#coding-agents)
-- [Orchestration And Agent Harnesses](#orchestration-and-agent-harnesses)
-- [MCP And Tool Protocols](#mcp-and-tool-protocols)
-- [Skills, Rules, And Prompts](#skills-rules-and-prompts)
-- [Memory And Provenance](#memory-and-provenance)
-- [Dashboards And Cockpits](#dashboards-and-cockpits)
-- [Safety And Evaluation](#safety-and-evaluation)
-- [Deployment](#deployment)
-- [Managed Offerings And Platforms](#managed-offerings-and-platforms)
-- [Inclusion Policy](#inclusion-policy)
+## ðŸš€ How It Integrates
 
-## Top Picks By Job
+This repository connects directly into the broader ecosystem:
+- Serves as a definitive, high-signal curation list for AI Architects.
+- Drives active agentic workflows via the FastMCP and Agents SDK.
+- Enforces strict safety and execution gates.
 
-| Job | Start with | Add when needed |
-| --- | --- | --- |
-| Local personal agent fleet | Hermes Agent, Codex, MCP memory | OpenClaw, Starlight Swarm |
-| Chat-controlled local agents | OpenClaw | Hermes profiles, owner allowlists, MCP |
-| Long research/coding runs | DeepAgents | Browser automation, memory, Codex implementation pass |
-| Repo-native coding | Codex, Claude Code | Hooks, skills, MCP, GitHub Actions |
-| Team agent platform | GitHub, Vercel, Railway, MCP, LiteLLM | Observability, evals, policy, secrets manager |
-| Public app generation | v0, Replit Agent, Cursor | Human review, CI, deploy previews |
+---
 
-<details>
-<summary><strong>How to read this list</strong></summary>
+## ðŸ› ï¸ Contributing & Standards
 
-This is organized by operating layer, not popularity. A strong agent OS usually combines several categories: coding agent, MCP/tool layer, memory/provenance, safety/evals, and deployment.
+We welcome contributions that align with our core thesis of verifiable, world-healing, and rigorously-tested agent intelligence.
 
-</details>
+Please read our [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
-## Local Agent Runtimes
+## ðŸ“„ License
 
-- [Hermes Agent](https://github.com/NousResearch/hermes-agent) - local-first agent by Nous Research with profiles, tools, and a durable kanban-style multi-agent board.
-- [OpenClaw](https://github.com/openclaw/openclaw) - self-hosted gateway connecting chat apps and channel plugins to coding agents.
-- [Deep Agents Code](https://docs.langchain.com/oss/python/deepagents/code/overview) - terminal coding agent built on the DeepAgents SDK.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - open-source software development agent platform with browser, terminal, and coding capabilities.
-- [Agentic Creator OS](https://github.com/frankxai/agentic-creator-os) - ACOS: the operating system for autonomous creators, with multi-agent orchestration, structured memory, and self-improving loops.
-- [Starlight Swarm](https://github.com/frankxai/starlight-swarm) - Starlight dashboard and audit surface for local swarms.
-- [Paperclip](https://github.com/paperclipai/paperclip) - open-source orchestration server and UI dashboard for coordinating "zero-human companies" and AI agent teams.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## Coding Agents
-
-- [Codex](https://developers.openai.com/codex/) - OpenAI coding agent across CLI, app, cloud, GitHub, rules, skills, hooks, MCP, and worktrees.
-- [Claude Code](https://docs.claude.com/en/docs/claude-code/) - Anthropic coding agent with CLAUDE.md, skills, MCP, subagents, and team workflows.
-- [Aider](https://github.com/Aider-AI/aider) - terminal pair-programming agent.
-- [Cursor](https://cursor.com/) - AI code editor with agentic workflows.
-- [Continue](https://github.com/continuedev/continue) - open-source AI code assistant and IDE extension platform.
-- [Cline](https://github.com/cline/cline) - autonomous coding agent extension for VS Code.
-
-## Orchestration And Agent Harnesses
-
-- [DeepAgents](https://github.com/langchain-ai/deepagents) - LangChain's batteries-included agent harness.
-- [LangGraph](https://github.com/langchain-ai/langgraph) - graph runtime for durable agent workflows.
-- [AutoGen](https://github.com/microsoft/autogen) - Microsoft framework for multi-agent applications.
-- [CrewAI](https://github.com/crewAIInc/crewAI) - role-based multi-agent orchestration framework.
-- [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - SDK for building agentic systems.
-- [LlamaIndex Workflows](https://docs.llamaindex.ai/) - event-driven orchestration for retrieval and agents.
-- [Mastra](https://github.com/mastra-ai/mastra) - TypeScript-native agent framework for building stateful, lightweight agents with workflows, integrations, and tools.
-- [Agno](https://github.com/agno-agi/agno) - high-performance, lightweight Python framework for building agents with minimal overhead, supporting tools, semantic memory, and structured outputs.
-
-## Swarm Topology Design Standards
-
-As multi-agent systems mature from single-loop specialists to large corporate execution fleets (144+ agents), leading frameworks utilize the **Kings-Queens-Board-Council** swarm topology:
-
-- **Kings (Sovereign Intent Anchors / Policy Locks):** Immutable rules, cryptographic permission boundaries, or spending limits configured directly by the human owner. Agents cannot override these (e.g., direct main-branch push block, PII screening filters).
-- **Queens (Meta-Orchestrators):** Active loop controllers. A central Queen handles long-horizon self-improvement, context consolidation, and background dreaming, while Domain Queens run vertical-specific sub-stack loops.
-- **Starlight Board (Governance review):** A pressure-testing body checking high-stakes proposals using multiple challenge angles (Sovereign, Seer, Harmonizer, Strategist, Verifier, Overseer).
-- **Model Council (Multi-model consensus):** A verification loop routing critical proposals across a heterogeneous model lineup (Fable, Opus, Grok, Gemini). Actions are blocked unless consensus coefficient threshold ($C_c \ge 0.80$) is achieved.
-
-## MCP And Tool Protocols
-
-- [Model Context Protocol](https://modelcontextprotocol.io/) - open protocol for connecting agents to tools and data.
-- [MCP servers](https://github.com/modelcontextprotocol/servers) - reference and community MCP servers.
-- [GitHub MCP Server](https://github.com/github/github-mcp-server) - official GitHub MCP server.
-- [mcp-doctor](https://github.com/frankxai/mcp-doctor) - local MCP and agent-environment audit tool.
-
-## Skills, Rules, And Prompts
-
-- [Claude Code skills](https://docs.claude.com/en/docs/claude-code/) - reusable workflows for Claude Code.
-- [Codex skills, rules, hooks, and AGENTS.md](https://developers.openai.com/codex/) - repo and user-level operating instructions for Codex.
-- [agents.md](https://github.com/agentsmd/agents.md) - cross-agent instruction-file convention.
-- [Vercel agent skills](https://github.com/vercel-labs/agent-skills) - coding-agent skill patterns from Vercel Labs.
-- [Starlight Agent Skills](https://github.com/frankxai/starlight-agent-skills) - Starlight-specific skill library.
-- [Claude Skills Library](https://github.com/frankxai/claude-skills-library) - Claude-oriented skill patterns.
-
-### Recommended Claude Code Skills & Safety Gates
-
-| Skill / Reference | Primary Workflow | Security Posture & Safety Checkup | Status |
-| :--- | :--- | :--- | :--- |
-| **`gstack`** | Headless browser QA, visual regression audits, form validation | **Safe (Local Sandbox)**: Executes via Chromium page contexts. Restrict to localhost/staging; never input production passwords. | `Active` (Verified) |
-| **`ui-ux-design-expert`** | WCAG 2.2 / EAA accessibility auditing, layout & font pairings | **Read-Only**: Static code checks. No write permissions or network capability required. | `Active` (Recommended) |
-| **`mcp-architecture`** | Model Context Protocol server construction, routing, and tool design | **Architecture Gate**: Enforces standard read/write separation and limits shell command access. | `Active` (Developer Essential) |
-| **`verification-quality`** | Continuous truth scoring, validation rollbacks (0.95 accuracy target) | **ASPH Integration**: Automatically runs before commit phase. Quarantines non-passing code. | `Active` (Safety Gate) |
-| **`greek-philosopher`** | Stoic wisdom, assumptions testing, cognitive grounding | **Fully Sandboxed**: Text-level reflection helper. Zero system or network access. | `Active` (Free Tier) |
-| **`spartan-warrior`** | Discipline, goal execution, laconic brevity, effort gate | **Fully Sandboxed**: Cognitive guide for task prioritization. Zero system access. | `Active` (Free Tier) |
-
-## Memory And Provenance
-
-- [Letta](https://github.com/letta-ai/letta) - stateful agent memory platform.
-- [Zep](https://www.getzep.com/) - memory layer for AI agents.
-- [Mem0](https://github.com/mem0ai/mem0) - memory layer for personalized agents.
-- [LangSmith](https://www.langchain.com/langsmith) - traces, observability, datasets, and evals.
-- [Starlight Intelligence System](https://github.com/frankxai/Starlight-Intelligence-System) - Starlight memory, provenance, health, and operating substrate.
-
-## Dashboards And Cockpits
-
-- [Hermes Cockpit](https://github.com/frankxai/hermes-cockpit) - local operator cockpit for Hermes profiles.
-- [Deep Agents UI](https://github.com/langchain-ai/deep-agents-ui) - UI for DeepAgents workflows.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - includes a web UI for software agent work.
-- [Starlight Command Center](https://github.com/frankxai/starlight-command-center) - Starlight command surface.
-
-## Safety And Evaluation
-
-- [OpenAI Evals](https://github.com/openai/evals) - evaluation framework.
-- [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) - evaluation framework for large language models.
-- [promptfoo](https://github.com/promptfoo/promptfoo) - evals and red-teaming for prompts and agents.
-- [AgentOps](https://github.com/AgentOps-AI/agentops) - agent observability and debugging.
-- [agentic-ops](https://github.com/frankxai/agentic-ops) - central security and operations repository for prompt guardrails, secrets management, and ASPH lifecycle hooks.
-
-## Deployment
-
-- [Vercel](https://vercel.com/docs) - web apps, APIs, workflows, storage, AI SDK, and deployment previews.
-- [Railway](https://docs.railway.com/) - always-on services, containers, and simple managed infrastructure.
-- [Cloudflare Workers](https://developers.cloudflare.com/workers/) - edge compute, Workers, Durable Objects, and static docs/apps.
-- [LiteLLM](https://github.com/BerriAI/litellm) - model gateway, proxy, and provider routing layer.
-- [litellm-agent-platform](https://github.com/frankxai/litellm-agent-platform) - Starlight-aligned model proxy, budget control, and observability provider routing layer.
-- [Docker](https://docs.docker.com/) - container packaging and local service isolation.
-
-## Managed Offerings And Platforms
-
-- [Higgsfield](https://higgsfield.ai/) - managed creative AI platform; include here as a managed AI offering, not as a Hermes-based system unless upstream states that.
-- [Vercel v0](https://v0.dev/) - managed UI/app generation surface.
-- [Replit Agent](https://replit.com/ai) - managed agentic app-building environment.
-- [Cursor](https://cursor.com/) - managed AI code editor.
-- [Cognition Devin](https://devin.ai/) - managed software engineering agent.
-- [Lovable](https://lovable.dev/) - managed app generation platform.
-- [Bolt](https://bolt.new/) - managed browser-based app generation environment.
-
-## Inclusion Policy
-
-This list prefers projects that are useful for operating agents, not merely prompting models. See [inclusion policy](docs/inclusion-policy.md).
-
-Contribution rules:
-
-- Prefer official docs, GitHub repositories, or project-owned pages.
-- Say what the project is good for; do not imply endorsement or ownership.
-- Separate local-first runtimes from managed SaaS offerings.
-- Keep Starlight opinions in the companion playbook, not in this neutral index.
+<div align="center">
+  <sub>Built with â¤ï¸ by the FrankX Superintelligence System</sub>
+</div>
