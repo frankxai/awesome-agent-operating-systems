@@ -29,6 +29,15 @@ We follow the **Hub-and-Spoke Traffic Funnel** model. This is an active, deeply 
 | **Premium Swarm: Visual Creation Loop** | Full multi-agent pipeline for high-end mascot & asset generation. | [Get it on Gumroad](https://frankx.gumroad.com/l/visual-creation) <br/> [View on frankx.ai](https://frankx.ai/products) |
 | **Product Engine** | Agentic workflows for immediate deployment. | [frankx.ai](https://frankx.ai) |
 
+<details>
+<summary><strong>Agent operating systems and orchestration</strong></summary>
+
+| Name | Description | Mode | Source |
+| :--- | :--- | :--- | :--- |
+| **Orkas** | Open-source desktop workspace whose Commander plans work and coordinates built-in specialists and external coding agents, with local project state and explicit permission boundaries. | Local-first / hybrid | [GitHub](https://github.com/Orkas-AI/Orkas) |
+
+</details>
+
 
 
 > [!TIP]
@@ -56,4 +65,3 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 <div align="center">
   <sub>Built with ❤️ by the FrankX Superintelligence System</sub>
 </div>
-
