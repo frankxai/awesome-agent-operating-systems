@@ -1,0 +1,133 @@
+{
+  "authority": {
+    "deliveryEvidence": "git-github",
+    "fleetRouting": "starlight-swarm",
+    "scheduler": "hermes-cron",
+    "taskState": "hermes-kanban"
+  },
+  "board": "control-plane-ops",
+  "canonicalTaskId": "ctid:v1:agentic-tech-landscape:paperclip-promotion-gate",
+  "execution_status": "ok",
+  "generatedAt": "2026-07-19T02:58:24.489459+00:00",
+  "metrics": {
+    "dependencyPromotionEventCount": 1,
+    "doneCount": 3,
+    "duplicateRunCandidateCount": 0,
+    "externalActivity": "not_assessed",
+    "githubReferencesReconciled": 2,
+    "heartbeatEventCount": 4,
+    "idempotencyReplayPreservedTaskCount": true,
+    "orphanedTaskCount": 0,
+    "recoveryExercise": "not_assessed",
+    "taskCount": 3,
+    "workerPidCount": 0
+  },
+  "observationalLimits": [
+    "No model worker PID was recorded for these manual Kanban runs.",
+    "No recovery failure was injected; recovery remains not assessed.",
+    "Activity outside the allowlisted workflow commands remains not assessed."
+  ],
+  "outcome_status": "VERIFIED",
+  "paperclip": {
+    "executionAuthority": false,
+    "integrationStatus": "not-integrated",
+    "publishedReleaseGate": "HOLD"
+  },
+  "reconciliation": {
+    "canonicalTaskId": "ctid:v1:agentic-tech-landscape:paperclip-promotion-gate",
+    "github": [
+      {
+        "number": 9794,
+        "repository": "paperclipai/paperclip",
+        "state": "OPEN"
+      },
+      {
+        "number": 62810,
+        "repository": "NousResearch/hermes-agent",
+        "state": "OPEN"
+      }
+    ],
+    "hermes": {
+      "status": "done",
+      "taskId": "t_41d36afb",
+      "tenant": "agentic-tech-landscape"
+    },
+    "paperclipExecutionAuthority": false,
+    "reconciled": true,
+    "scheduler": {
+      "enabled": true,
+      "jobId": "5344380b6989",
+      "mode": "script-only",
+      "script": "control-plane-upstream-promotion-gates.py",
+      "workdir": "."
+    },
+    "swarm": "not-required-local-only"
+  },
+  "scheduler": {
+    "enabled": true,
+    "jobId": "5344380b6989",
+    "lastStatus": "ok",
+    "mode": "script-only",
+    "ownerCount": 1,
+    "schedule": {
+      "display": "15 11 * * *",
+      "expr": "15 11 * * *",
+      "kind": "cron"
+    }
+  },
+  "schema": "hermes-kanban-operational-scorecard.v1",
+  "tasks": [
+    {
+      "assignee": "default",
+      "completedRunCount": 1,
+      "eventCounts": {
+        "claimed": 1,
+        "commented": 1,
+        "completed": 1,
+        "created": 1,
+        "heartbeat": 1
+      },
+      "runCount": 1,
+      "status": "done",
+      "taskId": "t_fca0ce06",
+      "tenant": "agentic-tech-landscape",
+      "title": "Build deterministic upstream promotion-gate watcher",
+      "workerPidCount": 0
+    },
+    {
+      "assignee": "default",
+      "completedRunCount": 1,
+      "eventCounts": {
+        "claimed": 1,
+        "commented": 1,
+        "completed": 1,
+        "created": 1,
+        "heartbeat": 1
+      },
+      "runCount": 1,
+      "status": "done",
+      "taskId": "t_f28f8459",
+      "tenant": "agentic-tech-landscape",
+      "title": "Define canonical cross-plane task identity contract",
+      "workerPidCount": 0
+    },
+    {
+      "assignee": "default",
+      "completedRunCount": 1,
+      "eventCounts": {
+        "claimed": 1,
+        "commented": 1,
+        "completed": 1,
+        "created": 1,
+        "heartbeat": 2,
+        "promoted": 1
+      },
+      "runCount": 1,
+      "status": "done",
+      "taskId": "t_41d36afb",
+      "tenant": "agentic-tech-landscape",
+      "title": "Activate daily control-plane promotion-gate watcher",
+      "workerPidCount": 0
+    }
+  ]
+}
