@@ -111,6 +111,24 @@ Added to catalog seed and live snapshot:
 
 These expand **research surface**, not default runtime.
 
+## Executed absorb wave (2026-08-10 evening)
+
+| Pattern | Landed |
+|---|---|
+| OmO verified completion | Hermes `coding-agents` refs + MCR + arena task pack `verified-completion.v1` |
+| Aider git-first | MCR implementer notes + patterns file |
+| Ruflo roles | Patterns file → Model Council mapping |
+| Install decision automation | `scripts/absorb_recommend.py` |
+| Atlas regen | `scripts/generate_atlas_data.py` + Atlas UI v2 |
+
+**Verdict:** Do **not** install more CLIs this wave. Do more with Tier 0 + absorbed loops.
+
+```bash
+python scripts/absorb_recommend.py --need coding --limit 12
+python scripts/absorb_recommend.py --class B
+python scripts/generate_atlas_data.py
+```
+
 ## Related UI
 
-Open [`../sites/atlas/index.html`](../sites/atlas/index.html) for the operator/agent surface.
+Open [`../sites/atlas/index.html`](../sites/atlas/index.html) for the operator/agent surface (v2: action filters, class chips, install verdict, copy JSON).

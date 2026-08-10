@@ -1,12 +1,25 @@
 (() => {
   const data = window.ATLAS_DATA;
   if (!data) {
-    document.body.innerHTML = "<p style='padding:2rem;font-family:sans-serif'>Missing atlas-data.js</p>";
+    document.body.innerHTML =
+      "<p style='padding:2rem;font-family:sans-serif'>Missing atlas-data.js</p>";
     return;
   }
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+  const ACTIONS =
+    data.absorbActions || {
+      "adopt-core": "USE_NOW",
+      "adopt-adjacent": "WIRE_WHEN_NEEDED",
+      pilot: "GATED_PILOT",
+      evaluate: "ABSORB_PATTERN",
+      benchmark: "RESEARCH_ONLY",
+      watch: "WATCH",
+      reference: "REFERENCE",
+      "strategic-exception": "EXCEPTION_REVIEW",
+    };
 
   const classByExample = new Map();
   data.classes.forEach((c) => {
@@ -31,11 +44,34 @@
     return classByExample.get(project.repo) || categoryToClass[project.category] || "·";
   }
 
+  function actionFor(project) {
+    return ACTIONS[project.priority] || "WATCH";
+  }
+
   function formatStars(n) {
     if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
     if (n >= 10_000) return Math.round(n / 1000) + "k";
     if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "k";
     return String(n);
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;");
+  }
+
+  function toast(msg) {
+    const el = $("#toast");
+    if (!el) return;
+    el.hidden = false;
+    el.textContent = msg;
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => {
+      el.hidden = true;
+    }, 2200);
   }
 
   // Stats
@@ -85,14 +121,16 @@
       $("#hero-lede").innerHTML =
         "One map for coding harnesses, meta-harnesses, control planes, frameworks, and runtimes — with a single rule: <strong>one accountable owner per layer</strong>.";
       $("#jobs-title").textContent = "Human operator jobs";
-      $("#jobs-sub").textContent = "Command calmly. Decide with gates. See evidence. Feel premium clarity.";
+      $("#jobs-sub").textContent =
+        "Command calmly. Decide with gates. See evidence. Feel premium clarity.";
       renderJobs(data.humanJobs);
     } else {
       $("#hero-title").textContent = "Route work by class before you spawn.";
       $("#hero-lede").innerHTML =
-        "Agents: classify A–F, pick one layer owner, inject path bans, require maker≠checker proof. <strong>Stars are discovery. Receipts are truth.</strong>";
+        "Agents: classify A–F, pick one layer owner, inject path bans, require maker≠checker proof. <strong>Stars are discovery. Receipts are truth. Absorb before install.</strong>";
       $("#jobs-title").textContent = "Agent router jobs";
-      $("#jobs-sub").textContent = "Taxonomy → admission → execution → evidence → absorb or HOLD.";
+      $("#jobs-sub").textContent =
+        "Taxonomy → admission → execution → evidence → absorb or HOLD.";
       renderJobs(data.agentJobs);
     }
   }
@@ -114,6 +152,7 @@
 
   // Taxonomy
   let activeClass = data.classes[0]?.id || "A";
+  let classFilter = null;
   const taxRail = $("#tax-rail");
   data.classes.forEach((cls) => {
     const btn = document.createElement("button");
@@ -124,9 +163,16 @@
     btn.innerHTML = `<span class="id">Class ${cls.id}</span><span class="name">${cls.name}</span>`;
     btn.addEventListener("click", () => {
       activeClass = cls.id;
+      classFilter = cls.id;
       renderTax();
-      // soft filter catalog by examples + category map
-      filterByClass(cls.id);
+      renderChips();
+      // clear other filters for focused class view
+      $("#priority").value = "";
+      $("#category").value = "";
+      $("#action").value = "";
+      $("#q").value = "";
+      renderTable();
+      $("#catalog").scrollIntoView({ behavior: "smooth", block: "start" });
     });
     taxRail.appendChild(btn);
   });
@@ -160,13 +206,73 @@
       </div>`;
   }
 
+  // Class chips
+  const chips = $("#class-chips");
+  function renderChips() {
+    chips.innerHTML = "";
+    const all = document.createElement("button");
+    all.type = "button";
+    all.className = "chip" + (classFilter ? "" : " is-active");
+    all.textContent = "All classes";
+    all.addEventListener("click", () => {
+      classFilter = null;
+      renderChips();
+      renderTable();
+    });
+    chips.appendChild(all);
+    data.classes.forEach((cls) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip" + (classFilter === cls.id ? " is-active" : "");
+      b.textContent = `${cls.id} · ${cls.name.split(" ")[0]}`;
+      b.title = cls.name;
+      b.addEventListener("click", () => {
+        classFilter = cls.id;
+        activeClass = cls.id;
+        renderTax();
+        renderChips();
+        renderTable();
+      });
+      chips.appendChild(b);
+    });
+  }
+
   // System map
   const layers = [
-    { id: "human", label: "Human", title: "Command center", blurb: "Hermes + Queen · one receive gateway", filter: null },
-    { id: "gov", label: "Govern", title: "Control plane", blurb: "Kanban now · Paperclip gated", filterCat: ["control-plane", "coding-control-plane"] },
-    { id: "exec", label: "Execute", title: "Runtimes & coding", blurb: "Hermes · Codex · Claude · OpenCode · AGY", filterCat: ["agent-runtime", "coding-agent", "rust-runtime"] },
-    { id: "coord", label: "Coordinate", title: "Durable work", blurb: "Cron · Temporal · n8n", filterCat: ["durable-execution", "workflow-automation"] },
-    { id: "trust", label: "Trust", title: "Proof layer", blurb: "Evals · sandbox · secrets · Git", filterCat: ["eval-security", "observability", "sandbox-security", "identity-secrets"] },
+    {
+      id: "human",
+      label: "Human",
+      title: "Command center",
+      blurb: "Hermes + Queen · one receive gateway",
+    },
+    {
+      id: "gov",
+      label: "Govern",
+      title: "Control plane",
+      blurb: "Kanban now · Paperclip gated",
+      filterCat: ["control-plane", "coding-control-plane"],
+    },
+    {
+      id: "exec",
+      label: "Execute",
+      title: "Runtimes & coding",
+      blurb: "Hermes · Codex · Claude · OpenCode · AGY",
+      filterCat: ["agent-runtime", "coding-agent", "rust-runtime"],
+    },
+    {
+      id: "coord",
+      label: "Coordinate",
+      title: "Durable work",
+      blurb: "Cron · Temporal · n8n",
+      filterCat: ["durable-execution", "workflow-automation"],
+    },
+    {
+      id: "trust",
+      label: "Trust",
+      title: "Proof layer",
+      blurb: "Evals · sandbox · secrets · Git",
+      filterCat: ["eval-security", "observability", "sandbox-security", "identity-secrets"],
+    },
   ];
   const mapStage = $("#map-stage");
   layers.forEach((layer) => {
@@ -178,7 +284,12 @@
     btn.addEventListener("click", () => {
       $$(".map-node").forEach((n) => n.classList.toggle("is-active", n === btn));
       if (layer.filterCat) {
+        classFilter = null;
+        renderChips();
         $("#category").value = layer.filterCat[0];
+        $("#priority").value = "";
+        $("#action").value = "";
+        $("#q").value = "";
         renderTable();
         $("#catalog").scrollIntoView({ behavior: "smooth", block: "start" });
       }
@@ -189,7 +300,9 @@
   // Filters
   const prioritySel = $("#priority");
   const categorySel = $("#category");
+  const actionSel = $("#action");
   const qInput = $("#q");
+
   (data.priorityOrder || []).forEach((p) => {
     const opt = document.createElement("option");
     opt.value = p;
@@ -203,40 +316,41 @@
     opt.textContent = (data.categoryLabels && data.categoryLabels[cat]) || cat;
     categorySel.appendChild(opt);
   });
-
-  let classFilter = null;
-  function filterByClass(id) {
-    classFilter = id;
-    $("#priority").value = "";
-    $("#category").value = "";
-    qInput.value = "";
-    renderTable();
-    $("#catalog").scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  const actionSet = [...new Set(Object.values(ACTIONS))];
+  actionSet.forEach((a) => {
+    const opt = document.createElement("option");
+    opt.value = a;
+    opt.textContent = a;
+    actionSel.appendChild(opt);
+  });
 
   function matches(project) {
     const q = qInput.value.trim().toLowerCase();
     const pr = prioritySel.value;
     const cat = categorySel.value;
+    const act = actionSel.value;
     if (pr && project.priority !== pr) return false;
     if (cat && project.category !== cat) return false;
+    if (act && actionFor(project) !== act) return false;
     if (classFilter && classFor(project) !== classFilter) return false;
     if (!q) return true;
-    const hay = [project.repo, project.description, project.why, project.language, project.category, project.priority]
+    const hay = [
+      project.repo,
+      project.description,
+      project.why,
+      project.language,
+      project.category,
+      project.priority,
+      actionFor(project),
+      classFor(project),
+    ]
       .join(" ")
       .toLowerCase();
     return hay.includes(q);
   }
 
-  function renderTable() {
-    // if user edits filters, clear class filter unless class still matches intent
-    if (prioritySel.value || categorySel.value || qInput.value.trim()) {
-      // keep classFilter if set via taxonomy click without other filters - already handled
-    }
-    const rows = $("#rows");
-    rows.innerHTML = "";
+  function filtered() {
     const list = data.projects.filter(matches);
-    // sort: priority order then stars
     const pOrder = data.priorityOrder || [];
     list.sort((a, b) => {
       const pa = pOrder.indexOf(a.priority);
@@ -246,52 +360,97 @@
       if (ia !== ib) return ia - ib;
       return b.stars - a.stars;
     });
+    return list;
+  }
 
-    list.slice(0, 120).forEach((p) => {
+  function renderTable() {
+    const rows = $("#rows");
+    rows.innerHTML = "";
+    const list = filtered();
+    list.slice(0, 140).forEach((p) => {
       const tr = document.createElement("tr");
       const cls = classFor(p);
+      const act = actionFor(p);
       const license = p.licenseReview ? `${p.license} · review` : p.license;
       tr.innerHTML = `
         <td class="repo">
           <a href="${p.url}" target="_blank" rel="noreferrer">${p.repo}</a>
           <small>${p.language} · ${license}</small>
         </td>
-        <td><span class="pill">Class ${cls}</span> <span class="pill">${(data.categoryLabels && data.categoryLabels[p.category]) || p.category}</span></td>
+        <td><span class="pill">Class ${cls}</span><br><span class="pill">${(data.categoryLabels && data.categoryLabels[p.category]) || p.category}</span></td>
+        <td><span class="action-pill ${act}">${act}</span></td>
         <td><span class="pill ${p.priority}">${p.priority}</span></td>
         <td class="num">${formatStars(p.stars)}</td>
         <td class="why">${escapeHtml(p.why)}</td>`;
       rows.appendChild(tr);
     });
 
-    $("#cat-meta").textContent = `${list.length} matching · showing ${Math.min(list.length, 120)} · generated ${data.generatedAt}`;
-    $("#footnote").textContent =
-      classFilter
-        ? `Filtered to taxonomy class ${classFilter}. Clear search/filters or pick All to widen.`
-        : "Priority order: adopt-core → adjacent → pilot → evaluate → benchmark → watch. License NOASSERTION requires manual review.";
+    $("#cat-meta").textContent = `${list.length} matching · showing ${Math.min(
+      list.length,
+      140
+    )} · atlas v${data.version || 1} · ${data.generatedAt}`;
+    $("#footnote").textContent = classFilter
+      ? `Filtered to taxonomy class ${classFilter}. Clear or press Esc to widen.`
+      : "Action legend: USE_NOW · WIRE_WHEN_NEEDED · GATED_PILOT · ABSORB_PATTERN · RESEARCH_ONLY. License NOASSERTION requires manual review.";
   }
 
-  function escapeHtml(s) {
-    return String(s)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;");
-  }
-
-  qInput.addEventListener("input", () => {
+  function clearFilters() {
     classFilter = null;
+    qInput.value = "";
+    prioritySel.value = "";
+    categorySel.value = "";
+    actionSel.value = "";
+    $$(".map-node").forEach((n) => n.classList.remove("is-active"));
+    renderChips();
     renderTable();
-  });
+    toast("Filters cleared");
+  }
+
+  qInput.addEventListener("input", renderTable);
   prioritySel.addEventListener("change", () => {
     classFilter = null;
+    renderChips();
     renderTable();
   });
   categorySel.addEventListener("change", () => {
     classFilter = null;
+    renderChips();
     renderTable();
+  });
+  actionSel.addEventListener("change", renderTable);
+
+  $("#btn-clear").addEventListener("click", clearFilters);
+  $("#btn-copy-json").addEventListener("click", async () => {
+    const payload = filtered().slice(0, 140).map((p) => ({
+      repo: p.repo,
+      class: classFor(p),
+      action: actionFor(p),
+      priority: p.priority,
+      stars: p.stars,
+      why: p.why,
+      url: p.url,
+    }));
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
+      toast(`Copied ${payload.length} projects JSON`);
+    } catch {
+      toast("Clipboard blocked — select table instead");
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      clearFilters();
+      return;
+    }
+    if (e.key === "/" && document.activeElement !== qInput && document.activeElement?.tagName !== "INPUT") {
+      e.preventDefault();
+      qInput.focus();
+    }
   });
 
   setMode("human");
   renderTax();
+  renderChips();
   renderTable();
 })();

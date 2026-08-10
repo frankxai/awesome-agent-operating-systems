@@ -18,20 +18,24 @@
     <div class="brand">
       <span class="mark" aria-hidden="true"></span>
       <div>
-        <p class="eyebrow">Starlight · Intelligence Network</p>
+        <p class="eyebrow">Starlight · Intelligence Network · v2</p>
         <h1>Agentic Atlas</h1>
       </div>
     </div>
-    <nav class="mode" aria-label="Audience mode">
-      <button type="button" class="mode-btn is-active" data-mode="human" aria-pressed="true">Human operator</button>
-      <button type="button" class="mode-btn" data-mode="agent" aria-pressed="false">Agent router</button>
-    </nav>
+    <div class="top-actions">
+      <nav class="mode" aria-label="Audience mode">
+        <button type="button" class="mode-btn is-active" data-mode="human" aria-pressed="true">Human operator</button>
+        <button type="button" class="mode-btn" data-mode="agent" aria-pressed="false">Agent router</button>
+      </nav>
+      <button type="button" class="icon-btn" id="btn-copy-json" title="Copy filtered JSON">Copy JSON</button>
+      <button type="button" class="icon-btn" id="btn-clear" title="Clear filters (Esc)">Clear</button>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero">
       <div class="hero-copy">
-        <p class="kicker">Not a star leaderboard</p>
+        <p class="kicker">Not a star leaderboard · absorb before install</p>
         <h2 id="hero-title">What should we adopt, pilot, absorb, or refuse?</h2>
         <p class="lede" id="hero-lede">
           One map for coding harnesses, meta-harnesses, control planes, frameworks, and runtimes —
@@ -41,7 +45,8 @@
         <div class="cta-row">
           <a class="btn primary" href="#catalog">Browse catalog</a>
           <a class="btn ghost" href="#taxonomy">Read taxonomy</a>
-          <a class="btn ghost" href="../../docs/needs-map.md">Needs map</a>
+          <a class="btn ghost" href="#install-verdict">Install verdict</a>
+          <a class="btn ghost" href="../../docs/absorb-playbook.md">Absorb playbook</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Recommended stack">
@@ -57,6 +62,54 @@
         <p id="jobs-sub">Designed for both human command and agent routing.</p>
       </div>
       <div class="job-grid" id="job-grid"></div>
+    </section>
+
+    <section class="verdict" id="install-verdict" aria-labelledby="verdict-title">
+      <div class="section-head">
+        <h2 id="verdict-title">Should we install more?</h2>
+        <p>Honest superintelligence answer for this estate right now (BOUNDED disk, one Queen).</p>
+      </div>
+      <div class="verdict-grid">
+        <article class="v-yes">
+          <h3>Do more with (no install)</h3>
+          <ul>
+            <li>Hermes Queen + Kanban + cron</li>
+            <li>Codex · Claude Code · Grok Build · AGY · OpenCode</li>
+            <li>Verified-completion loop (OmO pattern)</li>
+            <li>This atlas + <code>absorb_recommend.py</code></li>
+            <li>model-arena L0–L3 evidence</li>
+          </ul>
+        </article>
+        <article class="v-absorb">
+          <h3>Absorb patterns (no install)</h3>
+          <ul>
+            <li>OmO plan→verify hooks</li>
+            <li>Aider git-first discipline</li>
+            <li>Ruflo role packs (not bus)</li>
+            <li>promptfoo-style packs</li>
+            <li>OpenHands sandbox honesty</li>
+          </ul>
+        </article>
+        <article class="v-gate">
+          <h3>Gated only</h3>
+          <ul>
+            <li>Paperclip — security HOLD</li>
+            <li>OmO binary — after measured OpenCode gap</li>
+            <li>Graphiti — Git facts only</li>
+            <li>Temporal — product long jobs</li>
+          </ul>
+        </article>
+        <article class="v-no">
+          <h3>Refuse now</h3>
+          <ul>
+            <li>Bulk clone of top-100 stars</li>
+            <li>Second Telegram gateway</li>
+            <li>LangGraph/AutoGen as fleet OS</li>
+            <li>Unreviewed MCP + business creds</li>
+            <li>Ruflo replacing Queen bus</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section class="taxonomy" id="taxonomy" aria-labelledby="tax-title">
@@ -84,7 +137,7 @@
         </div>
         <div class="filters">
           <label class="field">
-            <span>Search</span>
+            <span>Search <kbd>/</kbd></span>
             <input id="q" type="search" placeholder="repo, why, language…" autocomplete="off" />
           </label>
           <label class="field">
@@ -99,14 +152,22 @@
               <option value="">All</option>
             </select>
           </label>
+          <label class="field">
+            <span>Action</span>
+            <select id="action">
+              <option value="">All</option>
+            </select>
+          </label>
         </div>
       </div>
+      <div class="class-chips" id="class-chips" aria-label="Filter by taxonomy class"></div>
       <div class="table-wrap">
         <table class="grid">
           <thead>
             <tr>
               <th scope="col">Project</th>
-              <th scope="col">Class signal</th>
+              <th scope="col">Class</th>
+              <th scope="col">Action</th>
               <th scope="col">Priority</th>
               <th scope="col" class="num">Stars</th>
               <th scope="col">Why it matters here</th>
@@ -116,57 +177,29 @@
         </table>
       </div>
       <p class="footnote" id="footnote"></p>
+      <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
     </section>
 
     <section class="absorb" id="absorb" aria-labelledby="abs-title">
       <div class="section-head">
-        <h2 id="abs-title">Absorb more — without sprawl</h2>
-        <p>Install only when a measured gap exists. Pattern first. Product second. Second control plane never.</p>
+        <h2 id="abs-title">CLI for agents</h2>
+        <p>Deterministic recommendations — no network, no install side effects.</p>
       </div>
-      <div class="absorb-grid">
-        <article>
-          <h3>Now (no new installs)</h3>
-          <ul>
-            <li>Hermes Queen + coding-agents MCR</li>
-            <li>ops/model-arena L0–L3 evidence loop</li>
-            <li>Hermes Kanban task control</li>
-            <li>This atlas + taxonomy as SSOT language</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Evaluate / absorb patterns</h3>
-          <ul>
-            <li>oh-my-openagent — hooks, plan→verify completion</li>
-            <li>Ruflo — swarm memory metaphors (not fleet SSOT)</li>
-            <li>Aider / OpenHands — git discipline &amp; sandbox UX</li>
-            <li>promptfoo + Langfuse — eval/trace schemas</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Gated pilots</h3>
-          <ul>
-            <li>Paperclip — after undici/security clearance</li>
-            <li>Graphiti — temporal KG over Git facts</li>
-            <li>Vibe Kanban — only if Hermes board gap proven</li>
-            <li>Temporal — product-grade long jobs only</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Refuse by default</h3>
-          <ul>
-            <li>Second human gateway receive</li>
-            <li>Framework-as-OS (LangGraph/AutoGen fleet)</li>
-            <li>Unreviewed MCP with business credentials</li>
-            <li>Star-chasing clones under disk pressure</li>
-          </ul>
-        </article>
-      </div>
+      <pre class="codeblock" tabindex="0"><code>python scripts/absorb_recommend.py --need coding --limit 12
+python scripts/absorb_recommend.py --class B
+python scripts/absorb_recommend.py --repo code-yeongyu/oh-my-openagent
+python scripts/generate_atlas_data.py</code></pre>
     </section>
   </main>
 
   <footer class="foot">
     <p>Built for Starlight Intelligence Network · data from <code>data/projects.json</code> · evidence beats stars</p>
-    <p><a href="../../README.md">Repo README</a> · <a href="../../docs/harness-taxonomy.md">Taxonomy doc</a> · <a href="../../docs/absorb-playbook.md">Absorb playbook</a></p>
+    <p>
+      <a href="../../README.md">Repo README</a> ·
+      <a href="../../docs/harness-taxonomy.md">Taxonomy</a> ·
+      <a href="../../docs/absorb-playbook.md">Absorb playbook</a> ·
+      <a href="../../docs/starlight-intelligence-network.md">SIN</a>
+    </p>
   </footer>
 
   <script src="./atlas-data.js"></script>

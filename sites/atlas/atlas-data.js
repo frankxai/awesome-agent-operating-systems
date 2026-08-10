@@ -1,7 +1,8 @@
 window.ATLAS_DATA = {
-  "generatedAt": "2026-08-10T20:10:54.588617Z",
+  "generatedAt": "2026-08-10T20:52:18.260569Z",
   "title": "Starlight Agentic Atlas",
   "subtitle": "Operator surface for humans and agents — classify, route, absorb, prove",
+  "version": 2,
   "counts": {
     "seeded": 187,
     "resolved": 187,
@@ -2801,5 +2802,15 @@ window.ATLAS_DATA = {
     "model-gateway": "Model gateway",
     "voice-realtime": "Voice realtime",
     "domain-platform": "Domain platform"
+  },
+  "absorbActions": {
+    "adopt-core": "USE_NOW",
+    "adopt-adjacent": "WIRE_WHEN_NEEDED",
+    "pilot": "GATED_PILOT",
+    "evaluate": "ABSORB_PATTERN",
+    "benchmark": "RESEARCH_ONLY",
+    "watch": "WATCH",
+    "reference": "REFERENCE",
+    "strategic-exception": "EXCEPTION_REVIEW"
   }
 };

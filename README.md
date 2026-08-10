@@ -26,6 +26,7 @@ This repository is not a star leaderboard. It asks:
 | [**Agentic Atlas UI**](sites/atlas/index.html) | SOTA operator surface for humans + agents: taxonomy, stack, live catalog filters |
 | [Harness Taxonomy A–F](docs/harness-taxonomy.md) | Classify coding CLIs vs meta-harnesses vs control planes vs frameworks |
 | [Absorb Playbook](docs/absorb-playbook.md) | How to gain capability from the landscape without sprawl or second SSOTs |
+| [Verified Completion Contract](docs/verified-completion-contract.md) | OmO-absorbed PLAN→EXECUTE→VERIFY→ABSORB loop for all workers |
 | [Starlight Intelligence Network](docs/starlight-intelligence-network.md) | How catalog + Queen + SIS + arena form one network |
 | [Agentic Tech Catalog](docs/catalog.md) | All projects, grouped and annotated with stars, language, license flag and recommendation |
 | [Needs Map](docs/needs-map.md) | The full operational needs model and preferred foundation for each need |
