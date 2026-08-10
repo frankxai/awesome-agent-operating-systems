@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starlight Agentic Atlas</title>
+  <meta name="description" content="Operator surface for humans and agents — classify harnesses, route work, absorb SOTA patterns, prove outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./atlas.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <p class="eyebrow">Starlight · Intelligence Network</p>
+        <h1>Agentic Atlas</h1>
+      </div>
+    </div>
+    <nav class="mode" aria-label="Audience mode">
+      <button type="button" class="mode-btn is-active" data-mode="human" aria-pressed="true">Human operator</button>
+      <button type="button" class="mode-btn" data-mode="agent" aria-pressed="false">Agent router</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Not a star leaderboard</p>
+        <h2 id="hero-title">What should we adopt, pilot, absorb, or refuse?</h2>
+        <p class="lede" id="hero-lede">
+          One map for coding harnesses, meta-harnesses, control planes, frameworks, and runtimes —
+          with a single rule: <strong>one accountable owner per layer</strong>.
+        </p>
+        <div class="stats" id="stats" aria-live="polite"></div>
+        <div class="cta-row">
+          <a class="btn primary" href="#catalog">Browse catalog</a>
+          <a class="btn ghost" href="#taxonomy">Read taxonomy</a>
+          <a class="btn ghost" href="../../docs/needs-map.md">Needs map</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Recommended stack">
+        <p class="panel-label">Tier 0 foundation</p>
+        <ol class="stack" id="stack-list"></ol>
+        <p class="panel-note" id="stack-rule"></p>
+      </aside>
+    </section>
+
+    <section class="jobs" id="jobs" aria-labelledby="jobs-title">
+      <div class="section-head">
+        <h2 id="jobs-title">Jobs of the surface</h2>
+        <p id="jobs-sub">Designed for both human command and agent routing.</p>
+      </div>
+      <div class="job-grid" id="job-grid"></div>
+    </section>
+
+    <section class="taxonomy" id="taxonomy" aria-labelledby="tax-title">
+      <div class="section-head">
+        <h2 id="tax-title">Harness taxonomy A–F</h2>
+        <p>LangGraph is not Codex. Ruflo is not Paperclip. Classification first — then install.</p>
+      </div>
+      <div class="tax-rail" id="tax-rail" role="list"></div>
+      <article class="tax-detail" id="tax-detail" aria-live="polite"></article>
+    </section>
+
+    <section class="map" id="system-map" aria-labelledby="map-title">
+      <div class="section-head">
+        <h2 id="map-title">System map</h2>
+        <p>Interactive layer spine. Click a node to filter the catalog.</p>
+      </div>
+      <div class="map-stage" id="map-stage" role="group" aria-label="Architecture layers"></div>
+    </section>
+
+    <section class="catalog" id="catalog" aria-labelledby="cat-title">
+      <div class="section-head row">
+        <div>
+          <h2 id="cat-title">Live catalog</h2>
+          <p id="cat-meta"></p>
+        </div>
+        <div class="filters">
+          <label class="field">
+            <span>Search</span>
+            <input id="q" type="search" placeholder="repo, why, language…" autocomplete="off" />
+          </label>
+          <label class="field">
+            <span>Priority</span>
+            <select id="priority">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Category</span>
+            <select id="category">
+              <option value="">All</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="grid">
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Class signal</th>
+              <th scope="col">Priority</th>
+              <th scope="col" class="num">Stars</th>
+              <th scope="col">Why it matters here</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="footnote" id="footnote"></p>
+    </section>
+
+    <section class="absorb" id="absorb" aria-labelledby="abs-title">
+      <div class="section-head">
+        <h2 id="abs-title">Absorb more — without sprawl</h2>
+        <p>Install only when a measured gap exists. Pattern first. Product second. Second control plane never.</p>
+      </div>
+      <div class="absorb-grid">
+        <article>
+          <h3>Now (no new installs)</h3>
+          <ul>
+            <li>Hermes Queen + coding-agents MCR</li>
+            <li>ops/model-arena L0–L3 evidence loop</li>
+            <li>Hermes Kanban task control</li>
+            <li>This atlas + taxonomy as SSOT language</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Evaluate / absorb patterns</h3>
+          <ul>
+            <li>oh-my-openagent — hooks, plan→verify completion</li>
+            <li>Ruflo — swarm memory metaphors (not fleet SSOT)</li>
+            <li>Aider / OpenHands — git discipline &amp; sandbox UX</li>
+            <li>promptfoo + Langfuse — eval/trace schemas</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Gated pilots</h3>
+          <ul>
+            <li>Paperclip — after undici/security clearance</li>
+            <li>Graphiti — temporal KG over Git facts</li>
+            <li>Vibe Kanban — only if Hermes board gap proven</li>
+            <li>Temporal — product-grade long jobs only</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Refuse by default</h3>
+          <ul>
+            <li>Second human gateway receive</li>
+            <li>Framework-as-OS (LangGraph/AutoGen fleet)</li>
+            <li>Unreviewed MCP with business credentials</li>
+            <li>Star-chasing clones under disk pressure</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Built for Starlight Intelligence Network · data from <code>data/projects.json</code> · evidence beats stars</p>
+    <p><a href="../../README.md">Repo README</a> · <a href="../../docs/harness-taxonomy.md">Taxonomy doc</a> · <a href="../../docs/absorb-playbook.md">Absorb playbook</a></p>
+  </footer>
+
+  <script src="./atlas-data.js"></script>
+  <script src="./atlas.js"></script>
+</body>
+</html>
