@@ -14,7 +14,7 @@ PLAN → EXECUTE → VERIFY (≠ maker) → ABSORB or HOLD
 - Exact repo/worktree (4-fact git)
 - Done-when evidence paths
 - Kill criteria
-- Class A–F of any new tool considered
+- Class A–F (execution/ownership) or S (supporting substrate) of any new tool considered
 
 ## EXECUTE
 

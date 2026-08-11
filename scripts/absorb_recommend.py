@@ -16,64 +16,10 @@ import json
 import sys
 from pathlib import Path
 
+from taxonomy import INSTALL_HINT, PRIORITY_ACTION, action_of, class_of, policy_issues
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "projects.json"
-
-CATEGORY_TO_CLASS = {
-    "coding-agent": "A",
-    "coding-control-plane": "B",
-    "control-plane": "C",
-    "agent-framework": "D",
-    "agent-builder": "D",
-    "structured-output": "D",
-    "agent-runtime": "E",
-    "rust-runtime": "E",
-    "interaction-ui": "E",
-    "durable-execution": "F",
-    "workflow-automation": "F",
-}
-
-# Explicit overrides for famous meta-harnesses
-REPO_CLASS = {
-    "code-yeongyu/oh-my-openagent": "B",
-    "ruvnet/ruflo": "B",
-    "HKUDS/OpenHarness": "B",
-    "paperclipai/paperclip": "C",
-    "langchain-ai/langgraph": "D",
-    "microsoft/autogen": "D",
-    "crewAIInc/crewAI": "D",
-    "NousResearch/hermes-agent": "E",
-    "openai/codex": "A",
-    "anomalyco/opencode": "A",
-    "can1357/oh-my-pi": "A",
-    "earendil-works/pi": "A",
-}
-
-PRIORITY_ACTION = {
-    "adopt-core": "USE_NOW",
-    "adopt-adjacent": "WIRE_WHEN_NEEDED",
-    "pilot": "GATED_PILOT",
-    "evaluate": "ABSORB_PATTERN",
-    "benchmark": "RESEARCH_ONLY",
-    "watch": "WATCH",
-    "reference": "REFERENCE",
-    "strategic-exception": "EXCEPTION_REVIEW",
-}
-
-INSTALL_HINT = {
-    "USE_NOW": "Already or should be in Tier 0 runtime — do more with it, do not replace Queen.",
-    "WIRE_WHEN_NEEDED": "Keep available; enable for a concrete workflow, not curiosity.",
-    "GATED_PILOT": "Only after security/disk/evidence gates. Not default install.",
-    "ABSORB_PATTERN": "Do NOT install by default. Port hooks/prompts into skills/docs first.",
-    "RESEARCH_ONLY": "Architecture benchmark. No production control-plane role.",
-    "WATCH": "Track releases; no action.",
-    "REFERENCE": "Historical/educational only.",
-    "EXCEPTION_REVIEW": "Below star threshold for a reason — human review.",
-}
-
-
-def class_of(p: dict) -> str:
-    return REPO_CLASS.get(p["repo"]) or CATEGORY_TO_CLASS.get(p["category"], "?")
 
 
 def main() -> int:
@@ -88,6 +34,9 @@ def main() -> int:
 
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     projects = catalog["projects"]
+    errors = policy_issues(projects)
+    if errors:
+        ap.error("catalog policy invalid: " + "; ".join(errors))
 
     out = []
     need = args.need.lower().strip()
@@ -112,7 +61,7 @@ def main() -> int:
             ).lower()
             if need not in blob:
                 continue
-        action = PRIORITY_ACTION.get(p["priority"], "WATCH")
+        action = action_of(p)
         # Hard refuse double control planes for evaluate-class C when Hermes owns layer
         note = INSTALL_HINT[action]
         if p["repo"] == "paperclipai/paperclip":
@@ -136,16 +85,7 @@ def main() -> int:
         )
 
     # sort: action severity then stars
-    order = [
-        "USE_NOW",
-        "WIRE_WHEN_NEEDED",
-        "GATED_PILOT",
-        "ABSORB_PATTERN",
-        "RESEARCH_ONLY",
-        "WATCH",
-        "REFERENCE",
-        "EXCEPTION_REVIEW",
-    ]
+    order = list(dict.fromkeys(PRIORITY_ACTION.values()))
     out.sort(key=lambda r: (order.index(r["action"]) if r["action"] in order else 99, -r["stars"]))
     out = out[: max(1, args.limit)]
 

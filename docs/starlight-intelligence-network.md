@@ -31,7 +31,7 @@ Brand / domain intelligence
 | Stakeholder | Need | SIN answer |
 |---|---|---|
 | Founder / operator | Calm command, trust, speed | One gateway, clear boards, premium atlas UI |
-| Coding agents | Correct routing, hard rails | Taxonomy A–F + MCR + path bans |
+| Coding agents | Correct routing, hard rails | Taxonomy A–F + S + MCR + path bans |
 | Future agents | Portable context | AGENTS.md, skills, SIP adapters |
 | Security / governance | Fail-closed money & prod | Human gates + maker≠checker |
 | R&D | Continuous improvement | Catalog + arena + absorb ladder |
@@ -54,7 +54,7 @@ Brand / domain intelligence
 
 1. Appear in catalog seed (class + priority + why)
 2. Refresh metadata (no clone required)
-3. Classify A–F
+3. Classify A–F (execution/ownership) or S (supporting substrate)
 4. Absorb pattern **or** open gated pilot
 5. Only then optional install under disk/security gates
 6. Feed routing matrix from arena evidence

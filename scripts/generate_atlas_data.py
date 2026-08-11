@@ -6,6 +6,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from taxonomy import PRIORITY_ACTION, action_of, class_of, policy_issues
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "projects.json"
 OUT = ROOT / "sites" / "atlas" / "atlas-data.js"
@@ -92,16 +94,35 @@ CLASSES = [
         "not": "Not chat loops as workflow engines.",
         "estate": "Hermes cron simple; Temporal/n8n when product durability needs it",
     },
+    {
+        "id": "S",
+        "name": "Supporting substrate (not a harness)",
+        "job": "Protocols, trust, memory, retrieval, model infrastructure, and integration primitives",
+        "examples": [
+            "a2aproject/A2A",
+            "agentskills/agentskills",
+            "modelcontextprotocol/servers",
+            "promptfoo/promptfoo",
+            "Graphite/graphite",
+        ],
+        "not": "Not an execution harness or a second control plane.",
+        "estate": "Adopt standards deliberately; wire security and data components only behind explicit gates",
+    },
 ]
 
 
 def main() -> int:
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+    errors = policy_issues(catalog["projects"])
+    if errors:
+        raise ValueError("catalog taxonomy policy invalid: " + "; ".join(errors))
     slim = []
     for p in catalog["projects"]:
         slim.append(
             {
                 "repo": p["repo"],
+                "class": class_of(p),
+                "action": action_of(p),
                 "url": p["url"],
                 "name": p["repo"].split("/")[-1],
                 "owner": p["repo"].split("/")[0],
@@ -120,7 +141,7 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "title": "Starlight Agentic Atlas",
         "subtitle": "Operator surface for humans and agents — classify, route, absorb, prove",
-        "version": 2,
+        "version": 3,
         "counts": catalog["counts"],
         "classes": CLASSES,
         "stack": {
@@ -207,17 +228,18 @@ def main() -> int:
             "model-gateway": "Model gateway",
             "voice-realtime": "Voice realtime",
             "domain-platform": "Domain platform",
+            "agent-builder": "Agent builder",
+            "agent-training": "Agent training",
+            "data-integration": "Data integration",
+            "document-ingestion": "Document ingestion",
+            "identity-secrets": "Identity & secrets",
+            "knowledge-graph": "Knowledge graph",
+            "rag-platform": "RAG platform",
+            "sandbox-security": "Sandbox & security",
+            "tools-integration": "Tools & integration",
+            "vector-database": "Vector database",
         },
-        "absorbActions": {
-            "adopt-core": "USE_NOW",
-            "adopt-adjacent": "WIRE_WHEN_NEEDED",
-            "pilot": "GATED_PILOT",
-            "evaluate": "ABSORB_PATTERN",
-            "benchmark": "RESEARCH_ONLY",
-            "watch": "WATCH",
-            "reference": "REFERENCE",
-            "strategic-exception": "EXCEPTION_REVIEW",
-        },
+        "absorbActions": PRIORITY_ACTION,
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

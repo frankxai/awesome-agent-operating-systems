@@ -26,26 +26,12 @@
     (c.examples || []).forEach((repo) => classByExample.set(repo, c.id));
   });
 
-  const categoryToClass = {
-    "coding-agent": "A",
-    "coding-control-plane": "B",
-    "control-plane": "C",
-    "agent-framework": "D",
-    "agent-builder": "D",
-    "structured-output": "D",
-    "agent-runtime": "E",
-    "rust-runtime": "E",
-    "interaction-ui": "E",
-    "durable-execution": "F",
-    "workflow-automation": "F",
-  };
-
   function classFor(project) {
-    return classByExample.get(project.repo) || categoryToClass[project.category] || "·";
+    return project.class || classByExample.get(project.repo) || "S";
   }
 
   function actionFor(project) {
-    return ACTIONS[project.priority] || "WATCH";
+    return project.action || ACTIONS[project.priority] || "WATCH";
   }
 
   function formatStars(n) {
@@ -153,6 +139,7 @@
   // Taxonomy
   let activeClass = data.classes[0]?.id || "A";
   let classFilter = null;
+  let categoryFilters = null;
   const taxRail = $("#tax-rail");
   data.classes.forEach((cls) => {
     const btn = document.createElement("button");
@@ -164,6 +151,7 @@
     btn.addEventListener("click", () => {
       activeClass = cls.id;
       classFilter = cls.id;
+      categoryFilters = null;
       renderTax();
       renderChips();
       // clear other filters for focused class view
@@ -216,6 +204,7 @@
     all.textContent = "All classes";
     all.addEventListener("click", () => {
       classFilter = null;
+      categoryFilters = null;
       renderChips();
       renderTable();
     });
@@ -228,6 +217,7 @@
       b.title = cls.name;
       b.addEventListener("click", () => {
         classFilter = cls.id;
+        categoryFilters = null;
         activeClass = cls.id;
         renderTax();
         renderChips();
@@ -285,8 +275,9 @@
       $$(".map-node").forEach((n) => n.classList.toggle("is-active", n === btn));
       if (layer.filterCat) {
         classFilter = null;
+        categoryFilters = layer.filterCat;
         renderChips();
-        $("#category").value = layer.filterCat[0];
+        $("#category").value = "";
         $("#priority").value = "";
         $("#action").value = "";
         $("#q").value = "";
@@ -331,6 +322,7 @@
     const act = actionSel.value;
     if (pr && project.priority !== pr) return false;
     if (cat && project.category !== cat) return false;
+    if (categoryFilters && !categoryFilters.includes(project.category)) return false;
     if (act && actionFor(project) !== act) return false;
     if (classFilter && classFor(project) !== classFilter) return false;
     if (!q) return true;
@@ -389,13 +381,16 @@
       list.length,
       140
     )} · atlas v${data.version || 1} · ${data.generatedAt}`;
-    $("#footnote").textContent = classFilter
-      ? `Filtered to taxonomy class ${classFilter}. Clear or press Esc to widen.`
-      : "Action legend: USE_NOW · WIRE_WHEN_NEEDED · GATED_PILOT · ABSORB_PATTERN · RESEARCH_ONLY. License NOASSERTION requires manual review.";
+    $("#footnote").textContent = categoryFilters
+      ? `Filtered to system layer categories: ${categoryFilters.join(", ")}. Clear or press Esc to widen.`
+      : classFilter
+        ? `Filtered to taxonomy class ${classFilter}. Clear or press Esc to widen.`
+        : "Action legend: USE_NOW · ADOPT_STANDARD · WIRE_WHEN_NEEDED · GATED_PILOT · ABSORB_PATTERN · RESEARCH_ONLY. License NOASSERTION requires manual review.";
   }
 
   function clearFilters() {
     classFilter = null;
+    categoryFilters = null;
     qInput.value = "";
     prioritySel.value = "";
     categorySel.value = "";
@@ -409,11 +404,13 @@
   qInput.addEventListener("input", renderTable);
   prioritySel.addEventListener("change", () => {
     classFilter = null;
+    categoryFilters = null;
     renderChips();
     renderTable();
   });
   categorySel.addEventListener("change", () => {
     classFilter = null;
+    categoryFilters = null;
     renderChips();
     renderTable();
   });

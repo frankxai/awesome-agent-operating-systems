@@ -1,4 +1,4 @@
-# Harness taxonomy A–F
+# Harness taxonomy A–F + S
 
 **Purpose:** Stop mixing different technology classes.  
 **Audience:** humans (operators) and agents (routers).  
@@ -21,6 +21,7 @@ Not every popular “agent” project is the same kind of harness.
 | **D** | Agent frameworks (libraries) | Build product multi-agent graphs in code | LangGraph, AutoGen, CrewAI, Mastra, PydanticAI | **Embed in products** — not daily coding OS |
 | **E** | General agent runtime / OS | Chat, tools, memory, cron, gateway, skills | Hermes Agent, OpenClaw, DeerFlow, Goose | **Hermes + Starlight Queen = Tier 0** |
 | **F** | Durable workflow engines | Timers, retries, long jobs, SaaS integrations | Temporal, Trigger.dev, n8n, Activepieces | Hermes cron for simple; Temporal/n8n when product durability needs it |
+| **S** | Supporting substrate *(not a harness)* | Protocols, trust, memory, retrieval, integration and model infrastructure | A2A, Agent Skills, MCP, promptfoo, Graphiti/Qdrant | **Adopt standards deliberately**; wire components behind explicit security/data gates |
 
 ## Classification rules (agents must follow)
 
@@ -31,6 +32,7 @@ Not every popular “agent” project is the same kind of harness.
 5. **One owner per layer.** Do not run two dispatchers, two memory providers, or two human gateways for the same workload.
 6. **Stars admit research. Evidence admits routing.** Live evidence lives in Starlight `ops/model-arena/` and Git/PR/CI receipts.
 7. **Proprietary peers** (Claude Code, Grok Build) appear on the live fleet roster even when not in this open catalog.
+8. **S is not a seventh dispatcher.** It prevents trust, memory, protocol and data components from being incorrectly labelled an execution harness.
 
 ## Mapping open catalog categories → classes
 
@@ -39,9 +41,10 @@ Not every popular “agent” project is the same kind of harness.
 | `coding-agent` | A |
 | `coding-control-plane` | B (or C if org-fleet board) |
 | `control-plane` | C |
-| `agent-framework`, `agent-builder`, `structured-output` | D |
+| `agent-framework`, `agent-builder`, `structured-output`, `agent-training` | D |
 | `agent-runtime`, `rust-runtime`, `interaction-ui` | E |
 | `durable-execution`, `workflow-automation` | F |
+| trust, memory, retrieval, protocol, data, model, browser and media support categories | S |
 
 ## Human 2-second read
 

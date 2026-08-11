@@ -337,7 +337,7 @@ main {
 
 .tax-rail {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
   gap: 0.55rem;
   margin-bottom: 0.9rem;
 }
@@ -686,6 +686,7 @@ body[data-mode="agent"] .mark {
   white-space: nowrap;
 }
 .action-pill.USE_NOW { color: var(--signal); border-color: rgba(94,234,212,0.4); }
+.action-pill.ADOPT_STANDARD { color: #b8d6ff; border-color: rgba(184,214,255,0.36); }
 .action-pill.WIRE_WHEN_NEEDED { color: #9fe8d8; border-color: rgba(159,232,216,0.35); }
 .action-pill.GATED_PILOT { color: var(--gold-soft); border-color: rgba(212,175,122,0.45); }
 .action-pill.ABSORB_PATTERN { color: #c4b5fd; border-color: rgba(196,181,253,0.35); }

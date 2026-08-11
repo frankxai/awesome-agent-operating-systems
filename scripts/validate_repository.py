@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote
 
+from taxonomy import HARNESS_CLASSES, PRIORITY_ACTION, action_of, class_of, policy_issues
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -33,6 +35,43 @@ def validate_markdown_links(errors: list[str]) -> None:
                 fail(errors, f"broken local link in {path.relative_to(ROOT)}: {target}")
 
 
+def validate_atlas_data(errors: list[str], projects: list[dict[str, object]]) -> None:
+    """Keep the browser-facing Atlas view in lockstep with catalog policy."""
+    path = ROOT / "sites" / "atlas" / "atlas-data.js"
+    prefix = "window.ATLAS_DATA = "
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith(prefix) or not text.endswith(";\n"):
+        fail(errors, "atlas-data.js is not a valid generated payload")
+        return
+
+    try:
+        atlas = json.loads(text.removeprefix(prefix).removesuffix(";\n"))
+    except json.JSONDecodeError as exc:
+        fail(errors, f"atlas-data.js JSON invalid: {exc}")
+        return
+
+    atlas_projects = atlas.get("projects")
+    if not isinstance(atlas_projects, list):
+        fail(errors, "atlas-data.js projects is not a list")
+        return
+    if [item.get("repo") for item in atlas_projects] != [item.get("repo") for item in projects]:
+        fail(errors, "atlas-data.js project order/content does not match catalog")
+    if atlas.get("absorbActions") != PRIORITY_ACTION:
+        fail(errors, "atlas-data.js absorb action map does not match taxonomy policy")
+
+    atlas_classes = {item.get("id") for item in atlas.get("classes", [])}
+    if atlas_classes != set(HARNESS_CLASSES):
+        fail(errors, f"atlas-data.js classes mismatch: expected {sorted(HARNESS_CLASSES)}, got {sorted(atlas_classes)}")
+
+    for source, rendered in zip(projects, atlas_projects, strict=False):
+        expected_class = class_of(source)
+        expected_action = action_of(source)
+        if rendered.get("class") != expected_class:
+            fail(errors, f"atlas class stale for {source.get('repo')}: {rendered.get('class')} != {expected_class}")
+        if rendered.get("action") != expected_action:
+            fail(errors, f"atlas action stale for {source.get('repo')}: {rendered.get('action')} != {expected_action}")
+
+
 def main() -> int:
     errors: list[str] = []
     seed = json.loads((ROOT / "data" / "catalog-seed.json").read_text(encoding="utf-8"))
@@ -41,6 +80,8 @@ def main() -> int:
 
     seed_repos = [item["repo"] for item in seed["projects"]]
     projects = catalog["projects"]
+    for issue in policy_issues(projects):
+        fail(errors, issue)
     catalog_repos = [item["repo"] for item in projects]
     if seed_repos != catalog_repos:
         fail(errors, "catalog project order/content does not match the seed")
@@ -131,6 +172,7 @@ def main() -> int:
         fail(errors, "Paperclip posture must remain pilot unless its assessment is updated")
 
     validate_markdown_links(errors)
+    validate_atlas_data(errors, projects)
 
     if errors:
         print("validation failed:", file=sys.stderr)

@@ -1,8 +1,8 @@
 window.ATLAS_DATA = {
-  "generatedAt": "2026-08-10T20:52:18.260569Z",
+  "generatedAt": "2026-08-11T02:50:37.104057Z",
   "title": "Starlight Agentic Atlas",
   "subtitle": "Operator surface for humans and agents — classify, route, absorb, prove",
-  "version": 2,
+  "version": 3,
   "counts": {
     "seeded": 187,
     "resolved": 187,
@@ -91,6 +91,20 @@ window.ATLAS_DATA = {
       ],
       "not": "Not chat loops as workflow engines.",
       "estate": "Hermes cron simple; Temporal/n8n when product durability needs it"
+    },
+    {
+      "id": "S",
+      "name": "Supporting substrate (not a harness)",
+      "job": "Protocols, trust, memory, retrieval, model infrastructure, and integration primitives",
+      "examples": [
+        "a2aproject/A2A",
+        "agentskills/agentskills",
+        "modelcontextprotocol/servers",
+        "promptfoo/promptfoo",
+        "Graphite/graphite"
+      ],
+      "not": "Not an execution harness or a second control plane.",
+      "estate": "Adopt standards deliberately; wire security and data components only behind explicit gates"
     }
   ],
   "stack": {
@@ -155,6 +169,8 @@ window.ATLAS_DATA = {
   "projects": [
     {
       "repo": "NousResearch/hermes-agent",
+      "class": "E",
+      "action": "USE_NOW",
       "url": "https://github.com/NousResearch/hermes-agent",
       "name": "hermes-agent",
       "owner": "NousResearch",
@@ -169,6 +185,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "paperclipai/paperclip",
+      "class": "C",
+      "action": "GATED_PILOT",
       "url": "https://github.com/paperclipai/paperclip",
       "name": "paperclip",
       "owner": "paperclipai",
@@ -183,6 +201,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openclaw/openclaw",
+      "class": "E",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/openclaw/openclaw",
       "name": "openclaw",
       "owner": "openclaw",
@@ -197,6 +217,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "lobehub/lobehub",
+      "class": "C",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/lobehub/lobehub",
       "name": "lobehub",
       "owner": "lobehub",
@@ -211,6 +233,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ruvnet/ruflo",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/ruvnet/ruflo",
       "name": "ruflo",
       "owner": "ruvnet",
@@ -225,6 +249,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "multica-ai/multica",
+      "class": "C",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/multica-ai/multica",
       "name": "multica",
       "owner": "multica-ai",
@@ -239,6 +265,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "simstudioai/sim",
+      "class": "C",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/simstudioai/sim",
       "name": "sim",
       "owner": "simstudioai",
@@ -253,6 +281,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "bytedance/deer-flow",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/bytedance/deer-flow",
       "name": "deer-flow",
       "owner": "bytedance",
@@ -267,6 +297,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "HKUDS/nanobot",
+      "class": "E",
+      "action": "WATCH",
       "url": "https://github.com/HKUDS/nanobot",
       "name": "nanobot",
       "owner": "HKUDS",
@@ -281,6 +313,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "zeroclaw-labs/zeroclaw",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/zeroclaw-labs/zeroclaw",
       "name": "zeroclaw",
       "owner": "zeroclaw-labs",
@@ -295,6 +329,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "RightNow-AI/openfang",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/RightNow-AI/openfang",
       "name": "openfang",
       "owner": "RightNow-AI",
@@ -309,6 +345,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "elizaOS/eliza",
+      "class": "E",
+      "action": "WATCH",
       "url": "https://github.com/elizaOS/eliza",
       "name": "eliza",
       "owner": "elizaOS",
@@ -323,6 +361,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "agent0ai/agent-zero",
+      "class": "E",
+      "action": "WATCH",
       "url": "https://github.com/agent0ai/agent-zero",
       "name": "agent-zero",
       "owner": "agent0ai",
@@ -337,6 +377,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "HKUDS/OpenHarness",
+      "class": "B",
+      "action": "WATCH",
       "url": "https://github.com/HKUDS/OpenHarness",
       "name": "OpenHarness",
       "owner": "HKUDS",
@@ -351,6 +393,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Significant-Gravitas/AutoGPT",
+      "class": "E",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
       "name": "AutoGPT",
       "owner": "Significant-Gravitas",
@@ -365,6 +409,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "open-webui/open-webui",
+      "class": "E",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/open-webui/open-webui",
       "name": "open-webui",
       "owner": "open-webui",
@@ -379,6 +425,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "danny-avila/LibreChat",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/danny-avila/LibreChat",
       "name": "LibreChat",
       "owner": "danny-avila",
@@ -393,6 +441,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openai/codex",
+      "class": "A",
+      "action": "USE_NOW",
       "url": "https://github.com/openai/codex",
       "name": "codex",
       "owner": "openai",
@@ -407,6 +457,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "anomalyco/opencode",
+      "class": "A",
+      "action": "USE_NOW",
       "url": "https://github.com/anomalyco/opencode",
       "name": "opencode",
       "owner": "anomalyco",
@@ -421,6 +473,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "google-gemini/gemini-cli",
+      "class": "A",
+      "action": "USE_NOW",
       "url": "https://github.com/google-gemini/gemini-cli",
       "name": "gemini-cli",
       "owner": "google-gemini",
@@ -435,6 +489,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "cline/cline",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/cline/cline",
       "name": "cline",
       "owner": "cline",
@@ -449,6 +505,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "continuedev/continue",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/continuedev/continue",
       "name": "continue",
       "owner": "continuedev",
@@ -463,6 +521,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "aaif-goose/goose",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/aaif-goose/goose",
       "name": "goose",
       "owner": "aaif-goose",
@@ -477,6 +537,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openinterpreter/openinterpreter",
+      "class": "E",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/openinterpreter/openinterpreter",
       "name": "openinterpreter",
       "owner": "openinterpreter",
@@ -491,6 +553,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Kilo-Org/kilocode",
+      "class": "A",
+      "action": "WATCH",
       "url": "https://github.com/Kilo-Org/kilocode",
       "name": "kilocode",
       "owner": "Kilo-Org",
@@ -505,6 +569,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "QwenLM/qwen-code",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/QwenLM/qwen-code",
       "name": "qwen-code",
       "owner": "QwenLM",
@@ -519,6 +585,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "charmbracelet/crush",
+      "class": "A",
+      "action": "WATCH",
       "url": "https://github.com/charmbracelet/crush",
       "name": "crush",
       "owner": "charmbracelet",
@@ -533,6 +601,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "plandex-ai/plandex",
+      "class": "A",
+      "action": "WATCH",
       "url": "https://github.com/plandex-ai/plandex",
       "name": "plandex",
       "owner": "plandex-ai",
@@ -547,6 +617,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "bytedance/trae-agent",
+      "class": "A",
+      "action": "WATCH",
       "url": "https://github.com/bytedance/trae-agent",
       "name": "trae-agent",
       "owner": "bytedance",
@@ -561,6 +633,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "BloopAI/vibe-kanban",
+      "class": "E",
+      "action": "GATED_PILOT",
       "url": "https://github.com/BloopAI/vibe-kanban",
       "name": "vibe-kanban",
       "owner": "BloopAI",
@@ -575,6 +649,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "superset-sh/superset",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/superset-sh/superset",
       "name": "superset",
       "owner": "superset-sh",
@@ -589,6 +665,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "gastownhall/gastown",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/gastownhall/gastown",
       "name": "gastown",
       "owner": "gastownhall",
@@ -603,6 +681,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openai/symphony",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/openai/symphony",
       "name": "symphony",
       "owner": "openai",
@@ -617,6 +697,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "stablyai/orca",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/stablyai/orca",
       "name": "orca",
       "owner": "stablyai",
@@ -631,6 +713,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "getpaseo/paseo",
+      "class": "B",
+      "action": "WATCH",
       "url": "https://github.com/getpaseo/paseo",
       "name": "paseo",
       "owner": "getpaseo",
@@ -645,6 +729,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "humanlayer/humanlayer",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/humanlayer/humanlayer",
       "name": "humanlayer",
       "owner": "humanlayer",
@@ -659,6 +745,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "code-yeongyu/oh-my-openagent",
+      "class": "B",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/code-yeongyu/oh-my-openagent",
       "name": "oh-my-openagent",
       "owner": "code-yeongyu",
@@ -673,6 +761,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "can1357/oh-my-pi",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/can1357/oh-my-pi",
       "name": "oh-my-pi",
       "owner": "can1357",
@@ -687,6 +777,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "earendil-works/pi",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/earendil-works/pi",
       "name": "pi",
       "owner": "earendil-works",
@@ -701,6 +793,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "langchain-ai/open-swe",
+      "class": "A",
+      "action": "WATCH",
       "url": "https://github.com/langchain-ai/open-swe",
       "name": "open-swe",
       "owner": "langchain-ai",
@@ -715,6 +809,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "farion1231/cc-switch",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/farion1231/cc-switch",
       "name": "cc-switch",
       "owner": "farion1231",
@@ -729,6 +825,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Hmbown/CodeWhale",
+      "class": "E",
+      "action": "WATCH",
       "url": "https://github.com/Hmbown/CodeWhale",
       "name": "CodeWhale",
       "owner": "Hmbown",
@@ -743,6 +841,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "OpenHands/OpenHands",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/OpenHands/OpenHands",
       "name": "OpenHands",
       "owner": "OpenHands",
@@ -757,6 +857,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Aider-AI/aider",
+      "class": "A",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/Aider-AI/aider",
       "name": "aider",
       "owner": "Aider-AI",
@@ -771,6 +873,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "TabbyML/tabby",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/TabbyML/tabby",
       "name": "tabby",
       "owner": "TabbyML",
@@ -785,6 +889,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "SWE-agent/SWE-agent",
+      "class": "A",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/SWE-agent/SWE-agent",
       "name": "SWE-agent",
       "owner": "SWE-agent",
@@ -799,6 +905,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "langchain-ai/langchain",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/langchain-ai/langchain",
       "name": "langchain",
       "owner": "langchain-ai",
@@ -813,6 +921,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "langchain-ai/langgraph",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/langchain-ai/langgraph",
       "name": "langgraph",
       "owner": "langchain-ai",
@@ -827,6 +937,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "run-llama/llama_index",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/run-llama/llama_index",
       "name": "llama_index",
       "owner": "run-llama",
@@ -841,6 +953,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/autogen",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/microsoft/autogen",
       "name": "autogen",
       "owner": "microsoft",
@@ -855,6 +969,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "crewAIInc/crewAI",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/crewAIInc/crewAI",
       "name": "crewAI",
       "owner": "crewAIInc",
@@ -869,6 +985,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "FoundationAgents/MetaGPT",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/FoundationAgents/MetaGPT",
       "name": "MetaGPT",
       "owner": "FoundationAgents",
@@ -883,6 +1001,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "agno-agi/agno",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/agno-agi/agno",
       "name": "agno",
       "owner": "agno-agi",
@@ -897,6 +1017,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openai/openai-agents-python",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/openai/openai-agents-python",
       "name": "openai-agents-python",
       "owner": "openai",
@@ -911,6 +1033,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "google/adk-python",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/google/adk-python",
       "name": "adk-python",
       "owner": "google",
@@ -925,6 +1049,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "pydantic/pydantic-ai",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/pydantic/pydantic-ai",
       "name": "pydantic-ai",
       "owner": "pydantic",
@@ -939,6 +1065,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "mastra-ai/mastra",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/mastra-ai/mastra",
       "name": "mastra",
       "owner": "mastra-ai",
@@ -953,6 +1081,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "deepset-ai/haystack",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/deepset-ai/haystack",
       "name": "haystack",
       "owner": "deepset-ai",
@@ -967,6 +1097,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "camel-ai/camel",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/camel-ai/camel",
       "name": "camel",
       "owner": "camel-ai",
@@ -981,6 +1113,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "agentscope-ai/agentscope",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/agentscope-ai/agentscope",
       "name": "agentscope",
       "owner": "agentscope-ai",
@@ -995,6 +1129,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/agent-framework",
+      "class": "D",
+      "action": "WATCH",
       "url": "https://github.com/microsoft/agent-framework",
       "name": "agent-framework",
       "owner": "microsoft",
@@ -1009,6 +1145,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "langchain-ai/deepagents",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/langchain-ai/deepagents",
       "name": "deepagents",
       "owner": "langchain-ai",
@@ -1023,6 +1161,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/semantic-kernel",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/microsoft/semantic-kernel",
       "name": "semantic-kernel",
       "owner": "microsoft",
@@ -1037,6 +1177,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "The-Pocket/PocketFlow",
+      "class": "D",
+      "action": "WATCH",
       "url": "https://github.com/The-Pocket/PocketFlow",
       "name": "PocketFlow",
       "owner": "The-Pocket",
@@ -1051,6 +1193,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openai/swarm",
+      "class": "D",
+      "action": "REFERENCE",
       "url": "https://github.com/openai/swarm",
       "name": "swarm",
       "owner": "openai",
@@ -1065,6 +1209,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "567-labs/instructor",
+      "class": "D",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/567-labs/instructor",
       "name": "instructor",
       "owner": "567-labs",
@@ -1079,6 +1225,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "dottxt-ai/outlines",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/dottxt-ai/outlines",
       "name": "outlines",
       "owner": "dottxt-ai",
@@ -1093,6 +1241,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "n8n-io/n8n",
+      "class": "F",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/n8n-io/n8n",
       "name": "n8n",
       "owner": "n8n-io",
@@ -1107,6 +1257,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "activepieces/activepieces",
+      "class": "F",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/activepieces/activepieces",
       "name": "activepieces",
       "owner": "activepieces",
@@ -1121,6 +1273,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "triggerdotdev/trigger.dev",
+      "class": "F",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/triggerdotdev/trigger.dev",
       "name": "trigger.dev",
       "owner": "triggerdotdev",
@@ -1135,6 +1289,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "conductor-oss/conductor",
+      "class": "F",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/conductor-oss/conductor",
       "name": "conductor",
       "owner": "conductor-oss",
@@ -1149,6 +1305,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "temporalio/temporal",
+      "class": "F",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/temporalio/temporal",
       "name": "temporal",
       "owner": "temporalio",
@@ -1163,6 +1321,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "windmill-labs/windmill",
+      "class": "F",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/windmill-labs/windmill",
       "name": "windmill",
       "owner": "windmill-labs",
@@ -1177,6 +1337,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "PrefectHQ/prefect",
+      "class": "F",
+      "action": "WATCH",
       "url": "https://github.com/PrefectHQ/prefect",
       "name": "prefect",
       "owner": "PrefectHQ",
@@ -1191,6 +1353,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "dagster-io/dagster",
+      "class": "F",
+      "action": "WATCH",
       "url": "https://github.com/dagster-io/dagster",
       "name": "dagster",
       "owner": "dagster-io",
@@ -1205,6 +1369,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "huginn/huginn",
+      "class": "F",
+      "action": "REFERENCE",
       "url": "https://github.com/huginn/huginn",
       "name": "huginn",
       "owner": "huginn",
@@ -1219,6 +1385,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "automatisch/automatisch",
+      "class": "F",
+      "action": "WATCH",
       "url": "https://github.com/automatisch/automatisch",
       "name": "automatisch",
       "owner": "automatisch",
@@ -1233,6 +1401,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "langgenius/dify",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/langgenius/dify",
       "name": "dify",
       "owner": "langgenius",
@@ -1247,6 +1417,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "FlowiseAI/Flowise",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/FlowiseAI/Flowise",
       "name": "Flowise",
       "owner": "FlowiseAI",
@@ -1261,6 +1433,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "coze-dev/coze-studio",
+      "class": "D",
+      "action": "WATCH",
       "url": "https://github.com/coze-dev/coze-studio",
       "name": "coze-studio",
       "owner": "coze-dev",
@@ -1275,6 +1449,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "labring/FastGPT",
+      "class": "D",
+      "action": "WATCH",
       "url": "https://github.com/labring/FastGPT",
       "name": "FastGPT",
       "owner": "labring",
@@ -1289,6 +1465,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "1Panel-dev/MaxKB",
+      "class": "D",
+      "action": "WATCH",
       "url": "https://github.com/1Panel-dev/MaxKB",
       "name": "MaxKB",
       "owner": "1Panel-dev",
@@ -1303,6 +1481,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "a2aproject/A2A",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/a2aproject/A2A",
       "name": "A2A",
       "owner": "a2aproject",
@@ -1317,6 +1497,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "agentskills/agentskills",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/agentskills/agentskills",
       "name": "agentskills",
       "owner": "agentskills",
@@ -1331,6 +1513,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "agentsmd/agents.md",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/agentsmd/agents.md",
       "name": "agents.md",
       "owner": "agentsmd",
@@ -1345,6 +1529,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ag-ui-protocol/ag-ui",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/ag-ui-protocol/ag-ui",
       "name": "ag-ui",
       "owner": "ag-ui-protocol",
@@ -1359,6 +1545,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "modelcontextprotocol/servers",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/modelcontextprotocol/servers",
       "name": "servers",
       "owner": "modelcontextprotocol",
@@ -1373,6 +1561,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "mcp-use/mcp-use",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/mcp-use/mcp-use",
       "name": "mcp-use",
       "owner": "mcp-use",
@@ -1387,6 +1577,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ComposioHQ/composio",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/ComposioHQ/composio",
       "name": "composio",
       "owner": "ComposioHQ",
@@ -1401,6 +1593,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "name": "chrome-devtools-mcp",
       "owner": "ChromeDevTools",
@@ -1415,6 +1609,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "oraios/serena",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/oraios/serena",
       "name": "serena",
       "owner": "oraios",
@@ -1429,6 +1625,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "googleapis/mcp-toolbox",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/googleapis/mcp-toolbox",
       "name": "mcp-toolbox",
       "owner": "googleapis",
@@ -1443,6 +1641,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "vercel-labs/skills",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/vercel-labs/skills",
       "name": "skills",
       "owner": "vercel-labs",
@@ -1457,6 +1657,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "PrefectHQ/fastmcp",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/PrefectHQ/fastmcp",
       "name": "fastmcp",
       "owner": "PrefectHQ",
@@ -1471,6 +1673,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "modelcontextprotocol/python-sdk",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/modelcontextprotocol/python-sdk",
       "name": "python-sdk",
       "owner": "modelcontextprotocol",
@@ -1485,6 +1689,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "modelcontextprotocol/typescript-sdk",
+      "class": "S",
+      "action": "ADOPT_STANDARD",
       "url": "https://github.com/modelcontextprotocol/typescript-sdk",
       "name": "typescript-sdk",
       "owner": "modelcontextprotocol",
@@ -1499,6 +1705,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "github/github-mcp-server",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/github/github-mcp-server",
       "name": "github-mcp-server",
       "owner": "github",
@@ -1513,6 +1721,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "mem0ai/mem0",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/mem0ai/mem0",
       "name": "mem0",
       "owner": "mem0ai",
@@ -1527,6 +1737,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "letta-ai/letta",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/letta-ai/letta",
       "name": "letta",
       "owner": "letta-ai",
@@ -1541,6 +1753,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "getzep/graphiti",
+      "class": "S",
+      "action": "GATED_PILOT",
       "url": "https://github.com/getzep/graphiti",
       "name": "graphiti",
       "owner": "getzep",
@@ -1555,6 +1769,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "topoteretes/cognee",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/topoteretes/cognee",
       "name": "cognee",
       "owner": "topoteretes",
@@ -1569,6 +1785,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "vectorize-io/hindsight",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/vectorize-io/hindsight",
       "name": "hindsight",
       "owner": "vectorize-io",
@@ -1583,6 +1801,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "MemTensor/MemOS",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/MemTensor/MemOS",
       "name": "MemOS",
       "owner": "MemTensor",
@@ -1597,6 +1817,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "memvid/memvid",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/memvid/memvid",
       "name": "memvid",
       "owner": "memvid",
@@ -1611,6 +1833,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "volcengine/OpenViking",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/volcengine/OpenViking",
       "name": "OpenViking",
       "owner": "volcengine",
@@ -1625,6 +1849,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "HKUDS/LightRAG",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/HKUDS/LightRAG",
       "name": "LightRAG",
       "owner": "HKUDS",
@@ -1639,6 +1865,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/graphrag",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/microsoft/graphrag",
       "name": "graphrag",
       "owner": "microsoft",
@@ -1653,6 +1881,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "qdrant/qdrant",
+      "class": "E",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/qdrant/qdrant",
       "name": "qdrant",
       "owner": "qdrant",
@@ -1667,6 +1897,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "milvus-io/milvus",
+      "class": "S",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/milvus-io/milvus",
       "name": "milvus",
       "owner": "milvus-io",
@@ -1681,6 +1913,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "weaviate/weaviate",
+      "class": "S",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/weaviate/weaviate",
       "name": "weaviate",
       "owner": "weaviate",
@@ -1695,6 +1929,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "infiniflow/ragflow",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/infiniflow/ragflow",
       "name": "ragflow",
       "owner": "infiniflow",
@@ -1709,6 +1945,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "VectifyAI/PageIndex",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/VectifyAI/PageIndex",
       "name": "PageIndex",
       "owner": "VectifyAI",
@@ -1723,6 +1961,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Mintplex-Labs/anything-llm",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
       "name": "anything-llm",
       "owner": "Mintplex-Labs",
@@ -1737,6 +1977,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "khoj-ai/khoj",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/khoj-ai/khoj",
       "name": "khoj",
       "owner": "khoj-ai",
@@ -1751,6 +1993,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "onyx-dot-app/onyx",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/onyx-dot-app/onyx",
       "name": "onyx",
       "owner": "onyx-dot-app",
@@ -1765,6 +2009,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "promptfoo/promptfoo",
+      "class": "S",
+      "action": "USE_NOW",
       "url": "https://github.com/promptfoo/promptfoo",
       "name": "promptfoo",
       "owner": "promptfoo",
@@ -1779,6 +2025,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "comet-ml/opik",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/comet-ml/opik",
       "name": "opik",
       "owner": "comet-ml",
@@ -1793,6 +2041,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "langfuse/langfuse",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/langfuse/langfuse",
       "name": "langfuse",
       "owner": "langfuse",
@@ -1807,6 +2057,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "confident-ai/deepeval",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/confident-ai/deepeval",
       "name": "deepeval",
       "owner": "confident-ai",
@@ -1821,6 +2073,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "vibrantlabsai/ragas",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/vibrantlabsai/ragas",
       "name": "ragas",
       "owner": "vibrantlabsai",
@@ -1835,6 +2089,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "SigNoz/signoz",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/SigNoz/signoz",
       "name": "signoz",
       "owner": "SigNoz",
@@ -1849,6 +2105,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "openobserve/openobserve",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/openobserve/openobserve",
       "name": "openobserve",
       "owner": "openobserve",
@@ -1863,6 +2121,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
       "name": "RagaAI-Catalyst",
       "owner": "raga-ai-hub",
@@ -1877,6 +2137,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Arize-ai/phoenix",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/Arize-ai/phoenix",
       "name": "phoenix",
       "owner": "Arize-ai",
@@ -1891,6 +2153,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/agent-lightning",
+      "class": "D",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/microsoft/agent-lightning",
       "name": "agent-lightning",
       "owner": "microsoft",
@@ -1905,6 +2169,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "verl-project/verl",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/verl-project/verl",
       "name": "verl",
       "owner": "verl-project",
@@ -1919,6 +2185,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "huggingface/trl",
+      "class": "D",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/huggingface/trl",
       "name": "trl",
       "owner": "huggingface",
@@ -1933,6 +2201,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "NVIDIA/SkillSpector",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/NVIDIA/SkillSpector",
       "name": "SkillSpector",
       "owner": "NVIDIA",
@@ -1947,6 +2217,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "NVIDIA/NemoClaw",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/NVIDIA/NemoClaw",
       "name": "NemoClaw",
       "owner": "NVIDIA",
@@ -1961,6 +2233,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "opensandbox-group/OpenSandbox",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/opensandbox-group/OpenSandbox",
       "name": "OpenSandbox",
       "owner": "opensandbox-group",
@@ -1975,6 +2249,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "TencentCloud/CubeSandbox",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/TencentCloud/CubeSandbox",
       "name": "CubeSandbox",
       "owner": "TencentCloud",
@@ -1989,6 +2265,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "e2b-dev/E2B",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/e2b-dev/E2B",
       "name": "E2B",
       "owner": "e2b-dev",
@@ -2003,6 +2281,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "daytonaio/daytona",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/daytonaio/daytona",
       "name": "daytona",
       "owner": "daytonaio",
@@ -2017,6 +2297,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Infisical/infisical",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/Infisical/infisical",
       "name": "infisical",
       "owner": "Infisical",
@@ -2031,6 +2313,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "getsops/sops",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/getsops/sops",
       "name": "sops",
       "owner": "getsops",
@@ -2045,6 +2329,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "casdoor/casdoor",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/casdoor/casdoor",
       "name": "casdoor",
       "owner": "casdoor",
@@ -2059,6 +2345,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "browser-use/browser-use",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/browser-use/browser-use",
       "name": "browser-use",
       "owner": "browser-use",
@@ -2073,6 +2361,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "vercel-labs/agent-browser",
+      "class": "E",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/vercel-labs/agent-browser",
       "name": "agent-browser",
       "owner": "vercel-labs",
@@ -2087,6 +2377,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "browserbase/stagehand",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/browserbase/stagehand",
       "name": "stagehand",
       "owner": "browserbase",
@@ -2101,6 +2393,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "apify/crawlee",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/apify/crawlee",
       "name": "crawlee",
       "owner": "apify",
@@ -2115,6 +2409,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "bytedance/UI-TARS-desktop",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/bytedance/UI-TARS-desktop",
       "name": "UI-TARS-desktop",
       "owner": "bytedance",
@@ -2129,6 +2425,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "simular-ai/Agent-S",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/simular-ai/Agent-S",
       "name": "Agent-S",
       "owner": "simular-ai",
@@ -2143,6 +2441,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "browseros-ai/BrowserOS",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/browseros-ai/BrowserOS",
       "name": "BrowserOS",
       "owner": "browseros-ai",
@@ -2157,6 +2457,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "h4ckf0r0day/obscura",
+      "class": "E",
+      "action": "WATCH",
       "url": "https://github.com/h4ckf0r0day/obscura",
       "name": "obscura",
       "owner": "h4ckf0r0day",
@@ -2171,6 +2473,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/playwright-mcp",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/microsoft/playwright-mcp",
       "name": "playwright-mcp",
       "owner": "microsoft",
@@ -2185,6 +2489,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/OmniParser",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/microsoft/OmniParser",
       "name": "OmniParser",
       "owner": "microsoft",
@@ -2199,6 +2505,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "unclecode/crawl4ai",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/unclecode/crawl4ai",
       "name": "crawl4ai",
       "owner": "unclecode",
@@ -2213,6 +2521,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Skyvern-AI/skyvern",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/Skyvern-AI/skyvern",
       "name": "skyvern",
       "owner": "Skyvern-AI",
@@ -2227,6 +2537,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ollama/ollama",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/ollama/ollama",
       "name": "ollama",
       "owner": "ollama",
@@ -2241,6 +2553,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ggml-org/llama.cpp",
+      "class": "S",
+      "action": "RESEARCH_ONLY",
       "url": "https://github.com/ggml-org/llama.cpp",
       "name": "llama.cpp",
       "owner": "ggml-org",
@@ -2255,6 +2569,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "vllm-project/vllm",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/vllm-project/vllm",
       "name": "vllm",
       "owner": "vllm-project",
@@ -2269,6 +2585,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "BerriAI/litellm",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/BerriAI/litellm",
       "name": "litellm",
       "owner": "BerriAI",
@@ -2283,6 +2601,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Portkey-AI/gateway",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/Portkey-AI/gateway",
       "name": "gateway",
       "owner": "Portkey-AI",
@@ -2297,6 +2617,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "BoundaryML/baml",
+      "class": "E",
+      "action": "EXCEPTION_REVIEW",
       "url": "https://github.com/BoundaryML/baml",
       "name": "baml",
       "owner": "BoundaryML",
@@ -2311,6 +2633,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "sgl-project/sglang",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/sgl-project/sglang",
       "name": "sglang",
       "owner": "sgl-project",
@@ -2325,6 +2649,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "huggingface/transformers",
+      "class": "S",
+      "action": "REFERENCE",
       "url": "https://github.com/huggingface/transformers",
       "name": "transformers",
       "owner": "huggingface",
@@ -2339,6 +2665,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "huggingface/candle",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/huggingface/candle",
       "name": "candle",
       "owner": "huggingface",
@@ -2353,6 +2681,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "mlc-ai/web-llm",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/mlc-ai/web-llm",
       "name": "web-llm",
       "owner": "mlc-ai",
@@ -2367,6 +2697,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/BitNet",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/microsoft/BitNet",
       "name": "BitNet",
       "owner": "microsoft",
@@ -2381,6 +2713,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "mudler/LocalAI",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/mudler/LocalAI",
       "name": "LocalAI",
       "owner": "mudler",
@@ -2395,6 +2729,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "exo-explore/exo",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/exo-explore/exo",
       "name": "exo",
       "owner": "exo-explore",
@@ -2409,6 +2745,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ml-explore/mlx",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/ml-explore/mlx",
       "name": "mlx",
       "owner": "ml-explore",
@@ -2423,6 +2761,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "lm-sys/FastChat",
+      "class": "S",
+      "action": "REFERENCE",
       "url": "https://github.com/lm-sys/FastChat",
       "name": "FastChat",
       "owner": "lm-sys",
@@ -2437,6 +2777,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "0xPlaygrounds/rig",
+      "class": "E",
+      "action": "EXCEPTION_REVIEW",
       "url": "https://github.com/0xPlaygrounds/rig",
       "name": "rig",
       "owner": "0xPlaygrounds",
@@ -2451,6 +2793,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "EricLBuehler/mistral.rs",
+      "class": "E",
+      "action": "EXCEPTION_REVIEW",
       "url": "https://github.com/EricLBuehler/mistral.rs",
       "name": "mistral.rs",
       "owner": "EricLBuehler",
@@ -2465,6 +2809,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "restatedev/restate",
+      "class": "E",
+      "action": "EXCEPTION_REVIEW",
       "url": "https://github.com/restatedev/restate",
       "name": "restate",
       "owner": "restatedev",
@@ -2479,6 +2825,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "hatchet-dev/hatchet",
+      "class": "F",
+      "action": "EXCEPTION_REVIEW",
       "url": "https://github.com/hatchet-dev/hatchet",
       "name": "hatchet",
       "owner": "hatchet-dev",
@@ -2493,6 +2841,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "microsoft/markitdown",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/microsoft/markitdown",
       "name": "markitdown",
       "owner": "microsoft",
@@ -2507,6 +2857,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "docling-project/docling",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/docling-project/docling",
       "name": "docling",
       "owner": "docling-project",
@@ -2521,6 +2873,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "firecrawl/firecrawl",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/firecrawl/firecrawl",
       "name": "firecrawl",
       "owner": "firecrawl",
@@ -2535,6 +2889,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "PaddlePaddle/PaddleOCR",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/PaddlePaddle/PaddleOCR",
       "name": "PaddleOCR",
       "owner": "PaddlePaddle",
@@ -2549,6 +2905,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "opendatalab/MinerU",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/opendatalab/MinerU",
       "name": "MinerU",
       "owner": "opendatalab",
@@ -2563,6 +2921,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "opendataloader-project/opendataloader-pdf",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/opendataloader-project/opendataloader-pdf",
       "name": "opendataloader-pdf",
       "owner": "opendataloader-project",
@@ -2577,6 +2937,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Unstructured-IO/unstructured",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/Unstructured-IO/unstructured",
       "name": "unstructured",
       "owner": "Unstructured-IO",
@@ -2591,6 +2953,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "livekit/agents",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/livekit/agents",
       "name": "agents",
       "owner": "livekit",
@@ -2605,6 +2969,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "TEN-framework/ten-framework",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/TEN-framework/ten-framework",
       "name": "ten-framework",
       "owner": "TEN-framework",
@@ -2619,6 +2985,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "pipecat-ai/pipecat",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/pipecat-ai/pipecat",
       "name": "pipecat",
       "owner": "pipecat-ai",
@@ -2633,6 +3001,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Comfy-Org/ComfyUI",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/Comfy-Org/ComfyUI",
       "name": "ComfyUI",
       "owner": "Comfy-Org",
@@ -2647,6 +3017,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "remotion-dev/remotion",
+      "class": "S",
+      "action": "WIRE_WHEN_NEEDED",
       "url": "https://github.com/remotion-dev/remotion",
       "name": "remotion",
       "owner": "remotion-dev",
@@ -2661,6 +3033,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "calesthio/OpenMontage",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/calesthio/OpenMontage",
       "name": "OpenMontage",
       "owner": "calesthio",
@@ -2675,6 +3049,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "heygen-com/hyperframes",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/heygen-com/hyperframes",
       "name": "hyperframes",
       "owner": "heygen-com",
@@ -2689,6 +3065,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "airbytehq/airbyte",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/airbytehq/airbyte",
       "name": "airbyte",
       "owner": "airbytehq",
@@ -2703,6 +3081,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "screenpipe/screenpipe",
+      "class": "E",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/screenpipe/screenpipe",
       "name": "screenpipe",
       "owner": "screenpipe",
@@ -2717,6 +3097,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "OpenBB-finance/OpenBB",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/OpenBB-finance/OpenBB",
       "name": "OpenBB",
       "owner": "OpenBB-finance",
@@ -2731,6 +3113,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "gitroomhq/postiz-app",
+      "class": "S",
+      "action": "ABSORB_PATTERN",
       "url": "https://github.com/gitroomhq/postiz-app",
       "name": "postiz-app",
       "owner": "gitroomhq",
@@ -2745,6 +3129,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "ToolJet/ToolJet",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/ToolJet/ToolJet",
       "name": "ToolJet",
       "owner": "ToolJet",
@@ -2759,6 +3145,8 @@ window.ATLAS_DATA = {
     },
     {
       "repo": "Budibase/budibase",
+      "class": "S",
+      "action": "WATCH",
       "url": "https://github.com/Budibase/budibase",
       "name": "budibase",
       "owner": "Budibase",
@@ -2801,10 +3189,21 @@ window.ATLAS_DATA = {
     "model-runtime": "Model runtime",
     "model-gateway": "Model gateway",
     "voice-realtime": "Voice realtime",
-    "domain-platform": "Domain platform"
+    "domain-platform": "Domain platform",
+    "agent-builder": "Agent builder",
+    "agent-training": "Agent training",
+    "data-integration": "Data integration",
+    "document-ingestion": "Document ingestion",
+    "identity-secrets": "Identity & secrets",
+    "knowledge-graph": "Knowledge graph",
+    "rag-platform": "RAG platform",
+    "sandbox-security": "Sandbox & security",
+    "tools-integration": "Tools & integration",
+    "vector-database": "Vector database"
   },
   "absorbActions": {
     "adopt-core": "USE_NOW",
+    "adopt-standard": "ADOPT_STANDARD",
     "adopt-adjacent": "WIRE_WHEN_NEEDED",
     "pilot": "GATED_PILOT",
     "evaluate": "ABSORB_PATTERN",
