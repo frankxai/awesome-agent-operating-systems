@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "starlight.control-plane-task-identity.v1",
+  "canonicalTaskId": "ctid:v1:agentic-tech-landscape:paperclip-promotion-gate",
+  "title": "Paperclip published-release promotion gate",
+  "scope": "agentic-tech-landscape",
+  "idempotencyKey": "cpops:20260718:cron",
+  "createdAt": "2026-07-18T02:13:01.758660+00:00",
+  "authority": {
+    "taskState": "hermes-kanban",
+    "deliveryEvidence": "git-github",
+    "scheduler": "hermes-cron",
+    "fleetRouting": "starlight-swarm"
+  },
+  "scheduler": {
+    "owner": "hermes-cron",
+    "mode": "script-only",
+    "jobId": "5344380b6989",
+    "script": "control-plane-upstream-promotion-gates.py",
+    "workdir": ".",
+    "duplicateDispatchPolicy": "NOOP_DUPLICATE"
+  },
+  "systems": {
+    "hermes": {
+      "board": "control-plane-ops",
+      "taskId": "t_41d36afb",
+      "workflowTaskIds": [
+        "t_fca0ce06",
+        "t_f28f8459",
+        "t_41d36afb"
+      ],
+      "profile": "default",
+      "tenant": "agentic-tech-landscape"
+    },
+    "github": {
+      "deliveryRepository": "frankxai/awesome-agent-operating-systems",
+      "evidenceIssues": [
+        {
+          "repository": "paperclipai/paperclip",
+          "number": 9794,
+          "role": "promotion-gate",
+          "url": "https://github.com/paperclipai/paperclip/issues/9794"
+        },
+        {
+          "repository": "NousResearch/hermes-agent",
+          "number": 62810,
+          "role": "runtime-defect",
+          "url": "https://github.com/NousResearch/hermes-agent/issues/62810"
+        }
+      ]
+    },
+    "swarm": null,
+    "paperclip": {
+      "integrationStatus": "not-integrated",
+      "issueId": "paperclipai/paperclip#9794",
+      "executionAuthority": false
+    }
+  },
+  "artifacts": [
+    "data/schemas/control-plane-task-identity.schema.json",
+    "docs/task-identity-contract.md",
+    "scripts/control_plane_upstream_watch.py",
+    "scripts/validate_task_identity.py",
+    "tests/test_pilot_harnesses.py"
+  ]
+}

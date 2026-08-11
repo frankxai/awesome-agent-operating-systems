@@ -1,0 +1,1128 @@
+{
+  "schema": "awesome-agentic-tech.seed.v1",
+  "starThreshold": 10000,
+  "projects": [
+    {
+      "repo": "NousResearch/hermes-agent",
+      "category": "agent-runtime",
+      "priority": "adopt-core",
+      "why": "Personal execution runtime, memory, skills, tools, gateways, cron and delegation."
+    },
+    {
+      "repo": "paperclipai/paperclip",
+      "category": "control-plane",
+      "priority": "pilot",
+      "why": "Company-level orchestration, goals, budgets, approvals, issue checkout and native Hermes adapters."
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "category": "agent-runtime",
+      "priority": "benchmark",
+      "why": "Largest personal-agent/runtime ecosystem and gateway reference."
+    },
+    {
+      "repo": "lobehub/lobehub",
+      "category": "control-plane",
+      "priority": "evaluate",
+      "why": "Chief-agent-operator UX and always-on agent team surface."
+    },
+    {
+      "repo": "ruvnet/ruflo",
+      "category": "control-plane",
+      "priority": "evaluate",
+      "why": "Meta-harness for swarms, adaptive memory and multi-agent coordination."
+    },
+    {
+      "repo": "multica-ai/multica",
+      "category": "control-plane",
+      "priority": "evaluate",
+      "why": "Managed coding-agent teammates with task and skill compounding surfaces."
+    },
+    {
+      "repo": "simstudioai/sim",
+      "category": "control-plane",
+      "priority": "evaluate",
+      "why": "Visual deployment and orchestration layer for agent workforces."
+    },
+    {
+      "repo": "bytedance/deer-flow",
+      "category": "agent-runtime",
+      "priority": "evaluate",
+      "why": "Long-horizon super-agent with sandbox, memory, tools, skills and gateway."
+    },
+    {
+      "repo": "HKUDS/nanobot",
+      "category": "agent-runtime",
+      "priority": "watch",
+      "why": "Lightweight multi-channel agent runtime."
+    },
+    {
+      "repo": "zeroclaw-labs/zeroclaw",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust personal-assistant infrastructure; useful efficiency benchmark."
+    },
+    {
+      "repo": "RightNow-AI/openfang",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust agent operating system; architecture benchmark, not a Paperclip equivalent."
+    },
+    {
+      "repo": "elizaOS/eliza",
+      "category": "agent-runtime",
+      "priority": "watch",
+      "why": "Plugin-oriented agent OS and community ecosystem."
+    },
+    {
+      "repo": "agent0ai/agent-zero",
+      "category": "agent-runtime",
+      "priority": "watch",
+      "why": "General-purpose autonomous agent framework."
+    },
+    {
+      "repo": "HKUDS/OpenHarness",
+      "category": "agent-runtime",
+      "priority": "watch",
+      "why": "Open agent harness with personal-agent layer."
+    },
+    {
+      "repo": "Significant-Gravitas/AutoGPT",
+      "category": "agent-runtime",
+      "priority": "benchmark",
+      "why": "Historically influential autonomous-agent platform and current architecture benchmark."
+    },
+    {
+      "repo": "open-webui/open-webui",
+      "category": "interaction-ui",
+      "priority": "benchmark",
+      "why": "Widely adopted self-hosted human interface for models and agent tools."
+    },
+    {
+      "repo": "danny-avila/LibreChat",
+      "category": "interaction-ui",
+      "priority": "evaluate",
+      "why": "Multi-user self-hosted chat, agents, MCP, tools and authentication surface."
+    },
+    {
+      "repo": "openai/codex",
+      "category": "coding-agent",
+      "priority": "adopt-core",
+      "why": "Rust coding agent and primary implementation worker."
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "category": "coding-agent",
+      "priority": "adopt-core",
+      "why": "Provider-neutral open coding agent and ACP/MCP benchmark."
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "category": "coding-agent",
+      "priority": "adopt-core",
+      "why": "Gemini terminal agent and large-context worker."
+    },
+    {
+      "repo": "cline/cline",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "IDE, CLI and SDK coding-agent surface."
+    },
+    {
+      "repo": "continuedev/continue",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "Open coding agent with IDE integration."
+    },
+    {
+      "repo": "aaif-goose/goose",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust extensible execution agent and MCP host."
+    },
+    {
+      "repo": "openinterpreter/openinterpreter",
+      "category": "rust-runtime",
+      "priority": "benchmark",
+      "why": "Local open-model coding and computer-use agent."
+    },
+    {
+      "repo": "Kilo-Org/kilocode",
+      "category": "coding-agent",
+      "priority": "watch",
+      "why": "Multi-surface agentic engineering platform."
+    },
+    {
+      "repo": "QwenLM/qwen-code",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "Open terminal coding agent and model-diversity lane."
+    },
+    {
+      "repo": "charmbracelet/crush",
+      "category": "coding-agent",
+      "priority": "watch",
+      "why": "Go terminal coding agent with strong local UX."
+    },
+    {
+      "repo": "plandex-ai/plandex",
+      "category": "coding-agent",
+      "priority": "watch",
+      "why": "Large-project coding agent and planning benchmark."
+    },
+    {
+      "repo": "bytedance/trae-agent",
+      "category": "coding-agent",
+      "priority": "watch",
+      "why": "General software-engineering agent."
+    },
+    {
+      "repo": "BloopAI/vibe-kanban",
+      "category": "rust-runtime",
+      "priority": "pilot",
+      "why": "Rust coding-agent fleet board; narrower and lighter than Paperclip."
+    },
+    {
+      "repo": "superset-sh/superset",
+      "category": "coding-control-plane",
+      "priority": "evaluate",
+      "why": "Desktop code editor for parallel coding-agent armies."
+    },
+    {
+      "repo": "gastownhall/gastown",
+      "category": "coding-control-plane",
+      "priority": "evaluate",
+      "why": "Go multi-agent workspace manager."
+    },
+    {
+      "repo": "openai/symphony",
+      "category": "coding-control-plane",
+      "priority": "evaluate",
+      "why": "Isolated autonomous implementation runs driven by project work."
+    },
+    {
+      "repo": "stablyai/orca",
+      "category": "coding-control-plane",
+      "priority": "evaluate",
+      "why": "Agent development environment for fleets across desktop and mobile."
+    },
+    {
+      "repo": "getpaseo/paseo",
+      "category": "coding-control-plane",
+      "priority": "watch",
+      "why": "Multi-coding-agent orchestration across desktop and mobile."
+    },
+    {
+      "repo": "humanlayer/humanlayer",
+      "category": "coding-control-plane",
+      "priority": "evaluate",
+      "why": "Human-in-the-loop workflows for hard coding-agent tasks."
+    },
+    {
+      "repo": "code-yeongyu/oh-my-openagent",
+      "category": "coding-control-plane",
+      "priority": "evaluate",
+      "why": "High-signal meta-harness for complex codebases on Codex and OpenCode; absorb hooks, planning, and verified-completion patterns without replacing Hermes Queen."
+    },
+    {
+      "repo": "can1357/oh-my-pi",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "Terminal coding harness with hash-anchored edits, LSP, subagents and browser; useful architecture benchmark for edit safety."
+    },
+    {
+      "repo": "earendil-works/pi",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "Unified LLM API + agent loop + TUI coding CLI toolkit; source lineage for several modern terminal harnesses."
+    },
+    {
+      "repo": "langchain-ai/open-swe",
+      "category": "coding-agent",
+      "priority": "watch",
+      "why": "Asynchronous coding-agent architecture reference."
+    },
+    {
+      "repo": "farion1231/cc-switch",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust desktop switchboard across Hermes and major coding agents."
+    },
+    {
+      "repo": "Hmbown/CodeWhale",
+      "category": "rust-runtime",
+      "priority": "watch",
+      "why": "Community Rust agent harness."
+    },
+    {
+      "repo": "OpenHands/OpenHands",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "End-to-end software-development agent with sandboxed execution and operator UI."
+    },
+    {
+      "repo": "Aider-AI/aider",
+      "category": "coding-agent",
+      "priority": "evaluate",
+      "why": "Mature terminal pair-programming agent with strong Git integration."
+    },
+    {
+      "repo": "TabbyML/tabby",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust self-hosted coding-assistant platform for local and enterprise evaluation."
+    },
+    {
+      "repo": "SWE-agent/SWE-agent",
+      "category": "coding-agent",
+      "priority": "benchmark",
+      "why": "Issue-to-patch research agent and SWE-bench architecture reference."
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "category": "agent-framework",
+      "priority": "benchmark",
+      "why": "Broad agent engineering ecosystem and integrations."
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Durable graph/state-machine execution for agents."
+    },
+    {
+      "repo": "run-llama/llama_index",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Document agents, indexing and context engineering."
+    },
+    {
+      "repo": "microsoft/autogen",
+      "category": "agent-framework",
+      "priority": "benchmark",
+      "why": "Multi-agent framework and research reference."
+    },
+    {
+      "repo": "crewAIInc/crewAI",
+      "category": "agent-framework",
+      "priority": "benchmark",
+      "why": "Role-oriented multi-agent orchestration."
+    },
+    {
+      "repo": "FoundationAgents/MetaGPT",
+      "category": "agent-framework",
+      "priority": "benchmark",
+      "why": "Software-company multi-agent pattern reference."
+    },
+    {
+      "repo": "agno-agi/agno",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Build, run and manage agent platforms."
+    },
+    {
+      "repo": "openai/openai-agents-python",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Lightweight multi-agent and handoff framework."
+    },
+    {
+      "repo": "google/adk-python",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Code-first build, evaluate and deploy toolkit."
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Typed Python agent framework with strong schema discipline."
+    },
+    {
+      "repo": "mastra-ai/mastra",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Modern TypeScript agent application framework."
+    },
+    {
+      "repo": "deepset-ai/haystack",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Explicit production pipelines and agent workflows."
+    },
+    {
+      "repo": "camel-ai/camel",
+      "category": "agent-framework",
+      "priority": "benchmark",
+      "why": "Research-heavy multi-agent framework."
+    },
+    {
+      "repo": "agentscope-ai/agentscope",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Observable and trustworthy agent framework."
+    },
+    {
+      "repo": "microsoft/agent-framework",
+      "category": "agent-framework",
+      "priority": "watch",
+      "why": "Microsoft Python/.NET agent framework successor surface."
+    },
+    {
+      "repo": "langchain-ai/deepagents",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Batteries-included long-horizon agent harness."
+    },
+    {
+      "repo": "microsoft/semantic-kernel",
+      "category": "agent-framework",
+      "priority": "evaluate",
+      "why": "Enterprise multi-language agent and plugin framework."
+    },
+    {
+      "repo": "The-Pocket/PocketFlow",
+      "category": "agent-framework",
+      "priority": "watch",
+      "why": "Minimal framework useful as a complexity baseline."
+    },
+    {
+      "repo": "openai/swarm",
+      "category": "agent-framework",
+      "priority": "reference",
+      "why": "Educational handoff/orchestration patterns; not a production foundation."
+    },
+    {
+      "repo": "567-labs/instructor",
+      "category": "structured-output",
+      "priority": "adopt-adjacent",
+      "why": "Typed structured outputs across model providers."
+    },
+    {
+      "repo": "dottxt-ai/outlines",
+      "category": "structured-output",
+      "priority": "evaluate",
+      "why": "Constrained generation and structured-output primitives."
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "category": "workflow-automation",
+      "priority": "adopt-adjacent",
+      "why": "Human-readable business automation and integration fabric; fair-code licensing caveat."
+    },
+    {
+      "repo": "activepieces/activepieces",
+      "category": "workflow-automation",
+      "priority": "evaluate",
+      "why": "Open workflow automation with agents and MCPs."
+    },
+    {
+      "repo": "triggerdotdev/trigger.dev",
+      "category": "durable-execution",
+      "priority": "evaluate",
+      "why": "Long-running TypeScript agent jobs and workflows."
+    },
+    {
+      "repo": "conductor-oss/conductor",
+      "category": "durable-execution",
+      "priority": "evaluate",
+      "why": "Durable event-driven workflow engine for agentic work."
+    },
+    {
+      "repo": "temporalio/temporal",
+      "category": "durable-execution",
+      "priority": "evaluate",
+      "why": "Battle-tested durable execution substrate."
+    },
+    {
+      "repo": "windmill-labs/windmill",
+      "category": "durable-execution",
+      "priority": "evaluate",
+      "why": "Rust-backed scripts, workflows and internal tools."
+    },
+    {
+      "repo": "PrefectHQ/prefect",
+      "category": "durable-execution",
+      "priority": "watch",
+      "why": "Python workflow orchestration with strong observability."
+    },
+    {
+      "repo": "dagster-io/dagster",
+      "category": "durable-execution",
+      "priority": "watch",
+      "why": "Asset-aware data and automation orchestration."
+    },
+    {
+      "repo": "huginn/huginn",
+      "category": "workflow-automation",
+      "priority": "reference",
+      "why": "Long-lived monitor-and-act agent pattern."
+    },
+    {
+      "repo": "automatisch/automatisch",
+      "category": "workflow-automation",
+      "priority": "watch",
+      "why": "Open-source Zapier alternative."
+    },
+    {
+      "repo": "langgenius/dify",
+      "category": "agent-builder",
+      "priority": "evaluate",
+      "why": "Production agentic workflow and application platform."
+    },
+    {
+      "repo": "FlowiseAI/Flowise",
+      "category": "agent-builder",
+      "priority": "evaluate",
+      "why": "Visual agent builder."
+    },
+    {
+      "repo": "coze-dev/coze-studio",
+      "category": "agent-builder",
+      "priority": "watch",
+      "why": "All-in-one visual agent development platform."
+    },
+    {
+      "repo": "labring/FastGPT",
+      "category": "agent-builder",
+      "priority": "watch",
+      "why": "Knowledge, RAG and visual workflow platform."
+    },
+    {
+      "repo": "1Panel-dev/MaxKB",
+      "category": "agent-builder",
+      "priority": "watch",
+      "why": "Enterprise agent builder."
+    },
+    {
+      "repo": "a2aproject/A2A",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "Agent-to-agent interoperability protocol."
+    },
+    {
+      "repo": "agentskills/agentskills",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "Portable Agent Skills specification."
+    },
+    {
+      "repo": "agentsmd/agents.md",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "Portable repository guidance format for coding agents."
+    },
+    {
+      "repo": "ag-ui-protocol/ag-ui",
+      "category": "protocol",
+      "priority": "evaluate",
+      "why": "Agent-to-frontend interaction protocol."
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "Reference MCP servers and ecosystem signal."
+    },
+    {
+      "repo": "mcp-use/mcp-use",
+      "category": "protocol",
+      "priority": "evaluate",
+      "why": "Full-stack MCP application and server framework."
+    },
+    {
+      "repo": "ComposioHQ/composio",
+      "category": "tools-integration",
+      "priority": "evaluate",
+      "why": "Large authenticated tool catalog, search and sandboxed workbench."
+    },
+    {
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "category": "tools-integration",
+      "priority": "adopt-adjacent",
+      "why": "Browser diagnostics and automation for coding agents."
+    },
+    {
+      "repo": "oraios/serena",
+      "category": "tools-integration",
+      "priority": "evaluate",
+      "why": "Semantic code retrieval/editing MCP toolkit."
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "category": "tools-integration",
+      "priority": "evaluate",
+      "why": "Database MCP server and governance patterns."
+    },
+    {
+      "repo": "vercel-labs/skills",
+      "category": "protocol",
+      "priority": "evaluate",
+      "why": "Open skill installer and distribution conventions."
+    },
+    {
+      "repo": "PrefectHQ/fastmcp",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "High-level Python framework for MCP servers and clients."
+    },
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "Official Python MCP SDK."
+    },
+    {
+      "repo": "modelcontextprotocol/typescript-sdk",
+      "category": "protocol",
+      "priority": "adopt-standard",
+      "why": "Official TypeScript MCP SDK."
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "category": "tools-integration",
+      "priority": "adopt-adjacent",
+      "why": "Official GitHub MCP server for repository and delivery operations."
+    },
+    {
+      "repo": "mem0ai/mem0",
+      "category": "memory",
+      "priority": "evaluate",
+      "why": "General agent memory layer."
+    },
+    {
+      "repo": "letta-ai/letta",
+      "category": "memory",
+      "priority": "evaluate",
+      "why": "Stateful agents and memory architecture."
+    },
+    {
+      "repo": "getzep/graphiti",
+      "category": "knowledge-graph",
+      "priority": "pilot",
+      "why": "Temporal real-time knowledge graphs for agents."
+    },
+    {
+      "repo": "topoteretes/cognee",
+      "category": "knowledge-graph",
+      "priority": "evaluate",
+      "why": "Self-hosted knowledge-graph memory platform."
+    },
+    {
+      "repo": "vectorize-io/hindsight",
+      "category": "memory",
+      "priority": "evaluate",
+      "why": "Agent memory with learning and consolidation."
+    },
+    {
+      "repo": "MemTensor/MemOS",
+      "category": "memory",
+      "priority": "watch",
+      "why": "Self-evolving memory OS and cross-task skill reuse."
+    },
+    {
+      "repo": "memvid/memvid",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust single-file serverless agent memory."
+    },
+    {
+      "repo": "volcengine/OpenViking",
+      "category": "memory",
+      "priority": "watch",
+      "why": "Context database unifying memory, RAG and skills."
+    },
+    {
+      "repo": "HKUDS/LightRAG",
+      "category": "knowledge-graph",
+      "priority": "evaluate",
+      "why": "Simple graph-oriented RAG."
+    },
+    {
+      "repo": "microsoft/graphrag",
+      "category": "knowledge-graph",
+      "priority": "evaluate",
+      "why": "Graph-based RAG reference architecture."
+    },
+    {
+      "repo": "qdrant/qdrant",
+      "category": "rust-runtime",
+      "priority": "adopt-adjacent",
+      "why": "Rust vector database for retrieval workloads."
+    },
+    {
+      "repo": "milvus-io/milvus",
+      "category": "vector-database",
+      "priority": "benchmark",
+      "why": "Large-scale cloud-native vector database."
+    },
+    {
+      "repo": "weaviate/weaviate",
+      "category": "vector-database",
+      "priority": "benchmark",
+      "why": "Object-plus-vector database with hybrid search."
+    },
+    {
+      "repo": "infiniflow/ragflow",
+      "category": "rag-platform",
+      "priority": "evaluate",
+      "why": "Document ingestion, RAG and agent context layer."
+    },
+    {
+      "repo": "VectifyAI/PageIndex",
+      "category": "rag-platform",
+      "priority": "evaluate",
+      "why": "Reasoning-based vectorless document index."
+    },
+    {
+      "repo": "Mintplex-Labs/anything-llm",
+      "category": "rag-platform",
+      "priority": "watch",
+      "why": "Local-first agent and knowledge workspace."
+    },
+    {
+      "repo": "khoj-ai/khoj",
+      "category": "memory",
+      "priority": "evaluate",
+      "why": "Self-hosted second brain, agents and scheduled automation."
+    },
+    {
+      "repo": "onyx-dot-app/onyx",
+      "category": "rag-platform",
+      "priority": "evaluate",
+      "why": "Enterprise search and AI platform."
+    },
+    {
+      "repo": "promptfoo/promptfoo",
+      "category": "eval-security",
+      "priority": "adopt-core",
+      "why": "Prompt, agent and RAG evaluation plus red teaming."
+    },
+    {
+      "repo": "comet-ml/opik",
+      "category": "observability",
+      "priority": "evaluate",
+      "why": "Tracing, evaluation and production monitoring for agent workflows."
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "category": "observability",
+      "priority": "evaluate",
+      "why": "Open LLM engineering, traces, prompts and evaluations."
+    },
+    {
+      "repo": "confident-ai/deepeval",
+      "category": "eval-security",
+      "priority": "evaluate",
+      "why": "LLM and agent evaluation framework."
+    },
+    {
+      "repo": "vibrantlabsai/ragas",
+      "category": "eval-security",
+      "priority": "evaluate",
+      "why": "RAG and agent evaluation toolkit."
+    },
+    {
+      "repo": "SigNoz/signoz",
+      "category": "observability",
+      "priority": "evaluate",
+      "why": "OpenTelemetry-native full-stack observability."
+    },
+    {
+      "repo": "openobserve/openobserve",
+      "category": "observability",
+      "priority": "evaluate",
+      "why": "High-performance logs, metrics, traces and LLM observability."
+    },
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "category": "observability",
+      "priority": "watch",
+      "why": "Agent tracing, evaluation and monitoring."
+    },
+    {
+      "repo": "Arize-ai/phoenix",
+      "category": "observability",
+      "priority": "evaluate",
+      "why": "Open tracing and evaluation platform for AI and agent systems."
+    },
+    {
+      "repo": "microsoft/agent-lightning",
+      "category": "agent-training",
+      "priority": "evaluate",
+      "why": "Agent-agnostic reinforcement-learning and training framework."
+    },
+    {
+      "repo": "verl-project/verl",
+      "category": "agent-training",
+      "priority": "benchmark",
+      "why": "Scalable reinforcement-learning post-training infrastructure."
+    },
+    {
+      "repo": "huggingface/trl",
+      "category": "agent-training",
+      "priority": "benchmark",
+      "why": "Widely used transformer reinforcement-learning toolkit."
+    },
+    {
+      "repo": "NVIDIA/SkillSpector",
+      "category": "eval-security",
+      "priority": "adopt-adjacent",
+      "why": "Security scanner for agent skills."
+    },
+    {
+      "repo": "NVIDIA/NemoClaw",
+      "category": "sandbox-security",
+      "priority": "evaluate",
+      "why": "Hardened agent execution patterns in NVIDIA OpenShell."
+    },
+    {
+      "repo": "opensandbox-group/OpenSandbox",
+      "category": "sandbox-security",
+      "priority": "evaluate",
+      "why": "Secure extensible sandbox runtime for agents."
+    },
+    {
+      "repo": "TencentCloud/CubeSandbox",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust lightweight concurrent sandbox for agents."
+    },
+    {
+      "repo": "e2b-dev/E2B",
+      "category": "sandbox-security",
+      "priority": "evaluate",
+      "why": "Cloud sandboxes designed for agent code execution."
+    },
+    {
+      "repo": "daytonaio/daytona",
+      "category": "sandbox-security",
+      "priority": "evaluate",
+      "why": "Secure ephemeral development and agent execution environments."
+    },
+    {
+      "repo": "Infisical/infisical",
+      "category": "identity-secrets",
+      "priority": "adopt-adjacent",
+      "why": "Open secrets, certificates and privileged-access management platform; license review required."
+    },
+    {
+      "repo": "getsops/sops",
+      "category": "identity-secrets",
+      "priority": "adopt-adjacent",
+      "why": "Encrypted configuration and secret-file management with cloud KMS support."
+    },
+    {
+      "repo": "casdoor/casdoor",
+      "category": "identity-secrets",
+      "priority": "evaluate",
+      "why": "Agent-first IAM and MCP/LLM gateway with broad identity protocols."
+    },
+    {
+      "repo": "browser-use/browser-use",
+      "category": "browser-computer-use",
+      "priority": "evaluate",
+      "why": "Browser-use framework for agents."
+    },
+    {
+      "repo": "vercel-labs/agent-browser",
+      "category": "rust-runtime",
+      "priority": "adopt-adjacent",
+      "why": "Rust browser automation CLI designed for agents."
+    },
+    {
+      "repo": "browserbase/stagehand",
+      "category": "browser-computer-use",
+      "priority": "evaluate",
+      "why": "Browser-agent SDK with reliable action primitives."
+    },
+    {
+      "repo": "apify/crawlee",
+      "category": "browser-computer-use",
+      "priority": "evaluate",
+      "why": "Reliable crawling and browser automation substrate."
+    },
+    {
+      "repo": "bytedance/UI-TARS-desktop",
+      "category": "browser-computer-use",
+      "priority": "evaluate",
+      "why": "Multimodal computer-use agent stack."
+    },
+    {
+      "repo": "simular-ai/Agent-S",
+      "category": "browser-computer-use",
+      "priority": "watch",
+      "why": "General computer-use framework."
+    },
+    {
+      "repo": "browseros-ai/BrowserOS",
+      "category": "browser-computer-use",
+      "priority": "watch",
+      "why": "Open agentic browser."
+    },
+    {
+      "repo": "h4ckf0r0day/obscura",
+      "category": "rust-runtime",
+      "priority": "watch",
+      "why": "Rust headless browser for agents and scraping."
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "category": "browser-computer-use",
+      "priority": "adopt-adjacent",
+      "why": "Official Playwright MCP server for browser automation."
+    },
+    {
+      "repo": "microsoft/OmniParser",
+      "category": "browser-computer-use",
+      "priority": "evaluate",
+      "why": "Visual screen parsing for GUI and computer-use agents."
+    },
+    {
+      "repo": "unclecode/crawl4ai",
+      "category": "document-ingestion",
+      "priority": "evaluate",
+      "why": "LLM-friendly crawling and structured web extraction."
+    },
+    {
+      "repo": "Skyvern-AI/skyvern",
+      "category": "browser-computer-use",
+      "priority": "evaluate",
+      "why": "AI-driven browser workflow automation with an operator platform."
+    },
+    {
+      "repo": "ollama/ollama",
+      "category": "model-runtime",
+      "priority": "adopt-adjacent",
+      "why": "Default local-model runtime and OpenAI-compatible serving."
+    },
+    {
+      "repo": "ggml-org/llama.cpp",
+      "category": "model-runtime",
+      "priority": "benchmark",
+      "why": "Portable local inference foundation."
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "category": "model-runtime",
+      "priority": "evaluate",
+      "why": "High-throughput model serving."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "category": "model-gateway",
+      "priority": "evaluate",
+      "why": "Provider gateway, routing, budgets and OpenAI-compatible proxy."
+    },
+    {
+      "repo": "Portkey-AI/gateway",
+      "category": "model-gateway",
+      "priority": "evaluate",
+      "why": "AI gateway with routing and guardrail integrations."
+    },
+    {
+      "repo": "BoundaryML/baml",
+      "category": "rust-runtime",
+      "priority": "strategic-exception",
+      "why": "Rust-backed programming language and type-safe boundary for agent applications even if below threshold."
+    },
+    {
+      "repo": "sgl-project/sglang",
+      "category": "model-runtime",
+      "priority": "evaluate",
+      "why": "High-performance LLM and multimodal serving."
+    },
+    {
+      "repo": "huggingface/transformers",
+      "category": "model-runtime",
+      "priority": "reference",
+      "why": "Model definition, training and inference ecosystem."
+    },
+    {
+      "repo": "huggingface/candle",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust ML and inference framework."
+    },
+    {
+      "repo": "mlc-ai/web-llm",
+      "category": "model-runtime",
+      "priority": "watch",
+      "why": "In-browser model inference."
+    },
+    {
+      "repo": "microsoft/BitNet",
+      "category": "model-runtime",
+      "priority": "watch",
+      "why": "1-bit model inference research and runtime."
+    },
+    {
+      "repo": "mudler/LocalAI",
+      "category": "model-runtime",
+      "priority": "evaluate",
+      "why": "Local multi-modal OpenAI-compatible inference engine across commodity hardware."
+    },
+    {
+      "repo": "exo-explore/exo",
+      "category": "model-runtime",
+      "priority": "watch",
+      "why": "Distributed local inference across heterogeneous personal devices."
+    },
+    {
+      "repo": "ml-explore/mlx",
+      "category": "model-runtime",
+      "priority": "watch",
+      "why": "Apple-silicon array and model runtime for sovereign local execution."
+    },
+    {
+      "repo": "lm-sys/FastChat",
+      "category": "model-runtime",
+      "priority": "reference",
+      "why": "Training, serving and evaluation architecture behind early open chat systems."
+    },
+    {
+      "repo": "0xPlaygrounds/rig",
+      "category": "rust-runtime",
+      "priority": "strategic-exception",
+      "why": "Rust agent application framework; direct code-first architecture benchmark even if below threshold."
+    },
+    {
+      "repo": "EricLBuehler/mistral.rs",
+      "category": "rust-runtime",
+      "priority": "strategic-exception",
+      "why": "Rust local inference and serving; useful for sovereign runtime evaluation."
+    },
+    {
+      "repo": "restatedev/restate",
+      "category": "rust-runtime",
+      "priority": "strategic-exception",
+      "why": "Rust durable execution substrate for reliable agents even if below threshold."
+    },
+    {
+      "repo": "hatchet-dev/hatchet",
+      "category": "durable-execution",
+      "priority": "strategic-exception",
+      "why": "Modern durable task queue with agent workflow fit even if below threshold."
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "category": "document-ingestion",
+      "priority": "adopt-adjacent",
+      "why": "Convert common files to LLM-ready markdown."
+    },
+    {
+      "repo": "docling-project/docling",
+      "category": "document-ingestion",
+      "priority": "evaluate",
+      "why": "Structured document conversion and parsing."
+    },
+    {
+      "repo": "firecrawl/firecrawl",
+      "category": "document-ingestion",
+      "priority": "evaluate",
+      "why": "Web data extraction for agents and RAG."
+    },
+    {
+      "repo": "PaddlePaddle/PaddleOCR",
+      "category": "document-ingestion",
+      "priority": "evaluate",
+      "why": "Multilingual OCR and document structure extraction."
+    },
+    {
+      "repo": "opendatalab/MinerU",
+      "category": "document-ingestion",
+      "priority": "evaluate",
+      "why": "Complex PDF and Office conversion to markdown/JSON."
+    },
+    {
+      "repo": "opendataloader-project/opendataloader-pdf",
+      "category": "document-ingestion",
+      "priority": "watch",
+      "why": "AI-ready PDF parser."
+    },
+    {
+      "repo": "Unstructured-IO/unstructured",
+      "category": "document-ingestion",
+      "priority": "evaluate",
+      "why": "Document ETL and partitioning for RAG pipelines."
+    },
+    {
+      "repo": "livekit/agents",
+      "category": "voice-realtime",
+      "priority": "evaluate",
+      "why": "Realtime voice and multimodal agent framework."
+    },
+    {
+      "repo": "TEN-framework/ten-framework",
+      "category": "voice-realtime",
+      "priority": "evaluate",
+      "why": "Conversational voice-agent framework."
+    },
+    {
+      "repo": "pipecat-ai/pipecat",
+      "category": "voice-realtime",
+      "priority": "evaluate",
+      "why": "Realtime voice and multimodal agent pipelines."
+    },
+    {
+      "repo": "Comfy-Org/ComfyUI",
+      "category": "creative-media",
+      "priority": "adopt-adjacent",
+      "why": "Node-based generative media execution substrate."
+    },
+    {
+      "repo": "remotion-dev/remotion",
+      "category": "creative-media",
+      "priority": "adopt-adjacent",
+      "why": "Code-native video rendering for repeatable agent outputs."
+    },
+    {
+      "repo": "calesthio/OpenMontage",
+      "category": "creative-media",
+      "priority": "evaluate",
+      "why": "Agentic video production system and skills library."
+    },
+    {
+      "repo": "heygen-com/hyperframes",
+      "category": "creative-media",
+      "priority": "evaluate",
+      "why": "Agent-oriented HTML-to-video renderer."
+    },
+    {
+      "repo": "airbytehq/airbyte",
+      "category": "data-integration",
+      "priority": "evaluate",
+      "why": "Large connector fabric for agent data movement."
+    },
+    {
+      "repo": "screenpipe/screenpipe",
+      "category": "rust-runtime",
+      "priority": "evaluate",
+      "why": "Rust local work capture substrate for private memory and agents."
+    },
+    {
+      "repo": "OpenBB-finance/OpenBB",
+      "category": "domain-platform",
+      "priority": "evaluate",
+      "why": "Open financial data platform for analyst and investor agents."
+    },
+    {
+      "repo": "gitroomhq/postiz-app",
+      "category": "domain-platform",
+      "priority": "evaluate",
+      "why": "Agentic social publishing and scheduling surface."
+    },
+    {
+      "repo": "ToolJet/ToolJet",
+      "category": "domain-platform",
+      "priority": "watch",
+      "why": "Internal tools and business apps for human-agent operations."
+    },
+    {
+      "repo": "Budibase/budibase",
+      "category": "domain-platform",
+      "priority": "watch",
+      "why": "Operational apps, automations and agent surfaces."
+    }
+  ]
+}

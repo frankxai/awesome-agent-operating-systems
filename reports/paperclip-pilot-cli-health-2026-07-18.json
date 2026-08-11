@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "version": "2026.707.0",
+  "deploymentMode": "local_trusted",
+  "deploymentExposure": "private",
+  "authReady": true,
+  "bootstrapStatus": "ready",
+  "bootstrapInviteActive": false,
+  "features": {
+    "companyDeletionEnabled": true
+  },
+  "serverInfo": {
+    "processStartedAt": "2026-07-17T22:49:25.744Z",
+    "git": {
+      "available": true,
+      "note": "Host-repository metadata removed from this bounded receipt."
+    }
+  },
+  "databaseBackup": {
+    "enabled": true,
+    "status": "warning",
+    "backupDir": ".pilot-cache/paperclip-data/instances/default/data/backups",
+    "maxAgeHours": 26,
+    "latestBackup": null,
+    "lastFailure": null,
+    "warnings": [
+      {
+        "code": "database_backup_missing",
+        "message": "No .sql.gz database backups found in the disposable pilot backup directory."
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "database_backup_missing",
+      "message": "No .sql.gz database backups found in the disposable pilot backup directory."
+    }
+  ]
+}

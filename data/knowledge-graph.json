@@ -1,0 +1,4401 @@
+{
+  "schema": "awesome-agentic-tech.knowledge-graph.v1",
+  "generatedAt": "2026-08-10T20:10:10.676305Z",
+  "sourceCatalog": "data/projects.json",
+  "counts": {
+    "nodes": 259,
+    "edges": 427
+  },
+  "nodes": [
+    {
+      "id": "layer:coordination",
+      "type": "layer",
+      "label": "coordination"
+    },
+    {
+      "id": "layer:development",
+      "type": "layer",
+      "label": "development"
+    },
+    {
+      "id": "layer:domain-systems",
+      "type": "layer",
+      "label": "domain-systems"
+    },
+    {
+      "id": "layer:execution",
+      "type": "layer",
+      "label": "execution"
+    },
+    {
+      "id": "layer:governance",
+      "type": "layer",
+      "label": "governance"
+    },
+    {
+      "id": "layer:interaction",
+      "type": "layer",
+      "label": "interaction"
+    },
+    {
+      "id": "layer:interoperability",
+      "type": "layer",
+      "label": "interoperability"
+    },
+    {
+      "id": "layer:model-infrastructure",
+      "type": "layer",
+      "label": "model-infrastructure"
+    },
+    {
+      "id": "layer:state",
+      "type": "layer",
+      "label": "state"
+    },
+    {
+      "id": "layer:trust",
+      "type": "layer",
+      "label": "trust"
+    },
+    {
+      "id": "need:govern-work",
+      "type": "need",
+      "label": "govern-work",
+      "description": "Goals, org charts, assignments, approvals, budgets and human oversight"
+    },
+    {
+      "id": "need:interact-with-agents",
+      "type": "need",
+      "label": "interact-with-agents",
+      "description": "Human command, collaboration and review surfaces for agents"
+    },
+    {
+      "id": "need:execute-autonomously",
+      "type": "need",
+      "label": "execute-autonomously",
+      "description": "Persistent agents that can reason, use tools and complete work"
+    },
+    {
+      "id": "need:ship-software",
+      "type": "need",
+      "label": "ship-software",
+      "description": "Parallel coding, review, testing and repository delivery"
+    },
+    {
+      "id": "need:build-agent-systems",
+      "type": "need",
+      "label": "build-agent-systems",
+      "description": "Frameworks and builders for new agent products"
+    },
+    {
+      "id": "need:learn-and-optimize",
+      "type": "need",
+      "label": "learn-and-optimize",
+      "description": "Training, reinforcement learning and measured agent improvement"
+    },
+    {
+      "id": "need:efficient-sovereign-runtime",
+      "type": "need",
+      "label": "efficient-sovereign-runtime",
+      "description": "Fast local and Rust-native execution primitives"
+    },
+    {
+      "id": "need:run-reliably",
+      "type": "need",
+      "label": "run-reliably",
+      "description": "Durable, resumable and event-driven long-running jobs"
+    },
+    {
+      "id": "need:automate-business",
+      "type": "need",
+      "label": "automate-business",
+      "description": "Cross-application business workflows and integrations"
+    },
+    {
+      "id": "need:interoperate",
+      "type": "need",
+      "label": "interoperate",
+      "description": "Portable protocols, skills, tools and agent interfaces"
+    },
+    {
+      "id": "need:remember-and-learn",
+      "type": "need",
+      "label": "remember-and-learn",
+      "description": "Long-term memory, consolidation and reusable experience"
+    },
+    {
+      "id": "need:understand-connected-knowledge",
+      "type": "need",
+      "label": "understand-connected-knowledge",
+      "description": "Temporal and semantic knowledge graphs"
+    },
+    {
+      "id": "need:ground-in-evidence",
+      "type": "need",
+      "label": "ground-in-evidence",
+      "description": "Ingestion, retrieval, indexing and evidence-backed context"
+    },
+    {
+      "id": "need:measure-and-defend",
+      "type": "need",
+      "label": "measure-and-defend",
+      "description": "Evaluation, red teaming and security checks"
+    },
+    {
+      "id": "need:observe-and-improve",
+      "type": "need",
+      "label": "observe-and-improve",
+      "description": "Traces, cost, quality and production feedback loops"
+    },
+    {
+      "id": "need:contain-execution",
+      "type": "need",
+      "label": "contain-execution",
+      "description": "Sandboxes, least privilege and blast-radius control"
+    },
+    {
+      "id": "need:secure-identity-and-secrets",
+      "type": "need",
+      "label": "secure-identity-and-secrets",
+      "description": "Identity, authorization and controlled secret custody"
+    },
+    {
+      "id": "need:act-in-software",
+      "type": "need",
+      "label": "act-in-software",
+      "description": "Browser, desktop and computer-use automation"
+    },
+    {
+      "id": "need:access-models",
+      "type": "need",
+      "label": "access-models",
+      "description": "Local inference, serving, routing and provider abstraction"
+    },
+    {
+      "id": "need:communicate-naturally",
+      "type": "need",
+      "label": "communicate-naturally",
+      "description": "Realtime voice and multimodal interaction"
+    },
+    {
+      "id": "need:produce-media",
+      "type": "need",
+      "label": "produce-media",
+      "description": "Repeatable image, video and creative production"
+    },
+    {
+      "id": "need:connect-business-data",
+      "type": "need",
+      "label": "connect-business-data",
+      "description": "Connectors and controlled data movement"
+    },
+    {
+      "id": "need:operate-business-domains",
+      "type": "need",
+      "label": "operate-business-domains",
+      "description": "Finance, social, internal tools and vertical systems"
+    },
+    {
+      "id": "category:agent-builder",
+      "type": "category",
+      "label": "agent-builder"
+    },
+    {
+      "id": "category:agent-framework",
+      "type": "category",
+      "label": "agent-framework"
+    },
+    {
+      "id": "category:agent-runtime",
+      "type": "category",
+      "label": "agent-runtime"
+    },
+    {
+      "id": "category:agent-training",
+      "type": "category",
+      "label": "agent-training"
+    },
+    {
+      "id": "category:browser-computer-use",
+      "type": "category",
+      "label": "browser-computer-use"
+    },
+    {
+      "id": "category:coding-agent",
+      "type": "category",
+      "label": "coding-agent"
+    },
+    {
+      "id": "category:coding-control-plane",
+      "type": "category",
+      "label": "coding-control-plane"
+    },
+    {
+      "id": "category:control-plane",
+      "type": "category",
+      "label": "control-plane"
+    },
+    {
+      "id": "category:creative-media",
+      "type": "category",
+      "label": "creative-media"
+    },
+    {
+      "id": "category:data-integration",
+      "type": "category",
+      "label": "data-integration"
+    },
+    {
+      "id": "category:document-ingestion",
+      "type": "category",
+      "label": "document-ingestion"
+    },
+    {
+      "id": "category:domain-platform",
+      "type": "category",
+      "label": "domain-platform"
+    },
+    {
+      "id": "category:durable-execution",
+      "type": "category",
+      "label": "durable-execution"
+    },
+    {
+      "id": "category:eval-security",
+      "type": "category",
+      "label": "eval-security"
+    },
+    {
+      "id": "category:identity-secrets",
+      "type": "category",
+      "label": "identity-secrets"
+    },
+    {
+      "id": "category:interaction-ui",
+      "type": "category",
+      "label": "interaction-ui"
+    },
+    {
+      "id": "category:knowledge-graph",
+      "type": "category",
+      "label": "knowledge-graph"
+    },
+    {
+      "id": "category:memory",
+      "type": "category",
+      "label": "memory"
+    },
+    {
+      "id": "category:model-gateway",
+      "type": "category",
+      "label": "model-gateway"
+    },
+    {
+      "id": "category:model-runtime",
+      "type": "category",
+      "label": "model-runtime"
+    },
+    {
+      "id": "category:observability",
+      "type": "category",
+      "label": "observability"
+    },
+    {
+      "id": "category:protocol",
+      "type": "category",
+      "label": "protocol"
+    },
+    {
+      "id": "category:rag-platform",
+      "type": "category",
+      "label": "rag-platform"
+    },
+    {
+      "id": "category:rust-runtime",
+      "type": "category",
+      "label": "rust-runtime"
+    },
+    {
+      "id": "category:sandbox-security",
+      "type": "category",
+      "label": "sandbox-security"
+    },
+    {
+      "id": "category:structured-output",
+      "type": "category",
+      "label": "structured-output"
+    },
+    {
+      "id": "category:tools-integration",
+      "type": "category",
+      "label": "tools-integration"
+    },
+    {
+      "id": "category:vector-database",
+      "type": "category",
+      "label": "vector-database"
+    },
+    {
+      "id": "category:voice-realtime",
+      "type": "category",
+      "label": "voice-realtime"
+    },
+    {
+      "id": "category:workflow-automation",
+      "type": "category",
+      "label": "workflow-automation"
+    },
+    {
+      "id": "project:NousResearch/hermes-agent",
+      "type": "project",
+      "label": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 216395,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "adopt-core"
+    },
+    {
+      "id": "project:paperclipai/paperclip",
+      "type": "project",
+      "label": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "stars": 74039,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "pilot"
+    },
+    {
+      "id": "project:openclaw/openclaw",
+      "type": "project",
+      "label": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "stars": 383276,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:lobehub/lobehub",
+      "type": "project",
+      "label": "lobehub/lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "stars": 80426,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:ruvnet/ruflo",
+      "type": "project",
+      "label": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "stars": 64839,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:multica-ai/multica",
+      "type": "project",
+      "label": "multica-ai/multica",
+      "url": "https://github.com/multica-ai/multica",
+      "stars": 40914,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:simstudioai/sim",
+      "type": "project",
+      "label": "simstudioai/sim",
+      "url": "https://github.com/simstudioai/sim",
+      "stars": 29124,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:bytedance/deer-flow",
+      "type": "project",
+      "label": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "stars": 77287,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:HKUDS/nanobot",
+      "type": "project",
+      "label": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "stars": 45816,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:zeroclaw-labs/zeroclaw",
+      "type": "project",
+      "label": "zeroclaw-labs/zeroclaw",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "stars": 32284,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:RightNow-AI/openfang",
+      "type": "project",
+      "label": "RightNow-AI/openfang",
+      "url": "https://github.com/RightNow-AI/openfang",
+      "stars": 18025,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:elizaOS/eliza",
+      "type": "project",
+      "label": "elizaOS/eliza",
+      "url": "https://github.com/elizaOS/eliza",
+      "stars": 18756,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:agent0ai/agent-zero",
+      "type": "project",
+      "label": "agent0ai/agent-zero",
+      "url": "https://github.com/agent0ai/agent-zero",
+      "stars": 18444,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "watch"
+    },
+    {
+      "id": "project:HKUDS/OpenHarness",
+      "type": "project",
+      "label": "HKUDS/OpenHarness",
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "stars": 14882,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:Significant-Gravitas/AutoGPT",
+      "type": "project",
+      "label": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "stars": 185586,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:open-webui/open-webui",
+      "type": "project",
+      "label": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "stars": 145770,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:danny-avila/LibreChat",
+      "type": "project",
+      "label": "danny-avila/LibreChat",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "stars": 40863,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:openai/codex",
+      "type": "project",
+      "label": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "stars": 99131,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "adopt-core"
+    },
+    {
+      "id": "project:anomalyco/opencode",
+      "type": "project",
+      "label": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": 186893,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "adopt-core"
+    },
+    {
+      "id": "project:google-gemini/gemini-cli",
+      "type": "project",
+      "label": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "stars": 106035,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "adopt-core"
+    },
+    {
+      "id": "project:cline/cline",
+      "type": "project",
+      "label": "cline/cline",
+      "url": "https://github.com/cline/cline",
+      "stars": 64743,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:continuedev/continue",
+      "type": "project",
+      "label": "continuedev/continue",
+      "url": "https://github.com/continuedev/continue",
+      "stars": 34937,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:aaif-goose/goose",
+      "type": "project",
+      "label": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "stars": 51234,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:openinterpreter/openinterpreter",
+      "type": "project",
+      "label": "openinterpreter/openinterpreter",
+      "url": "https://github.com/openinterpreter/openinterpreter",
+      "stars": 66279,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:Kilo-Org/kilocode",
+      "type": "project",
+      "label": "Kilo-Org/kilocode",
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "stars": 26332,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:QwenLM/qwen-code",
+      "type": "project",
+      "label": "QwenLM/qwen-code",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "stars": 26084,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:charmbracelet/crush",
+      "type": "project",
+      "label": "charmbracelet/crush",
+      "url": "https://github.com/charmbracelet/crush",
+      "stars": 26592,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "priority": "watch"
+    },
+    {
+      "id": "project:plandex-ai/plandex",
+      "type": "project",
+      "label": "plandex-ai/plandex",
+      "url": "https://github.com/plandex-ai/plandex",
+      "stars": 15532,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:bytedance/trae-agent",
+      "type": "project",
+      "label": "bytedance/trae-agent",
+      "url": "https://github.com/bytedance/trae-agent",
+      "stars": 11856,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:BloopAI/vibe-kanban",
+      "type": "project",
+      "label": "BloopAI/vibe-kanban",
+      "url": "https://github.com/BloopAI/vibe-kanban",
+      "stars": 27420,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "pilot"
+    },
+    {
+      "id": "project:superset-sh/superset",
+      "type": "project",
+      "label": "superset-sh/superset",
+      "url": "https://github.com/superset-sh/superset",
+      "stars": 12475,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:gastownhall/gastown",
+      "type": "project",
+      "label": "gastownhall/gastown",
+      "url": "https://github.com/gastownhall/gastown",
+      "stars": 17077,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:openai/symphony",
+      "type": "project",
+      "label": "openai/symphony",
+      "url": "https://github.com/openai/symphony",
+      "stars": 26010,
+      "language": "Elixir",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:stablyai/orca",
+      "type": "project",
+      "label": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "stars": 21068,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:getpaseo/paseo",
+      "type": "project",
+      "label": "getpaseo/paseo",
+      "url": "https://github.com/getpaseo/paseo",
+      "stars": 10585,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "watch"
+    },
+    {
+      "id": "project:humanlayer/humanlayer",
+      "type": "project",
+      "label": "humanlayer/humanlayer",
+      "url": "https://github.com/humanlayer/humanlayer",
+      "stars": 11123,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:code-yeongyu/oh-my-openagent",
+      "type": "project",
+      "label": "code-yeongyu/oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "stars": 67632,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:can1357/oh-my-pi",
+      "type": "project",
+      "label": "can1357/oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "stars": 23575,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:earendil-works/pi",
+      "type": "project",
+      "label": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "stars": 86599,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:langchain-ai/open-swe",
+      "type": "project",
+      "label": "langchain-ai/open-swe",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "stars": 10323,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:farion1231/cc-switch",
+      "type": "project",
+      "label": "farion1231/cc-switch",
+      "url": "https://github.com/farion1231/cc-switch",
+      "stars": 118326,
+      "language": "Rust",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Hmbown/CodeWhale",
+      "type": "project",
+      "label": "Hmbown/CodeWhale",
+      "url": "https://github.com/Hmbown/CodeWhale",
+      "stars": 39894,
+      "language": "Rust",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:OpenHands/OpenHands",
+      "type": "project",
+      "label": "OpenHands/OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "stars": 81106,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Aider-AI/aider",
+      "type": "project",
+      "label": "Aider-AI/aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "stars": 47462,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:TabbyML/tabby",
+      "type": "project",
+      "label": "TabbyML/tabby",
+      "url": "https://github.com/TabbyML/tabby",
+      "stars": 33721,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:SWE-agent/SWE-agent",
+      "type": "project",
+      "label": "SWE-agent/SWE-agent",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "stars": 19839,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:langchain-ai/langchain",
+      "type": "project",
+      "label": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "stars": 142003,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:langchain-ai/langgraph",
+      "type": "project",
+      "label": "langchain-ai/langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "stars": 37515,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:run-llama/llama_index",
+      "type": "project",
+      "label": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "stars": 50913,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:microsoft/autogen",
+      "type": "project",
+      "label": "microsoft/autogen",
+      "url": "https://github.com/microsoft/autogen",
+      "stars": 59796,
+      "language": "Python",
+      "license": "CC-BY-4.0",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:crewAIInc/crewAI",
+      "type": "project",
+      "label": "crewAIInc/crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "stars": 55695,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:FoundationAgents/MetaGPT",
+      "type": "project",
+      "label": "FoundationAgents/MetaGPT",
+      "url": "https://github.com/FoundationAgents/MetaGPT",
+      "stars": 69413,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:agno-agi/agno",
+      "type": "project",
+      "label": "agno-agi/agno",
+      "url": "https://github.com/agno-agi/agno",
+      "stars": 41208,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:openai/openai-agents-python",
+      "type": "project",
+      "label": "openai/openai-agents-python",
+      "url": "https://github.com/openai/openai-agents-python",
+      "stars": 27975,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:google/adk-python",
+      "type": "project",
+      "label": "google/adk-python",
+      "url": "https://github.com/google/adk-python",
+      "stars": 20645,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:pydantic/pydantic-ai",
+      "type": "project",
+      "label": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "stars": 18624,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:mastra-ai/mastra",
+      "type": "project",
+      "label": "mastra-ai/mastra",
+      "url": "https://github.com/mastra-ai/mastra",
+      "stars": 26294,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:deepset-ai/haystack",
+      "type": "project",
+      "label": "deepset-ai/haystack",
+      "url": "https://github.com/deepset-ai/haystack",
+      "stars": 25925,
+      "language": "MDX",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:camel-ai/camel",
+      "type": "project",
+      "label": "camel-ai/camel",
+      "url": "https://github.com/camel-ai/camel",
+      "stars": 17414,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:agentscope-ai/agentscope",
+      "type": "project",
+      "label": "agentscope-ai/agentscope",
+      "url": "https://github.com/agentscope-ai/agentscope",
+      "stars": 27981,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:microsoft/agent-framework",
+      "type": "project",
+      "label": "microsoft/agent-framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "stars": 12184,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:langchain-ai/deepagents",
+      "type": "project",
+      "label": "langchain-ai/deepagents",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "stars": 26375,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:microsoft/semantic-kernel",
+      "type": "project",
+      "label": "microsoft/semantic-kernel",
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "stars": 28323,
+      "language": "C#",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:The-Pocket/PocketFlow",
+      "type": "project",
+      "label": "The-Pocket/PocketFlow",
+      "url": "https://github.com/The-Pocket/PocketFlow",
+      "stars": 10988,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:openai/swarm",
+      "type": "project",
+      "label": "openai/swarm",
+      "url": "https://github.com/openai/swarm",
+      "stars": 21805,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "reference"
+    },
+    {
+      "id": "project:567-labs/instructor",
+      "type": "project",
+      "label": "567-labs/instructor",
+      "url": "https://github.com/567-labs/instructor",
+      "stars": 13552,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:dottxt-ai/outlines",
+      "type": "project",
+      "label": "dottxt-ai/outlines",
+      "url": "https://github.com/dottxt-ai/outlines",
+      "stars": 14532,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:n8n-io/n8n",
+      "type": "project",
+      "label": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "stars": 196830,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:activepieces/activepieces",
+      "type": "project",
+      "label": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "stars": 23309,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:triggerdotdev/trigger.dev",
+      "type": "project",
+      "label": "triggerdotdev/trigger.dev",
+      "url": "https://github.com/triggerdotdev/trigger.dev",
+      "stars": 15677,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:conductor-oss/conductor",
+      "type": "project",
+      "label": "conductor-oss/conductor",
+      "url": "https://github.com/conductor-oss/conductor",
+      "stars": 32007,
+      "language": "Java",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:temporalio/temporal",
+      "type": "project",
+      "label": "temporalio/temporal",
+      "url": "https://github.com/temporalio/temporal",
+      "stars": 21695,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:windmill-labs/windmill",
+      "type": "project",
+      "label": "windmill-labs/windmill",
+      "url": "https://github.com/windmill-labs/windmill",
+      "stars": 17178,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:PrefectHQ/prefect",
+      "type": "project",
+      "label": "PrefectHQ/prefect",
+      "url": "https://github.com/PrefectHQ/prefect",
+      "stars": 23417,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:dagster-io/dagster",
+      "type": "project",
+      "label": "dagster-io/dagster",
+      "url": "https://github.com/dagster-io/dagster",
+      "stars": 15856,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:huginn/huginn",
+      "type": "project",
+      "label": "huginn/huginn",
+      "url": "https://github.com/huginn/huginn",
+      "stars": 49631,
+      "language": "Ruby",
+      "license": "MIT",
+      "priority": "reference"
+    },
+    {
+      "id": "project:automatisch/automatisch",
+      "type": "project",
+      "label": "automatisch/automatisch",
+      "url": "https://github.com/automatisch/automatisch",
+      "stars": 13887,
+      "language": "JavaScript",
+      "license": "NOASSERTION",
+      "priority": "watch"
+    },
+    {
+      "id": "project:langgenius/dify",
+      "type": "project",
+      "label": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "stars": 149167,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:FlowiseAI/Flowise",
+      "type": "project",
+      "label": "FlowiseAI/Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "stars": 54695,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:coze-dev/coze-studio",
+      "type": "project",
+      "label": "coze-dev/coze-studio",
+      "url": "https://github.com/coze-dev/coze-studio",
+      "stars": 21185,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:labring/FastGPT",
+      "type": "project",
+      "label": "labring/FastGPT",
+      "url": "https://github.com/labring/FastGPT",
+      "stars": 29014,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "watch"
+    },
+    {
+      "id": "project:1Panel-dev/MaxKB",
+      "type": "project",
+      "label": "1Panel-dev/MaxKB",
+      "url": "https://github.com/1Panel-dev/MaxKB",
+      "stars": 22117,
+      "language": "Python",
+      "license": "GPL-3.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:a2aproject/A2A",
+      "type": "project",
+      "label": "a2aproject/A2A",
+      "url": "https://github.com/a2aproject/A2A",
+      "stars": 24837,
+      "language": "Shell",
+      "license": "Apache-2.0",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:agentskills/agentskills",
+      "type": "project",
+      "label": "agentskills/agentskills",
+      "url": "https://github.com/agentskills/agentskills",
+      "stars": 23140,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:agentsmd/agents.md",
+      "type": "project",
+      "label": "agentsmd/agents.md",
+      "url": "https://github.com/agentsmd/agents.md",
+      "stars": 23069,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:ag-ui-protocol/ag-ui",
+      "type": "project",
+      "label": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "stars": 14789,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:modelcontextprotocol/servers",
+      "type": "project",
+      "label": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "stars": 88587,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:mcp-use/mcp-use",
+      "type": "project",
+      "label": "mcp-use/mcp-use",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "stars": 10326,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:ComposioHQ/composio",
+      "type": "project",
+      "label": "ComposioHQ/composio",
+      "url": "https://github.com/ComposioHQ/composio",
+      "stars": 29269,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:ChromeDevTools/chrome-devtools-mcp",
+      "type": "project",
+      "label": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "stars": 47095,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:oraios/serena",
+      "type": "project",
+      "label": "oraios/serena",
+      "url": "https://github.com/oraios/serena",
+      "stars": 26550,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:googleapis/mcp-toolbox",
+      "type": "project",
+      "label": "googleapis/mcp-toolbox",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "stars": 15970,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:vercel-labs/skills",
+      "type": "project",
+      "label": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "stars": 26420,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:PrefectHQ/fastmcp",
+      "type": "project",
+      "label": "PrefectHQ/fastmcp",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "stars": 26242,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:modelcontextprotocol/python-sdk",
+      "type": "project",
+      "label": "modelcontextprotocol/python-sdk",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "stars": 23644,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:modelcontextprotocol/typescript-sdk",
+      "type": "project",
+      "label": "modelcontextprotocol/typescript-sdk",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "stars": 12877,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "adopt-standard"
+    },
+    {
+      "id": "project:github/github-mcp-server",
+      "type": "project",
+      "label": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "stars": 31517,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:mem0ai/mem0",
+      "type": "project",
+      "label": "mem0ai/mem0",
+      "url": "https://github.com/mem0ai/mem0",
+      "stars": 61071,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:letta-ai/letta",
+      "type": "project",
+      "label": "letta-ai/letta",
+      "url": "https://github.com/letta-ai/letta",
+      "stars": 23831,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:getzep/graphiti",
+      "type": "project",
+      "label": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "stars": 28845,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "pilot"
+    },
+    {
+      "id": "project:topoteretes/cognee",
+      "type": "project",
+      "label": "topoteretes/cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "stars": 27983,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:vectorize-io/hindsight",
+      "type": "project",
+      "label": "vectorize-io/hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "stars": 18517,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:MemTensor/MemOS",
+      "type": "project",
+      "label": "MemTensor/MemOS",
+      "url": "https://github.com/MemTensor/MemOS",
+      "stars": 10252,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:memvid/memvid",
+      "type": "project",
+      "label": "memvid/memvid",
+      "url": "https://github.com/memvid/memvid",
+      "stars": 15975,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:volcengine/OpenViking",
+      "type": "project",
+      "label": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "stars": 26887,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:HKUDS/LightRAG",
+      "type": "project",
+      "label": "HKUDS/LightRAG",
+      "url": "https://github.com/HKUDS/LightRAG",
+      "stars": 37768,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:microsoft/graphrag",
+      "type": "project",
+      "label": "microsoft/graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "stars": 34485,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:qdrant/qdrant",
+      "type": "project",
+      "label": "qdrant/qdrant",
+      "url": "https://github.com/qdrant/qdrant",
+      "stars": 33354,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:milvus-io/milvus",
+      "type": "project",
+      "label": "milvus-io/milvus",
+      "url": "https://github.com/milvus-io/milvus",
+      "stars": 45258,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:weaviate/weaviate",
+      "type": "project",
+      "label": "weaviate/weaviate",
+      "url": "https://github.com/weaviate/weaviate",
+      "stars": 16606,
+      "language": "Go",
+      "license": "BSD-3-Clause",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:infiniflow/ragflow",
+      "type": "project",
+      "label": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "stars": 85296,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:VectifyAI/PageIndex",
+      "type": "project",
+      "label": "VectifyAI/PageIndex",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "stars": 34080,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Mintplex-Labs/anything-llm",
+      "type": "project",
+      "label": "Mintplex-Labs/anything-llm",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "stars": 63449,
+      "language": "JavaScript",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:khoj-ai/khoj",
+      "type": "project",
+      "label": "khoj-ai/khoj",
+      "url": "https://github.com/khoj-ai/khoj",
+      "stars": 35835,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:onyx-dot-app/onyx",
+      "type": "project",
+      "label": "onyx-dot-app/onyx",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "stars": 30948,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:promptfoo/promptfoo",
+      "type": "project",
+      "label": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "stars": 23365,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "adopt-core"
+    },
+    {
+      "id": "project:comet-ml/opik",
+      "type": "project",
+      "label": "comet-ml/opik",
+      "url": "https://github.com/comet-ml/opik",
+      "stars": 20655,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:langfuse/langfuse",
+      "type": "project",
+      "label": "langfuse/langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "stars": 31343,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:confident-ai/deepeval",
+      "type": "project",
+      "label": "confident-ai/deepeval",
+      "url": "https://github.com/confident-ai/deepeval",
+      "stars": 16918,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:vibrantlabsai/ragas",
+      "type": "project",
+      "label": "vibrantlabsai/ragas",
+      "url": "https://github.com/vibrantlabsai/ragas",
+      "stars": 14885,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:SigNoz/signoz",
+      "type": "project",
+      "label": "SigNoz/signoz",
+      "url": "https://github.com/SigNoz/signoz",
+      "stars": 30329,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:openobserve/openobserve",
+      "type": "project",
+      "label": "openobserve/openobserve",
+      "url": "https://github.com/openobserve/openobserve",
+      "stars": 20199,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:raga-ai-hub/RagaAI-Catalyst",
+      "type": "project",
+      "label": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16145,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:Arize-ai/phoenix",
+      "type": "project",
+      "label": "Arize-ai/phoenix",
+      "url": "https://github.com/Arize-ai/phoenix",
+      "stars": 10600,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:microsoft/agent-lightning",
+      "type": "project",
+      "label": "microsoft/agent-lightning",
+      "url": "https://github.com/microsoft/agent-lightning",
+      "stars": 17395,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:verl-project/verl",
+      "type": "project",
+      "label": "verl-project/verl",
+      "url": "https://github.com/verl-project/verl",
+      "stars": 22517,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:huggingface/trl",
+      "type": "project",
+      "label": "huggingface/trl",
+      "url": "https://github.com/huggingface/trl",
+      "stars": 18862,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:NVIDIA/SkillSpector",
+      "type": "project",
+      "label": "NVIDIA/SkillSpector",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "stars": 13348,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:NVIDIA/NemoClaw",
+      "type": "project",
+      "label": "NVIDIA/NemoClaw",
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "stars": 21816,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:opensandbox-group/OpenSandbox",
+      "type": "project",
+      "label": "opensandbox-group/OpenSandbox",
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "stars": 12047,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:TencentCloud/CubeSandbox",
+      "type": "project",
+      "label": "TencentCloud/CubeSandbox",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "stars": 10383,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:e2b-dev/E2B",
+      "type": "project",
+      "label": "e2b-dev/E2B",
+      "url": "https://github.com/e2b-dev/E2B",
+      "stars": 13018,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:daytonaio/daytona",
+      "type": "project",
+      "label": "daytonaio/daytona",
+      "url": "https://github.com/daytonaio/daytona",
+      "stars": 72267,
+      "language": null,
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Infisical/infisical",
+      "type": "project",
+      "label": "Infisical/infisical",
+      "url": "https://github.com/Infisical/infisical",
+      "stars": 28147,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:getsops/sops",
+      "type": "project",
+      "label": "getsops/sops",
+      "url": "https://github.com/getsops/sops",
+      "stars": 22526,
+      "language": "Go",
+      "license": "MPL-2.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:casdoor/casdoor",
+      "type": "project",
+      "label": "casdoor/casdoor",
+      "url": "https://github.com/casdoor/casdoor",
+      "stars": 13965,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:browser-use/browser-use",
+      "type": "project",
+      "label": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "stars": 105256,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:vercel-labs/agent-browser",
+      "type": "project",
+      "label": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "stars": 38655,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:browserbase/stagehand",
+      "type": "project",
+      "label": "browserbase/stagehand",
+      "url": "https://github.com/browserbase/stagehand",
+      "stars": 23547,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:apify/crawlee",
+      "type": "project",
+      "label": "apify/crawlee",
+      "url": "https://github.com/apify/crawlee",
+      "stars": 24775,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:bytedance/UI-TARS-desktop",
+      "type": "project",
+      "label": "bytedance/UI-TARS-desktop",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "stars": 38073,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:simular-ai/Agent-S",
+      "type": "project",
+      "label": "simular-ai/Agent-S",
+      "url": "https://github.com/simular-ai/Agent-S",
+      "stars": 12029,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:browseros-ai/BrowserOS",
+      "type": "project",
+      "label": "browseros-ai/BrowserOS",
+      "url": "https://github.com/browseros-ai/BrowserOS",
+      "stars": 12288,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:h4ckf0r0day/obscura",
+      "type": "project",
+      "label": "h4ckf0r0day/obscura",
+      "url": "https://github.com/h4ckf0r0day/obscura",
+      "stars": 19367,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:microsoft/playwright-mcp",
+      "type": "project",
+      "label": "microsoft/playwright-mcp",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "stars": 35206,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:microsoft/OmniParser",
+      "type": "project",
+      "label": "microsoft/OmniParser",
+      "url": "https://github.com/microsoft/OmniParser",
+      "stars": 25165,
+      "language": "Jupyter Notebook",
+      "license": "CC-BY-4.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:unclecode/crawl4ai",
+      "type": "project",
+      "label": "unclecode/crawl4ai",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "stars": 73079,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Skyvern-AI/skyvern",
+      "type": "project",
+      "label": "Skyvern-AI/skyvern",
+      "url": "https://github.com/Skyvern-AI/skyvern",
+      "stars": 22478,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:ollama/ollama",
+      "type": "project",
+      "label": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "stars": 176329,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:ggml-org/llama.cpp",
+      "type": "project",
+      "label": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "stars": 120728,
+      "language": "C++",
+      "license": "MIT",
+      "priority": "benchmark"
+    },
+    {
+      "id": "project:vllm-project/vllm",
+      "type": "project",
+      "label": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "stars": 86518,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:BerriAI/litellm",
+      "type": "project",
+      "label": "BerriAI/litellm",
+      "url": "https://github.com/BerriAI/litellm",
+      "stars": 53874,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Portkey-AI/gateway",
+      "type": "project",
+      "label": "Portkey-AI/gateway",
+      "url": "https://github.com/Portkey-AI/gateway",
+      "stars": 12458,
+      "language": "TypeScript",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:BoundaryML/baml",
+      "type": "project",
+      "label": "BoundaryML/baml",
+      "url": "https://github.com/BoundaryML/baml",
+      "stars": 8564,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "strategic-exception"
+    },
+    {
+      "id": "project:sgl-project/sglang",
+      "type": "project",
+      "label": "sgl-project/sglang",
+      "url": "https://github.com/sgl-project/sglang",
+      "stars": 30413,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:huggingface/transformers",
+      "type": "project",
+      "label": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "stars": 162689,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "reference"
+    },
+    {
+      "id": "project:huggingface/candle",
+      "type": "project",
+      "label": "huggingface/candle",
+      "url": "https://github.com/huggingface/candle",
+      "stars": 20682,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:mlc-ai/web-llm",
+      "type": "project",
+      "label": "mlc-ai/web-llm",
+      "url": "https://github.com/mlc-ai/web-llm",
+      "stars": 18380,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:microsoft/BitNet",
+      "type": "project",
+      "label": "microsoft/BitNet",
+      "url": "https://github.com/microsoft/BitNet",
+      "stars": 39746,
+      "language": "C++",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:mudler/LocalAI",
+      "type": "project",
+      "label": "mudler/LocalAI",
+      "url": "https://github.com/mudler/LocalAI",
+      "stars": 47598,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:exo-explore/exo",
+      "type": "project",
+      "label": "exo-explore/exo",
+      "url": "https://github.com/exo-explore/exo",
+      "stars": 46343,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:ml-explore/mlx",
+      "type": "project",
+      "label": "ml-explore/mlx",
+      "url": "https://github.com/ml-explore/mlx",
+      "stars": 27576,
+      "language": "C++",
+      "license": "MIT",
+      "priority": "watch"
+    },
+    {
+      "id": "project:lm-sys/FastChat",
+      "type": "project",
+      "label": "lm-sys/FastChat",
+      "url": "https://github.com/lm-sys/FastChat",
+      "stars": 39489,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "reference"
+    },
+    {
+      "id": "project:0xPlaygrounds/rig",
+      "type": "project",
+      "label": "0xPlaygrounds/rig",
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "stars": 7960,
+      "language": "Rust",
+      "license": "MIT",
+      "priority": "strategic-exception"
+    },
+    {
+      "id": "project:EricLBuehler/mistral.rs",
+      "type": "project",
+      "label": "EricLBuehler/mistral.rs",
+      "url": "https://github.com/EricLBuehler/mistral.rs",
+      "stars": 7488,
+      "language": "Rust",
+      "license": "MIT",
+      "priority": "strategic-exception"
+    },
+    {
+      "id": "project:restatedev/restate",
+      "type": "project",
+      "label": "restatedev/restate",
+      "url": "https://github.com/restatedev/restate",
+      "stars": 4175,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "priority": "strategic-exception"
+    },
+    {
+      "id": "project:hatchet-dev/hatchet",
+      "type": "project",
+      "label": "hatchet-dev/hatchet",
+      "url": "https://github.com/hatchet-dev/hatchet",
+      "stars": 7518,
+      "language": "Go",
+      "license": "MIT",
+      "priority": "strategic-exception"
+    },
+    {
+      "id": "project:microsoft/markitdown",
+      "type": "project",
+      "label": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "stars": 166850,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:docling-project/docling",
+      "type": "project",
+      "label": "docling-project/docling",
+      "url": "https://github.com/docling-project/docling",
+      "stars": 63367,
+      "language": "Python",
+      "license": "MIT",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:firecrawl/firecrawl",
+      "type": "project",
+      "label": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 152357,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:PaddlePaddle/PaddleOCR",
+      "type": "project",
+      "label": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "stars": 85716,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:opendatalab/MinerU",
+      "type": "project",
+      "label": "opendatalab/MinerU",
+      "url": "https://github.com/opendatalab/MinerU",
+      "stars": 74937,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:opendataloader-project/opendataloader-pdf",
+      "type": "project",
+      "label": "opendataloader-project/opendataloader-pdf",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "stars": 27418,
+      "language": "Java",
+      "license": "Apache-2.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:Unstructured-IO/unstructured",
+      "type": "project",
+      "label": "Unstructured-IO/unstructured",
+      "url": "https://github.com/Unstructured-IO/unstructured",
+      "stars": 15151,
+      "language": "HTML",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:livekit/agents",
+      "type": "project",
+      "label": "livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "stars": 11406,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:TEN-framework/ten-framework",
+      "type": "project",
+      "label": "TEN-framework/ten-framework",
+      "url": "https://github.com/TEN-framework/ten-framework",
+      "stars": 10907,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:pipecat-ai/pipecat",
+      "type": "project",
+      "label": "pipecat-ai/pipecat",
+      "url": "https://github.com/pipecat-ai/pipecat",
+      "stars": 13517,
+      "language": "Python",
+      "license": "BSD-2-Clause",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:Comfy-Org/ComfyUI",
+      "type": "project",
+      "label": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "stars": 121163,
+      "language": "Python",
+      "license": "GPL-3.0",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:remotion-dev/remotion",
+      "type": "project",
+      "label": "remotion-dev/remotion",
+      "url": "https://github.com/remotion-dev/remotion",
+      "stars": 53513,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "adopt-adjacent"
+    },
+    {
+      "id": "project:calesthio/OpenMontage",
+      "type": "project",
+      "label": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 39485,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:heygen-com/hyperframes",
+      "type": "project",
+      "label": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "stars": 35927,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:airbytehq/airbyte",
+      "type": "project",
+      "label": "airbytehq/airbyte",
+      "url": "https://github.com/airbytehq/airbyte",
+      "stars": 21645,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:screenpipe/screenpipe",
+      "type": "project",
+      "label": "screenpipe/screenpipe",
+      "url": "https://github.com/screenpipe/screenpipe",
+      "stars": 20233,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:OpenBB-finance/OpenBB",
+      "type": "project",
+      "label": "OpenBB-finance/OpenBB",
+      "url": "https://github.com/OpenBB-finance/OpenBB",
+      "stars": 70702,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:gitroomhq/postiz-app",
+      "type": "project",
+      "label": "gitroomhq/postiz-app",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "stars": 33435,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "priority": "evaluate"
+    },
+    {
+      "id": "project:ToolJet/ToolJet",
+      "type": "project",
+      "label": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "stars": 38223,
+      "language": "JavaScript",
+      "license": "AGPL-3.0",
+      "priority": "watch"
+    },
+    {
+      "id": "project:Budibase/budibase",
+      "type": "project",
+      "label": "Budibase/budibase",
+      "url": "https://github.com/Budibase/budibase",
+      "stars": 28127,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "priority": "watch"
+    },
+    {
+      "id": "priority:adopt-adjacent",
+      "type": "priority",
+      "label": "adopt-adjacent"
+    },
+    {
+      "id": "priority:adopt-core",
+      "type": "priority",
+      "label": "adopt-core"
+    },
+    {
+      "id": "priority:adopt-standard",
+      "type": "priority",
+      "label": "adopt-standard"
+    },
+    {
+      "id": "priority:benchmark",
+      "type": "priority",
+      "label": "benchmark"
+    },
+    {
+      "id": "priority:evaluate",
+      "type": "priority",
+      "label": "evaluate"
+    },
+    {
+      "id": "priority:pilot",
+      "type": "priority",
+      "label": "pilot"
+    },
+    {
+      "id": "priority:reference",
+      "type": "priority",
+      "label": "reference"
+    },
+    {
+      "id": "priority:strategic-exception",
+      "type": "priority",
+      "label": "strategic-exception"
+    },
+    {
+      "id": "priority:watch",
+      "type": "priority",
+      "label": "watch"
+    }
+  ],
+  "edges": [
+    {
+      "source": "category:agent-builder",
+      "target": "need:build-agent-systems",
+      "type": "serves"
+    },
+    {
+      "source": "need:build-agent-systems",
+      "target": "layer:development",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:agent-framework",
+      "target": "need:build-agent-systems",
+      "type": "serves"
+    },
+    {
+      "source": "category:agent-runtime",
+      "target": "need:execute-autonomously",
+      "type": "serves"
+    },
+    {
+      "source": "need:execute-autonomously",
+      "target": "layer:execution",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:agent-training",
+      "target": "need:learn-and-optimize",
+      "type": "serves"
+    },
+    {
+      "source": "need:learn-and-optimize",
+      "target": "layer:trust",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:browser-computer-use",
+      "target": "need:act-in-software",
+      "type": "serves"
+    },
+    {
+      "source": "need:act-in-software",
+      "target": "layer:interaction",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:coding-agent",
+      "target": "need:ship-software",
+      "type": "serves"
+    },
+    {
+      "source": "need:ship-software",
+      "target": "layer:execution",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:coding-control-plane",
+      "target": "need:govern-work",
+      "type": "serves"
+    },
+    {
+      "source": "need:govern-work",
+      "target": "layer:governance",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:control-plane",
+      "target": "need:govern-work",
+      "type": "serves"
+    },
+    {
+      "source": "category:creative-media",
+      "target": "need:produce-media",
+      "type": "serves"
+    },
+    {
+      "source": "need:produce-media",
+      "target": "layer:domain-systems",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:data-integration",
+      "target": "need:connect-business-data",
+      "type": "serves"
+    },
+    {
+      "source": "need:connect-business-data",
+      "target": "layer:domain-systems",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:document-ingestion",
+      "target": "need:ground-in-evidence",
+      "type": "serves"
+    },
+    {
+      "source": "need:ground-in-evidence",
+      "target": "layer:state",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:domain-platform",
+      "target": "need:operate-business-domains",
+      "type": "serves"
+    },
+    {
+      "source": "need:operate-business-domains",
+      "target": "layer:domain-systems",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:durable-execution",
+      "target": "need:run-reliably",
+      "type": "serves"
+    },
+    {
+      "source": "need:run-reliably",
+      "target": "layer:coordination",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:eval-security",
+      "target": "need:measure-and-defend",
+      "type": "serves"
+    },
+    {
+      "source": "need:measure-and-defend",
+      "target": "layer:trust",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:identity-secrets",
+      "target": "need:secure-identity-and-secrets",
+      "type": "serves"
+    },
+    {
+      "source": "need:secure-identity-and-secrets",
+      "target": "layer:trust",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:interaction-ui",
+      "target": "need:interact-with-agents",
+      "type": "serves"
+    },
+    {
+      "source": "need:interact-with-agents",
+      "target": "layer:interaction",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:knowledge-graph",
+      "target": "need:understand-connected-knowledge",
+      "type": "serves"
+    },
+    {
+      "source": "need:understand-connected-knowledge",
+      "target": "layer:state",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:memory",
+      "target": "need:remember-and-learn",
+      "type": "serves"
+    },
+    {
+      "source": "need:remember-and-learn",
+      "target": "layer:state",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:model-gateway",
+      "target": "need:access-models",
+      "type": "serves"
+    },
+    {
+      "source": "need:access-models",
+      "target": "layer:model-infrastructure",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:model-runtime",
+      "target": "need:access-models",
+      "type": "serves"
+    },
+    {
+      "source": "category:observability",
+      "target": "need:observe-and-improve",
+      "type": "serves"
+    },
+    {
+      "source": "need:observe-and-improve",
+      "target": "layer:trust",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:protocol",
+      "target": "need:interoperate",
+      "type": "serves"
+    },
+    {
+      "source": "need:interoperate",
+      "target": "layer:interoperability",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:rag-platform",
+      "target": "need:ground-in-evidence",
+      "type": "serves"
+    },
+    {
+      "source": "category:rust-runtime",
+      "target": "need:efficient-sovereign-runtime",
+      "type": "serves"
+    },
+    {
+      "source": "need:efficient-sovereign-runtime",
+      "target": "layer:execution",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:sandbox-security",
+      "target": "need:contain-execution",
+      "type": "serves"
+    },
+    {
+      "source": "need:contain-execution",
+      "target": "layer:trust",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:structured-output",
+      "target": "need:build-agent-systems",
+      "type": "serves"
+    },
+    {
+      "source": "category:tools-integration",
+      "target": "need:interoperate",
+      "type": "serves"
+    },
+    {
+      "source": "category:vector-database",
+      "target": "need:ground-in-evidence",
+      "type": "serves"
+    },
+    {
+      "source": "category:voice-realtime",
+      "target": "need:communicate-naturally",
+      "type": "serves"
+    },
+    {
+      "source": "need:communicate-naturally",
+      "target": "layer:interaction",
+      "type": "belongs-to"
+    },
+    {
+      "source": "category:workflow-automation",
+      "target": "need:automate-business",
+      "type": "serves"
+    },
+    {
+      "source": "need:automate-business",
+      "target": "layer:coordination",
+      "type": "belongs-to"
+    },
+    {
+      "source": "project:NousResearch/hermes-agent",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:NousResearch/hermes-agent",
+      "target": "priority:adopt-core",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:paperclipai/paperclip",
+      "target": "category:control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:paperclipai/paperclip",
+      "target": "priority:pilot",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openclaw/openclaw",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openclaw/openclaw",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:lobehub/lobehub",
+      "target": "category:control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:lobehub/lobehub",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ruvnet/ruflo",
+      "target": "category:control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ruvnet/ruflo",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:multica-ai/multica",
+      "target": "category:control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:multica-ai/multica",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:simstudioai/sim",
+      "target": "category:control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:simstudioai/sim",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:bytedance/deer-flow",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:bytedance/deer-flow",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:HKUDS/nanobot",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:HKUDS/nanobot",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:zeroclaw-labs/zeroclaw",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:zeroclaw-labs/zeroclaw",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:RightNow-AI/openfang",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:RightNow-AI/openfang",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:elizaOS/eliza",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:elizaOS/eliza",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:agent0ai/agent-zero",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:agent0ai/agent-zero",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:HKUDS/OpenHarness",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:HKUDS/OpenHarness",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Significant-Gravitas/AutoGPT",
+      "target": "category:agent-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Significant-Gravitas/AutoGPT",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:open-webui/open-webui",
+      "target": "category:interaction-ui",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:open-webui/open-webui",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:danny-avila/LibreChat",
+      "target": "category:interaction-ui",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:danny-avila/LibreChat",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openai/codex",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openai/codex",
+      "target": "priority:adopt-core",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:anomalyco/opencode",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:anomalyco/opencode",
+      "target": "priority:adopt-core",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:google-gemini/gemini-cli",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:google-gemini/gemini-cli",
+      "target": "priority:adopt-core",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:cline/cline",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:cline/cline",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:continuedev/continue",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:continuedev/continue",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:aaif-goose/goose",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:aaif-goose/goose",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openinterpreter/openinterpreter",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openinterpreter/openinterpreter",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Kilo-Org/kilocode",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Kilo-Org/kilocode",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:QwenLM/qwen-code",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:QwenLM/qwen-code",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:charmbracelet/crush",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:charmbracelet/crush",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:plandex-ai/plandex",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:plandex-ai/plandex",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:bytedance/trae-agent",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:bytedance/trae-agent",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:BloopAI/vibe-kanban",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:BloopAI/vibe-kanban",
+      "target": "priority:pilot",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:superset-sh/superset",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:superset-sh/superset",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:gastownhall/gastown",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:gastownhall/gastown",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openai/symphony",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openai/symphony",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:stablyai/orca",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:stablyai/orca",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:getpaseo/paseo",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:getpaseo/paseo",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:humanlayer/humanlayer",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:humanlayer/humanlayer",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:code-yeongyu/oh-my-openagent",
+      "target": "category:coding-control-plane",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:code-yeongyu/oh-my-openagent",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:can1357/oh-my-pi",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:can1357/oh-my-pi",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:earendil-works/pi",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:earendil-works/pi",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:langchain-ai/open-swe",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:langchain-ai/open-swe",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:farion1231/cc-switch",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:farion1231/cc-switch",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Hmbown/CodeWhale",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Hmbown/CodeWhale",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:OpenHands/OpenHands",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:OpenHands/OpenHands",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Aider-AI/aider",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Aider-AI/aider",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:TabbyML/tabby",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:TabbyML/tabby",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:SWE-agent/SWE-agent",
+      "target": "category:coding-agent",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:SWE-agent/SWE-agent",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:langchain-ai/langchain",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:langchain-ai/langchain",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:langchain-ai/langgraph",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:langchain-ai/langgraph",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:run-llama/llama_index",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:run-llama/llama_index",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/autogen",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/autogen",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:crewAIInc/crewAI",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:crewAIInc/crewAI",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:FoundationAgents/MetaGPT",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:FoundationAgents/MetaGPT",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:agno-agi/agno",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:agno-agi/agno",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openai/openai-agents-python",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openai/openai-agents-python",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:google/adk-python",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:google/adk-python",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:pydantic/pydantic-ai",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:pydantic/pydantic-ai",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:mastra-ai/mastra",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:mastra-ai/mastra",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:deepset-ai/haystack",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:deepset-ai/haystack",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:camel-ai/camel",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:camel-ai/camel",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:agentscope-ai/agentscope",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:agentscope-ai/agentscope",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/agent-framework",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/agent-framework",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:langchain-ai/deepagents",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:langchain-ai/deepagents",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/semantic-kernel",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/semantic-kernel",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:The-Pocket/PocketFlow",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:The-Pocket/PocketFlow",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openai/swarm",
+      "target": "category:agent-framework",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openai/swarm",
+      "target": "priority:reference",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:567-labs/instructor",
+      "target": "category:structured-output",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:567-labs/instructor",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:dottxt-ai/outlines",
+      "target": "category:structured-output",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:dottxt-ai/outlines",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:n8n-io/n8n",
+      "target": "category:workflow-automation",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:n8n-io/n8n",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:activepieces/activepieces",
+      "target": "category:workflow-automation",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:activepieces/activepieces",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:triggerdotdev/trigger.dev",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:triggerdotdev/trigger.dev",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:conductor-oss/conductor",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:conductor-oss/conductor",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:temporalio/temporal",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:temporalio/temporal",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:windmill-labs/windmill",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:windmill-labs/windmill",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:PrefectHQ/prefect",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:PrefectHQ/prefect",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:dagster-io/dagster",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:dagster-io/dagster",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:huginn/huginn",
+      "target": "category:workflow-automation",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:huginn/huginn",
+      "target": "priority:reference",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:automatisch/automatisch",
+      "target": "category:workflow-automation",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:automatisch/automatisch",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:langgenius/dify",
+      "target": "category:agent-builder",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:langgenius/dify",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:FlowiseAI/Flowise",
+      "target": "category:agent-builder",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:FlowiseAI/Flowise",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:coze-dev/coze-studio",
+      "target": "category:agent-builder",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:coze-dev/coze-studio",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:labring/FastGPT",
+      "target": "category:agent-builder",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:labring/FastGPT",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:1Panel-dev/MaxKB",
+      "target": "category:agent-builder",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:1Panel-dev/MaxKB",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:a2aproject/A2A",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:a2aproject/A2A",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:agentskills/agentskills",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:agentskills/agentskills",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:agentsmd/agents.md",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:agentsmd/agents.md",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ag-ui-protocol/ag-ui",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ag-ui-protocol/ag-ui",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:modelcontextprotocol/servers",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:modelcontextprotocol/servers",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:mcp-use/mcp-use",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:mcp-use/mcp-use",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ComposioHQ/composio",
+      "target": "category:tools-integration",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ComposioHQ/composio",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ChromeDevTools/chrome-devtools-mcp",
+      "target": "category:tools-integration",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ChromeDevTools/chrome-devtools-mcp",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:oraios/serena",
+      "target": "category:tools-integration",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:oraios/serena",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:googleapis/mcp-toolbox",
+      "target": "category:tools-integration",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:googleapis/mcp-toolbox",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:vercel-labs/skills",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:vercel-labs/skills",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:PrefectHQ/fastmcp",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:PrefectHQ/fastmcp",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:modelcontextprotocol/python-sdk",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:modelcontextprotocol/python-sdk",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:modelcontextprotocol/typescript-sdk",
+      "target": "category:protocol",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:modelcontextprotocol/typescript-sdk",
+      "target": "priority:adopt-standard",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:github/github-mcp-server",
+      "target": "category:tools-integration",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:github/github-mcp-server",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:mem0ai/mem0",
+      "target": "category:memory",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:mem0ai/mem0",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:letta-ai/letta",
+      "target": "category:memory",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:letta-ai/letta",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:getzep/graphiti",
+      "target": "category:knowledge-graph",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:getzep/graphiti",
+      "target": "priority:pilot",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:topoteretes/cognee",
+      "target": "category:knowledge-graph",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:topoteretes/cognee",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:vectorize-io/hindsight",
+      "target": "category:memory",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:vectorize-io/hindsight",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:MemTensor/MemOS",
+      "target": "category:memory",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:MemTensor/MemOS",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:memvid/memvid",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:memvid/memvid",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:volcengine/OpenViking",
+      "target": "category:memory",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:volcengine/OpenViking",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:HKUDS/LightRAG",
+      "target": "category:knowledge-graph",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:HKUDS/LightRAG",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/graphrag",
+      "target": "category:knowledge-graph",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/graphrag",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:qdrant/qdrant",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:qdrant/qdrant",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:milvus-io/milvus",
+      "target": "category:vector-database",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:milvus-io/milvus",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:weaviate/weaviate",
+      "target": "category:vector-database",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:weaviate/weaviate",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:infiniflow/ragflow",
+      "target": "category:rag-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:infiniflow/ragflow",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:VectifyAI/PageIndex",
+      "target": "category:rag-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:VectifyAI/PageIndex",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Mintplex-Labs/anything-llm",
+      "target": "category:rag-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Mintplex-Labs/anything-llm",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:khoj-ai/khoj",
+      "target": "category:memory",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:khoj-ai/khoj",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:onyx-dot-app/onyx",
+      "target": "category:rag-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:onyx-dot-app/onyx",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:promptfoo/promptfoo",
+      "target": "category:eval-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:promptfoo/promptfoo",
+      "target": "priority:adopt-core",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:comet-ml/opik",
+      "target": "category:observability",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:comet-ml/opik",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:langfuse/langfuse",
+      "target": "category:observability",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:langfuse/langfuse",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:confident-ai/deepeval",
+      "target": "category:eval-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:confident-ai/deepeval",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:vibrantlabsai/ragas",
+      "target": "category:eval-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:vibrantlabsai/ragas",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:SigNoz/signoz",
+      "target": "category:observability",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:SigNoz/signoz",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:openobserve/openobserve",
+      "target": "category:observability",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:openobserve/openobserve",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:raga-ai-hub/RagaAI-Catalyst",
+      "target": "category:observability",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:raga-ai-hub/RagaAI-Catalyst",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Arize-ai/phoenix",
+      "target": "category:observability",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Arize-ai/phoenix",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/agent-lightning",
+      "target": "category:agent-training",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/agent-lightning",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:verl-project/verl",
+      "target": "category:agent-training",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:verl-project/verl",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:huggingface/trl",
+      "target": "category:agent-training",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:huggingface/trl",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:NVIDIA/SkillSpector",
+      "target": "category:eval-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:NVIDIA/SkillSpector",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:NVIDIA/NemoClaw",
+      "target": "category:sandbox-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:NVIDIA/NemoClaw",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:opensandbox-group/OpenSandbox",
+      "target": "category:sandbox-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:opensandbox-group/OpenSandbox",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:TencentCloud/CubeSandbox",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:TencentCloud/CubeSandbox",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:e2b-dev/E2B",
+      "target": "category:sandbox-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:e2b-dev/E2B",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:daytonaio/daytona",
+      "target": "category:sandbox-security",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:daytonaio/daytona",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Infisical/infisical",
+      "target": "category:identity-secrets",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Infisical/infisical",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:getsops/sops",
+      "target": "category:identity-secrets",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:getsops/sops",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:casdoor/casdoor",
+      "target": "category:identity-secrets",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:casdoor/casdoor",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:browser-use/browser-use",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:browser-use/browser-use",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:vercel-labs/agent-browser",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:vercel-labs/agent-browser",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:browserbase/stagehand",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:browserbase/stagehand",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:apify/crawlee",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:apify/crawlee",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:bytedance/UI-TARS-desktop",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:bytedance/UI-TARS-desktop",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:simular-ai/Agent-S",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:simular-ai/Agent-S",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:browseros-ai/BrowserOS",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:browseros-ai/BrowserOS",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:h4ckf0r0day/obscura",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:h4ckf0r0day/obscura",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/playwright-mcp",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/playwright-mcp",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/OmniParser",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/OmniParser",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:unclecode/crawl4ai",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:unclecode/crawl4ai",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Skyvern-AI/skyvern",
+      "target": "category:browser-computer-use",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Skyvern-AI/skyvern",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ollama/ollama",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ollama/ollama",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ggml-org/llama.cpp",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ggml-org/llama.cpp",
+      "target": "priority:benchmark",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:vllm-project/vllm",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:vllm-project/vllm",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:BerriAI/litellm",
+      "target": "category:model-gateway",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:BerriAI/litellm",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Portkey-AI/gateway",
+      "target": "category:model-gateway",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Portkey-AI/gateway",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:BoundaryML/baml",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:BoundaryML/baml",
+      "target": "priority:strategic-exception",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:sgl-project/sglang",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:sgl-project/sglang",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:huggingface/transformers",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:huggingface/transformers",
+      "target": "priority:reference",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:huggingface/candle",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:huggingface/candle",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:mlc-ai/web-llm",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:mlc-ai/web-llm",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/BitNet",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/BitNet",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:mudler/LocalAI",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:mudler/LocalAI",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:exo-explore/exo",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:exo-explore/exo",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ml-explore/mlx",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ml-explore/mlx",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:lm-sys/FastChat",
+      "target": "category:model-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:lm-sys/FastChat",
+      "target": "priority:reference",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:0xPlaygrounds/rig",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:0xPlaygrounds/rig",
+      "target": "priority:strategic-exception",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:EricLBuehler/mistral.rs",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:EricLBuehler/mistral.rs",
+      "target": "priority:strategic-exception",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:restatedev/restate",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:restatedev/restate",
+      "target": "priority:strategic-exception",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:hatchet-dev/hatchet",
+      "target": "category:durable-execution",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:hatchet-dev/hatchet",
+      "target": "priority:strategic-exception",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:microsoft/markitdown",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:microsoft/markitdown",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:docling-project/docling",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:docling-project/docling",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:firecrawl/firecrawl",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:firecrawl/firecrawl",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:PaddlePaddle/PaddleOCR",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:PaddlePaddle/PaddleOCR",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:opendatalab/MinerU",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:opendatalab/MinerU",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:opendataloader-project/opendataloader-pdf",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:opendataloader-project/opendataloader-pdf",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Unstructured-IO/unstructured",
+      "target": "category:document-ingestion",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Unstructured-IO/unstructured",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:livekit/agents",
+      "target": "category:voice-realtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:livekit/agents",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:TEN-framework/ten-framework",
+      "target": "category:voice-realtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:TEN-framework/ten-framework",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:pipecat-ai/pipecat",
+      "target": "category:voice-realtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:pipecat-ai/pipecat",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Comfy-Org/ComfyUI",
+      "target": "category:creative-media",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Comfy-Org/ComfyUI",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:remotion-dev/remotion",
+      "target": "category:creative-media",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:remotion-dev/remotion",
+      "target": "priority:adopt-adjacent",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:calesthio/OpenMontage",
+      "target": "category:creative-media",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:calesthio/OpenMontage",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:heygen-com/hyperframes",
+      "target": "category:creative-media",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:heygen-com/hyperframes",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:airbytehq/airbyte",
+      "target": "category:data-integration",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:airbytehq/airbyte",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:screenpipe/screenpipe",
+      "target": "category:rust-runtime",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:screenpipe/screenpipe",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:OpenBB-finance/OpenBB",
+      "target": "category:domain-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:OpenBB-finance/OpenBB",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:gitroomhq/postiz-app",
+      "target": "category:domain-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:gitroomhq/postiz-app",
+      "target": "priority:evaluate",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:ToolJet/ToolJet",
+      "target": "category:domain-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:ToolJet/ToolJet",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    },
+    {
+      "source": "project:Budibase/budibase",
+      "target": "category:domain-platform",
+      "type": "classified-as"
+    },
+    {
+      "source": "project:Budibase/budibase",
+      "target": "priority:watch",
+      "type": "recommended-as"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starlight Agentic Atlas</title>
+  <meta name="description" content="Operator surface for humans and agents — classify harnesses, route work, absorb SOTA patterns, prove outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./atlas.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <p class="eyebrow">Starlight · Intelligence Network · v3</p>
+        <h1>Agentic Atlas</h1>
+      </div>
+    </div>
+    <div class="top-actions">
+      <nav class="mode" aria-label="Audience mode">
+        <button type="button" class="mode-btn is-active" data-mode="human" aria-pressed="true">Human operator</button>
+        <button type="button" class="mode-btn" data-mode="agent" aria-pressed="false">Agent router</button>
+      </nav>
+      <button type="button" class="icon-btn" id="btn-copy-json" title="Copy filtered JSON">Copy JSON</button>
+      <button type="button" class="icon-btn" id="btn-clear" title="Clear filters (Esc)">Clear</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Not a star leaderboard · absorb before install</p>
+        <h2 id="hero-title">What should we adopt, pilot, absorb, or refuse?</h2>
+        <p class="lede" id="hero-lede">
+          One map for coding harnesses, meta-harnesses, control planes, frameworks, and runtimes —
+          with a single rule: <strong>one accountable owner per layer</strong>.
+        </p>
+        <div class="stats" id="stats" aria-live="polite"></div>
+        <div class="cta-row">
+          <a class="btn primary" href="#catalog">Browse catalog</a>
+          <a class="btn ghost" href="#taxonomy">Read taxonomy</a>
+          <a class="btn ghost" href="#install-verdict">Install verdict</a>
+          <a class="btn ghost" href="../../docs/absorb-playbook.md">Absorb playbook</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Recommended stack">
+        <p class="panel-label">Tier 0 foundation</p>
+        <ol class="stack" id="stack-list"></ol>
+        <p class="panel-note" id="stack-rule"></p>
+      </aside>
+    </section>
+
+    <section class="jobs" id="jobs" aria-labelledby="jobs-title">
+      <div class="section-head">
+        <h2 id="jobs-title">Jobs of the surface</h2>
+        <p id="jobs-sub">Designed for both human command and agent routing.</p>
+      </div>
+      <div class="job-grid" id="job-grid"></div>
+    </section>
+
+    <section class="verdict" id="install-verdict" aria-labelledby="verdict-title">
+      <div class="section-head">
+        <h2 id="verdict-title">Should we install more?</h2>
+        <p>Honest superintelligence answer for this estate right now (BOUNDED disk, one Queen).</p>
+      </div>
+      <div class="verdict-grid">
+        <article class="v-yes">
+          <h3>Do more with (no install)</h3>
+          <ul>
+            <li>Hermes Queen + Kanban + cron</li>
+            <li>Codex · Claude Code · Grok Build · AGY · OpenCode</li>
+            <li>Verified-completion loop (OmO pattern)</li>
+            <li>This atlas + <code>absorb_recommend.py</code></li>
+            <li>model-arena L0–L3 evidence</li>
+          </ul>
+        </article>
+        <article class="v-absorb">
+          <h3>Absorb patterns (no install)</h3>
+          <ul>
+            <li>OmO plan→verify hooks</li>
+            <li>Aider git-first discipline</li>
+            <li>Ruflo role packs (not bus)</li>
+            <li>promptfoo-style packs</li>
+            <li>OpenHands sandbox honesty</li>
+          </ul>
+        </article>
+        <article class="v-gate">
+          <h3>Gated only</h3>
+          <ul>
+            <li>Paperclip — security HOLD</li>
+            <li>OmO binary — after measured OpenCode gap</li>
+            <li>Graphiti — Git facts only</li>
+            <li>Temporal — product long jobs</li>
+          </ul>
+        </article>
+        <article class="v-no">
+          <h3>Refuse now</h3>
+          <ul>
+            <li>Bulk clone of top-100 stars</li>
+            <li>Second Telegram gateway</li>
+            <li>LangGraph/AutoGen as fleet OS</li>
+            <li>Unreviewed MCP + business creds</li>
+            <li>Ruflo replacing Queen bus</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="taxonomy" id="taxonomy" aria-labelledby="tax-title">
+      <div class="section-head">
+        <h2 id="tax-title">Harness taxonomy A–F + S</h2>
+        <p>LangGraph is not Codex. Ruflo is not Paperclip. MCP is substrate, not a harness. Classify first — then install.</p>
+      </div>
+      <div class="tax-rail" id="tax-rail" role="list"></div>
+      <article class="tax-detail" id="tax-detail" aria-live="polite"></article>
+    </section>
+
+    <section class="map" id="system-map" aria-labelledby="map-title">
+      <div class="section-head">
+        <h2 id="map-title">System map</h2>
+        <p>Interactive layer spine. Click a node to filter the catalog.</p>
+      </div>
+      <div class="map-stage" id="map-stage" role="group" aria-label="Architecture layers"></div>
+    </section>
+
+    <section class="catalog" id="catalog" aria-labelledby="cat-title">
+      <div class="section-head row">
+        <div>
+          <h2 id="cat-title">Live catalog</h2>
+          <p id="cat-meta"></p>
+        </div>
+        <div class="filters">
+          <label class="field">
+            <span>Search <kbd>/</kbd></span>
+            <input id="q" type="search" placeholder="repo, why, language…" autocomplete="off" />
+          </label>
+          <label class="field">
+            <span>Priority</span>
+            <select id="priority">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Category</span>
+            <select id="category">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Action</span>
+            <select id="action">
+              <option value="">All</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="class-chips" id="class-chips" aria-label="Filter by taxonomy class"></div>
+      <div class="table-wrap">
+        <table class="grid">
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Class</th>
+              <th scope="col">Action</th>
+              <th scope="col">Priority</th>
+              <th scope="col" class="num">Stars</th>
+              <th scope="col">Why it matters here</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="footnote" id="footnote"></p>
+      <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
+    </section>
+
+    <section class="absorb" id="absorb" aria-labelledby="abs-title">
+      <div class="section-head">
+        <h2 id="abs-title">CLI for agents</h2>
+        <p>Deterministic recommendations — no network, no install side effects.</p>
+      </div>
+      <pre class="codeblock" tabindex="0"><code>python scripts/absorb_recommend.py --need coding --limit 12
+python scripts/absorb_recommend.py --class B
+python scripts/absorb_recommend.py --repo code-yeongyu/oh-my-openagent
+python scripts/generate_atlas_data.py</code></pre>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Built for Starlight Intelligence Network · data from <code>data/projects.json</code> · evidence beats stars</p>
+    <p>
+      <a href="../../README.md">Repo README</a> ·
+      <a href="../../docs/harness-taxonomy.md">Taxonomy</a> ·
+      <a href="../../docs/absorb-playbook.md">Absorb playbook</a> ·
+      <a href="../../docs/starlight-intelligence-network.md">SIN</a>
+    </p>
+  </footer>
+
+  <script src="./atlas-data.js"></script>
+  <script src="./atlas.js"></script>
+</body>
+</html>

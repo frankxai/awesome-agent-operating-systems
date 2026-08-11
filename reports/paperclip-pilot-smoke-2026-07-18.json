@@ -1,0 +1,33 @@
+{
+  "schema": "paperclip-pilot-smoke.v1",
+  "generatedAt": "2026-07-17T22:56:35.574980+00:00",
+  "status": "passed",
+  "scope": "Legacy reachability receipt: two loopback-resolved endpoints returned HTTP 200 with nonempty bodies.",
+  "baseUrl": "http://127.0.0.1:3100",
+  "resolvedAddresses": [
+    "127.0.0.1"
+  ],
+  "loopbackOnly": true,
+  "requestCredentialHeadersSent": false,
+  "credentialStateOfTargetService": "not_assessed",
+  "redirectPolicy": "legacy_default_follow",
+  "redirectOutcome": "not_assessed",
+  "serviceIdentityValidation": "not_assessed",
+  "checks": [
+    {
+      "url": "http://127.0.0.1:3100/api/health",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_length_observed": 1306,
+      "body_is_nonempty": true
+    },
+    {
+      "url": "http://127.0.0.1:3100/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length_observed": 2243,
+      "body_is_nonempty": true
+    }
+  ],
+  "passed": true
+}

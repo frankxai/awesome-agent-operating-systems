@@ -1,0 +1,434 @@
+{
+  "schema": "hermes-kanban-paperclip-benchmark.v1",
+  "startedAt": "2026-07-18T00:32:53.319971+00:00",
+  "finishedAt": "2026-07-18T00:33:13.514490+00:00",
+  "status": "passed",
+  "runId": "final-reviewed-20260718",
+  "hermesCliVersion": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream d59b79fa \u00b7 local 8e3f9537 (+14 carried commits)",
+  "runtime": {
+    "os": "Windows",
+    "osRelease": "10",
+    "python": "3.11.15"
+  },
+  "isolation": {
+    "hermesHome": ".pilot-cache/hermes-home",
+    "board": "paperclip-benchmark",
+    "workspace": ".pilot-cache/hermes-workspace",
+    "environmentPolicy": "allowlist",
+    "credentialsProvidedByHarness": false,
+    "gatewayCommandInvoked": false,
+    "dispatchCommandInvoked": false,
+    "externalActions": "not_assessed",
+    "partialStatePolicy": "preserve for inspection"
+  },
+  "commandResults": [
+    {
+      "command": "hermes --version",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban create",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban create",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban create",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban claim",
+      "profile": "competitor",
+      "returnCode": 0,
+      "stderrCategory": "claim_rejected"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban claim",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban claim",
+      "profile": "competitor",
+      "returnCode": 0,
+      "stderrCategory": "claim_rejected"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban heartbeat",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban comment",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban complete",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban claim",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban heartbeat",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban comment",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban complete",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban show",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban stats",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    },
+    {
+      "command": "hermes kanban list",
+      "profile": "default",
+      "returnCode": 0,
+      "stderrCategory": "none"
+    }
+  ],
+  "controls": {
+    "idempotentCreate": true,
+    "competingClaimRejected": true,
+    "claimConflictHasNonzeroExit": false,
+    "heartbeatRecorded": true,
+    "dependencyClaimRejectedBeforeParentCompletion": true,
+    "dependencyReleasedAfterParentCompletion": true,
+    "structuredCompletionMetadata": true,
+    "ownershipRecorded": true,
+    "completionHistoryRecorded": true
+  },
+  "tasks": {
+    "parent": {
+      "task": {
+        "id": "t_420d951c",
+        "title": "Verify control-plane assignment semantics",
+        "body": "CLI-only benchmark task. No dispatch command is part of this harness.",
+        "assignee": "default",
+        "status": "done",
+        "priority": 0,
+        "tenant": null,
+        "workspace_kind": "dir",
+        "workspace_path": ".pilot-cache/hermes-workspace",
+        "branch_name": null,
+        "project_id": null,
+        "created_by": "hermes-benchmark",
+        "created_at": 1784334774,
+        "started_at": 1784334779,
+        "completed_at": 1784334784,
+        "result": "Atomic claim and heartbeat verified.",
+        "skills": [],
+        "max_retries": null,
+        "session_id": null,
+        "workflow_template_id": null,
+        "current_step_key": null
+      },
+      "latest_summary": "Parent control-plane checks passed; child may proceed.",
+      "parents": [],
+      "children": [
+        "t_64d4e4cb"
+      ],
+      "comments": [
+        {
+          "author": "hermes-benchmark",
+          "body": "Atomic-claim conflict was rejected as expected.",
+          "created_at": 1784334783
+        }
+      ],
+      "events": [
+        {
+          "kind": "created",
+          "payload": {
+            "assignee": "default",
+            "status": "ready",
+            "parents": [],
+            "tenant": null,
+            "branch_name": null,
+            "skills": null,
+            "goal_mode": null
+          },
+          "created_at": 1784334774,
+          "run_id": null
+        },
+        {
+          "kind": "claimed",
+          "payload": {
+            "lock": "[host-pid-redacted]",
+            "expires": 1784334899,
+            "run_id": 7
+          },
+          "created_at": 1784334779,
+          "run_id": 7
+        },
+        {
+          "kind": "heartbeat",
+          "payload": {
+            "note": "Benchmark liveness signal"
+          },
+          "created_at": 1784334783,
+          "run_id": 7
+        },
+        {
+          "kind": "commented",
+          "payload": {
+            "author": "hermes-benchmark",
+            "len": 47
+          },
+          "created_at": 1784334783,
+          "run_id": null
+        },
+        {
+          "kind": "completed",
+          "payload": {
+            "result_len": 36,
+            "summary": "Parent control-plane checks passed; child may proceed."
+          },
+          "created_at": 1784334784,
+          "run_id": 7
+        }
+      ],
+      "runs": [
+        {
+          "id": 7,
+          "profile": "default",
+          "step_key": null,
+          "status": "done",
+          "outcome": "completed",
+          "summary": "Parent control-plane checks passed; child may proceed.",
+          "error": null,
+          "metadata": {
+            "atomic_claim": true,
+            "duplicate_claim_rejected": true,
+            "heartbeat": true,
+            "benchmark_mode": "cli_only"
+          },
+          "worker_pid": null,
+          "started_at": 1784334779,
+          "ended_at": 1784334784
+        }
+      ]
+    },
+    "child": {
+      "task": {
+        "id": "t_64d4e4cb",
+        "title": "Verify dependency handoff and completion evidence",
+        "body": "Wait for the parent, then record a bounded completion receipt.",
+        "assignee": "default",
+        "status": "done",
+        "priority": 0,
+        "tenant": null,
+        "workspace_kind": "dir",
+        "workspace_path": ".pilot-cache/hermes-workspace",
+        "branch_name": null,
+        "project_id": null,
+        "created_by": "hermes-benchmark",
+        "created_at": 1784334776,
+        "started_at": 1784334787,
+        "completed_at": 1784334790,
+        "result": "Dependency handoff verified.",
+        "skills": [],
+        "max_retries": null,
+        "session_id": null,
+        "workflow_template_id": null,
+        "current_step_key": null
+      },
+      "latest_summary": "CLI-only local benchmark completed.",
+      "parents": [
+        "t_420d951c"
+      ],
+      "children": [],
+      "comments": [
+        {
+          "author": "hermes-benchmark",
+          "body": "The benchmark harness invoked only Hermes Kanban CLI commands.",
+          "created_at": 1784334789
+        }
+      ],
+      "events": [
+        {
+          "kind": "created",
+          "payload": {
+            "assignee": "default",
+            "status": "todo",
+            "parents": [
+              "t_420d951c"
+            ],
+            "tenant": null,
+            "branch_name": null,
+            "skills": null,
+            "goal_mode": null
+          },
+          "created_at": 1784334776,
+          "run_id": null
+        },
+        {
+          "kind": "claim_rejected",
+          "payload": {
+            "reason": "parents_not_done"
+          },
+          "created_at": 1784334778,
+          "run_id": null
+        },
+        {
+          "kind": "promoted",
+          "payload": null,
+          "created_at": 1784334784,
+          "run_id": null
+        },
+        {
+          "kind": "claimed",
+          "payload": {
+            "lock": "[host-pid-redacted]",
+            "expires": 1784334907,
+            "run_id": 8
+          },
+          "created_at": 1784334787,
+          "run_id": 8
+        },
+        {
+          "kind": "heartbeat",
+          "payload": {
+            "note": "Dependency released after parent completion"
+          },
+          "created_at": 1784334788,
+          "run_id": 8
+        },
+        {
+          "kind": "commented",
+          "payload": {
+            "author": "hermes-benchmark",
+            "len": 62
+          },
+          "created_at": 1784334789,
+          "run_id": null
+        },
+        {
+          "kind": "completed",
+          "payload": {
+            "result_len": 28,
+            "summary": "CLI-only local benchmark completed."
+          },
+          "created_at": 1784334790,
+          "run_id": 8
+        }
+      ],
+      "runs": [
+        {
+          "id": 8,
+          "profile": "default",
+          "step_key": null,
+          "status": "done",
+          "outcome": "completed",
+          "summary": "CLI-only local benchmark completed.",
+          "error": null,
+          "metadata": {
+            "dependency_release": true,
+            "benchmark_mode": "cli_only"
+          },
+          "worker_pid": null,
+          "started_at": 1784334787,
+          "ended_at": 1784334790
+        }
+      ]
+    }
+  },
+  "deniedClaimEvidence": {
+    "parentConflictReturnCode": 0,
+    "parentConflictCategory": "claim_rejected",
+    "blockedChildReturnCode": 0,
+    "blockedChildCategory": "claim_rejected"
+  },
+  "stats": {
+    "by_status": {
+      "done": 8
+    },
+    "by_assignee": {
+      "default": {
+        "done": 8
+      }
+    },
+    "oldest_ready_age_seconds": null,
+    "now": 1784334792
+  },
+  "runTaskIds": [
+    "t_420d951c",
+    "t_64d4e4cb"
+  ],
+  "runTaskCount": 2,
+  "boardTaskCount": 8,
+  "passed": true
+}

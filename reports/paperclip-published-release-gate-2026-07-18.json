@@ -1,0 +1,33 @@
+{
+  "schema": "paperclip-published-release-gate.v1",
+  "checkedAt": "2026-07-19T03:05:01.238495+00:00",
+  "package": "paperclipai",
+  "version": "2026.707.0",
+  "registryIntegrity": "sha512-ibgW6muVlzmZT3v4Qsi7MAuPYSlPHfUT2yowlHeLUTpfr1P4h4J4qRZPiGoMc2zyhieoSKKiE2XkDiMMPT3Y3w==",
+  "computedIntegrity": "sha512-ibgW6muVlzmZT3v4Qsi7MAuPYSlPHfUT2yowlHeLUTpfr1P4h4J4qRZPiGoMc2zyhieoSKKiE2XkDiMMPT3Y3w==",
+  "integrityMatched": true,
+  "installLifecycleScripts": "disabled",
+  "npmUserConfig": "empty-disposable-config",
+  "productionAuditExitCode": 1,
+  "productionVulnerabilities": {
+    "critical": 0,
+    "high": 1,
+    "info": 0,
+    "low": 0,
+    "moderate": 5,
+    "total": 6
+  },
+  "undiciVersions": [
+    "5.29.0",
+    "7.28.0"
+  ],
+  "promotionGate": "HOLD",
+  "holdReasons": [
+    "1 high production vulnerability finding(s)",
+    "consumer tree still resolves undici@5.29.0"
+  ],
+  "serviceStarted": false,
+  "credentialsSupplied": false,
+  "temporaryConsumerRemovedAfterCheck": true,
+  "generatedBy": "scripts/control_plane_upstream_watch.py"
+}

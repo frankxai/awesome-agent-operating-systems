@@ -1,20 +1,31 @@
-# Contributing Standards
+# Contributing
 
-We welcome contributions that align with our core thesis of **verifiable, world-healing, and rigorously-tested agent intelligence**.
+Contributions should improve an architecture or adoption decision, not simply add links.
 
-## The Golden Rules
+## Ground rules
 
-1. **No Hallucinated Tooling**: If you submit an agent skill, prompt, or tool, it must be verified to work against a real API or framework.
-2. **Safety First**: Any capability that interfaces with the physical world, live capital, or critical infrastructure must include strict human-in-the-loop approval gates.
-3. **High Signal, Low Noise**: We prefer deeply curated, opinionated lists over exhaustive link dumps. If you add a repository, explain *why* it is the best-in-class choice for that specific layer of the agent OS.
-4. **Formatting**: Ensure your Markdown is clean. If adding to a list, use the existing `<details>` structure to preserve the scannability of the README.
+1. **Primary sources first.** Verify repository metadata, documentation, license and current architecture.
+2. **10k-star default.** Add lower-star projects only as justified `strategic-exception` entries.
+3. **License honesty.** Public source is not automatically open source. Flag unresolved or custom licenses.
+4. **One operational reason.** Explain the need the project addresses and why it changes the shortlist.
+5. **No install claims without execution.** Do not report a tool as working unless it was actually exercised and evidence is linked.
+6. **Human gates.** Money, production, credentials, public sends, legal/IP and destructive actions require explicit controls.
+7. **High signal.** Prefer a smaller, differentiated catalog over a dump of similar wrappers.
 
-## How to Submit
+## Workflow
 
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/amazing-new-skill`).
-3. Commit your changes (`git commit -m 'feat: Add incredible new skill'`).
-4. Push to the branch (`git push origin feature/amazing-new-skill`).
-5. Open a Pull Request.
+1. Edit `data/catalog-seed.json`.
+2. Refresh and regenerate:
 
-Your PR will be reviewed against our strict quality gates. We expect a high standard of engineering and documentation. Thank you for helping build the intelligence layer.
+   ```bash
+   python scripts/refresh_catalog.py
+   python scripts/build_knowledge_graph.py
+   python scripts/render_catalog.py
+   python scripts/validate_repository.py
+   ```
+
+3. Review generated metadata, especially `licenseReviewRequired`, archived state and unexpected threshold failures.
+4. Update the needs map or a focused assessment if the recommendation changes.
+5. Open a focused pull request explaining the evidence and decision impact.
+
+See [Inclusion Policy](docs/inclusion-policy.md) for the complete admission and removal rules.
