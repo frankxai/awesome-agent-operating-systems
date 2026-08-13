@@ -28,6 +28,7 @@ We follow the **Hub-and-Spoke Traffic Funnel** model. This is an active, deeply 
 | **ACOS Architecture Expert** | The definitive standard for agentic systems. | [Claude Skills Library](https://frankx.ai/claude-skills-library) |
 | **Premium Swarm: Visual Creation Loop** | Full multi-agent pipeline for high-end mascot & asset generation. | [Get it on Gumroad](https://frankx.gumroad.com/l/visual-creation) <br/> [View on frankx.ai](https://frankx.ai/products) |
 | **Product Engine** | Agentic workflows for immediate deployment. | [frankx.ai](https://frankx.ai) |
+| **Agentlas OS** | Local-first agent operating environment for portable agent packages, multi-agent orchestration, A2A Agent Cards, MCP integration, and runtime adapters. | [GitHub](https://github.com/agentlas-ai/Agentlas-OS) |
 
 
 
@@ -56,4 +57,3 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 <div align="center">
   <sub>Built with ❤️ by the FrankX Superintelligence System</sub>
 </div>
-
