@@ -129,6 +129,8 @@ Tools and resources for building agents.
 
 - **[Starlight Intelligence System](https://github.com/frankxai/Starlight-Intelligence-System)** - Sovereign AI substrate for memory, orchestration, skills, and governance across multiple agent platforms. *Checked: 2026-08-16*
 
+- **[Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet)** - Native Hermes Agent plugin for read-first X/Twitter search, replies, timelines, and approval-gated automation through Xquik. *Checked: 2026-08-18*
+
 - **[Agent Client Protocol (ACP)](https://devin.ai/desktop)** - Protocol for multi-model, multi-agent interoperability in Devin Desktop (formerly Windsurf). *Checked: 2026-08-16*
 
 ---
