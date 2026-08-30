@@ -143,6 +143,8 @@ Tools and resources for building agents.
 
 - **[Agent Client Protocol (ACP)](https://devin.ai/desktop)** - Protocol for multi-model, multi-agent interoperability in Devin Desktop (formerly Windsurf). *Checked: 2026-08-16*
 
+- **[AgentPlaybooks](https://agentplaybooks.ai/)** - Portable playbook for skills, MCP servers, personas, instructions, and memory. CLI writes each tool's native layout (Claude Code, Cursor, Codex, Antigravity, Hermes) and reports drift. Self-hostable; PolyForm Noncommercial. *Checked: 2026-08-21*
+
 ---
 
 ## Contributing
