@@ -161,7 +161,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This list is dedicated to the public domain under [CC0 1.0](./LICENSE).
 
 <div align="center">
   <sub>A researched index for AI architects building production agent systems.</sub>
