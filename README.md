@@ -4,9 +4,21 @@ A researched index of agent operating systems, coding-agent runtimes, MCP, memor
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> **Every entry has been verified with a live URL as of 2026-08-16.**
+> Live URLs checked **2026-08-16**. Skills for those runtimes live in [awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills).
 
 ---
+
+## Earned skills (when the OS is not enough)
+
+| Pack | Job |
+| --- | --- |
+| [agentskills/agentskills](https://github.com/agentskills/agentskills) | Portable `SKILL.md` spec |
+| [obra/superpowers](https://github.com/obra/superpowers) | TDD, debug, review methodology |
+| [garrytan/gstack](https://github.com/garrytan/gstack) | Product / design / QA operating loops |
+| [anthropics/skills](https://github.com/anthropics/skills) | Official named examples |
+| [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Scan a skill before install |
+
+Do not treat a 1,000-skill catalog as an operating system. Safety gate: [QUALITY-AND-SAFETY.md](https://github.com/frankxai/awesome-hermes-agent-skills/blob/main/docs/QUALITY-AND-SAFETY.md).
 
 ## Contents
 
