@@ -45,6 +45,8 @@ Agent runtimes provide the execution loop, tool calling, and context management 
 
 - **[OpenCode](https://opencode.ai/)** - Open-source terminal/desktop coding agent. Model-agnostic, LSP-enabled, supports 75+ LLM providers. 195k+ GitHub stars. *Checked: 2026-08-16*
 
+- **[Agentlas OS](https://github.com/agentlas-ai/Agentlas-OS)** - Apache-2.0 local-first agent operation environment for portable agent and team packages, multi-agent orchestration, A2A Agent Cards, MCP integration, and coding-host adapters. *Checked: 2026-08-30*
+
 - **[Replit Agent 4](https://replit.com/products/agent)** - Multi-artifact agent that builds web apps, mobile apps, and slides with parallel task execution and design canvas. Integrated testing via reflection loop. *Checked: 2026-08-16*
 
 - **[Vercel Eve](https://vercel.com/eve)** - Framework for durable backend agents on Vercel. File-based agent authoring with instructions.md, tools/, and skills/ directories. *Checked: 2026-08-16*
