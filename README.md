@@ -1,158 +1,209 @@
-# Awesome Agentic Tech
+<p align="center">
+  <img src="assets/hero.svg" alt="Awesome Agent Operating Systems" width="100%">
+</p>
 
-A decision-oriented map of the open and publicly inspectable technology that can form the basis of modern agentic systems: runtimes, control planes, coding fleets, workflows, protocols, memory, knowledge graphs, retrieval, evaluation, observability, security, browser use, model infrastructure, voice, media and business operations.
+<h1 align="center">Awesome Agent Operating Systems</h1>
 
-This repository is not a star leaderboard. It asks:
+<p align="center">
+  <strong>A curated landscape of runtimes, coding agents, MCP, memory, safety, deployment, and managed agent platforms.</strong>
+</p>
 
-> **What should we actually adopt, pilot, benchmark, watch or reject—and how do the pieces fit without creating five competing control planes?**
+<p align="center">
+  <a href="#top-picks-by-job">Top Picks</a> ·
+  <a href="docs/landscape-map.md">Landscape Map</a> ·
+  <a href="docs/frankxai-awesome-repos-audit.md">FrankX Audit</a> ·
+  <a href="#contents">Contents</a> ·
+  <a href="docs/inclusion-policy.md">Inclusion Policy</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a>
+</p>
 
-## Current snapshot
+[![Validate](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml/badge.svg)](https://github.com/frankxai/awesome-agent-operating-systems/actions/workflows/validate.yml)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](LICENSE)
+[![Landscape](https://img.shields.io/badge/Landscape-Agent%20OS-0b7285)](docs/landscape-map.md)
 
-- **187** curated projects
-- **182** at or above **10,000 GitHub stars**
-- **5** lower-star strategic exceptions with a specific Rust/durability reason
-- **30** primary categories
-- GitHub metadata refreshed **2026-08-10** (selective refresh + OmO/pi admissions)
-- Full machine-readable knowledge graph covering every project
-- Premium operator UI: [`sites/atlas/index.html`](sites/atlas/index.html)
+> A curated landscape of agent operating systems: local runtimes, coding agents, MCP, orchestration, memory, safety, dashboards, deployment surfaces, and managed-agent products.
 
-> [!CAUTION]
-> Stars are a discovery signal, not proof of quality, security, maintenance, license or fit. Projects reported by GitHub as `NOASSERTION` or `OTHER` require manual license review and are not treated as verified open source here.
+This is an independent index. It does not claim ownership of Hermes Agent, OpenClaw, DeepAgents, Claude Code, Codex, LiteLLM, or any listed project.
 
-## Start here
+## What Counts As An Agent OS?
 
-| Artifact | Purpose |
-|---|---|
-| [**Agentic Atlas UI**](sites/atlas/index.html) | SOTA operator surface for humans + agents: taxonomy, stack, live catalog filters |
-| [Harness Taxonomy A–F + S](docs/harness-taxonomy.md) | Separate execution harnesses from supporting trust, memory, protocol and data substrate |
-| [Absorb Playbook](docs/absorb-playbook.md) | How to gain capability from the landscape without sprawl or second SSOTs |
-| [Verified Completion Contract](docs/verified-completion-contract.md) | OmO-absorbed PLAN→EXECUTE→VERIFY→ABSORB loop for all workers |
-| [Starlight Intelligence Network](docs/starlight-intelligence-network.md) | How catalog + Queen + SIS + arena form one network |
-| [Agentic Tech Catalog](docs/catalog.md) | All projects, grouped and annotated with stars, language, license flag and recommendation |
-| [Needs Map](docs/needs-map.md) | The full operational needs model and preferred foundation for each need |
-| [Knowledge Graph](docs/knowledge-graph.md) | Architecture views plus JSON/CSV graph artifacts covering every project |
-| [Paperclip × Hermes Assessment](docs/paperclip-hermes-assessment.md) | Install decision, overlap, integration, architecture, risks and safe pilot |
-| [Control-plane Decision](docs/control-plane-decision.md) | Live Paperclip/Hermes evidence and the current adoption boundary |
-| [Canonical Task Identity](docs/task-identity-contract.md) | One-task/one-scheduler contract across Hermes, GitHub, cron, swarm and future governance |
-| [Operational Scorecard](reports/hermes-kanban-operational-scorecard-2026-07-18.json) | Sanitized evidence from the real three-card Hermes workflow and reconciliation pass |
-| [Rust Landscape](docs/rust-landscape.md) | Rust shortlist and the direct answer on Rust Paperclip alternatives |
-| [Inclusion Policy](docs/inclusion-policy.md) | Admission and evidence rules |
-| [Landscape Map](docs/landscape-map.md) | Compact layer-oriented index |
+An agent OS is not just a chatbot or a model. It is the operating layer that gives agents:
 
-## Recommended foundation for Frank's estate
+- Instructions and rules
+- Tool access
+- Memory and provenance
+- Runtime isolation
+- Human approvals
+- Deployment and observability
+- Review, rollback, and audit paths
 
-```text
-Human command center
-  Hermes Agent + Starlight Queen
-        |
-Optional organizational governance pilot
-  Paperclip
-        |
-Execution workers
-  Hermes | Codex | Claude Code | OpenCode | Gemini CLI
-        |
-Durability and integration
-  Hermes cron | Temporal/Trigger.dev | n8n/Activepieces
-        |
-Interoperability
-  MCP | Agent Skills | AGENTS.md | A2A | AG-UI
-        |
-State and context
-  Git/SSOT | Hermes memory | Graphiti | Qdrant when justified
-        |
-Trust
-  tests/evals | promptfoo | SkillSpector | sandbox | secrets
-        |
-Model and creative infrastructure
-  provider APIs | Ollama/llama.cpp/vLLM | ComfyUI | Remotion
-```
+## Companion Guides
 
-The key design rule is **one accountable owner per layer**. A control plane coordinates; an execution runtime acts; Git/GitHub proves delivery; the fleet bus routes machines; provider billing proves spend. No new product gets to silently replace all four.
+- [Agentic Architecture Field Guide](https://github.com/frankxai/agentic-architecture-field-guide) - vendor-neutral "when to use what" architecture guide.
+- [Starlight Agent Army Architecture](https://github.com/frankxai/starlight-agent-army-architecture) - Starlight-specific implementation playbook.
+- [Awesome Hermes Agents](https://github.com/frankxai/awesome-hermes-agents) - Hermes-specific resources.
+- [FrankX awesome repositories visual audit](docs/frankxai-awesome-repos-audit.md) - consistency checklist for the broader FrankX awesome layer.
 
-## Paperclip verdict
+## Contents
 
-**The loopback smoke passed; credential wiring is on security hold.**
+- [Top Picks By Job](#top-picks-by-job)
+- [Local Agent Runtimes](#local-agent-runtimes)
+- [Coding Agents](#coding-agents)
+- [Orchestration And Agent Harnesses](#orchestration-and-agent-harnesses)
+- [MCP And Tool Protocols](#mcp-and-tool-protocols)
+- [Skills, Rules, And Prompts](#skills-rules-and-prompts)
+- [Memory And Provenance](#memory-and-provenance)
+- [Dashboards And Cockpits](#dashboards-and-cockpits)
+- [Safety And Evaluation](#safety-and-evaluation)
+- [Deployment](#deployment)
+- [Managed Offerings And Platforms](#managed-offerings-and-platforms)
+- [Inclusion Policy](#inclusion-policy)
 
-Paperclip is complementary to Hermes rather than a replacement. It ships native `hermes_local` and `hermes_gateway` adapters and adds company-level goals, org charts, issues, approvals, budgets, cost tracking and an operator board. Hermes remains the tool-using runtime and now has a live-verified durable Kanban baseline with idempotent creation, atomic claims, dependencies, heartbeats and completion evidence.
+## Top Picks By Job
 
-The pinned, loopback-only, telemetry-disabled Paperclip run returned HTTP 200 with nonempty bodies for API and UI checks. That tracked receipt is deliberately scoped as legacy reachability evidence; redirect outcome, service identity and target credential state were not established by it alone. The published package also pulls a high-severity `undici@5.29.0` finding through the required Cursor Cloud adapter. Paperclip remains stopped with no live credentials connected pending [upstream issue #9794](https://github.com/paperclipai/paperclip/issues/9794). Promotion also requires deterministic recovery, clean GitHub reconciliation, no duplicate dispatch and demonstrated governance value beyond Hermes Kanban.
+| Job | Start with | Add when needed |
+| --- | --- | --- |
+| Local personal agent fleet | Hermes Agent, Codex, MCP memory | OpenClaw, Starlight Swarm |
+| Chat-controlled local agents | OpenClaw | Hermes profiles, owner allowlists, MCP |
+| Long research/coding runs | DeepAgents | Browser automation, memory, Codex implementation pass |
+| Repo-native coding | Codex, Claude Code | Hooks, skills, MCP, GitHub Actions |
+| Team agent platform | GitHub, Vercel, Railway, MCP, LiteLLM | Observability, evals, policy, secrets manager |
+| Public app generation | v0, Replit Agent, Cursor | Human review, CI, deploy previews |
 
-Read the full [Paperclip × Hermes assessment](docs/paperclip-hermes-assessment.md) and [control-plane decision](docs/control-plane-decision.md).
+<details>
+<summary><strong>How to read this list</strong></summary>
 
-## Is Paperclip's architecture “best”?
+This is organized by operating layer, not popularity. A strong agent OS usually combines several categories: coding agent, MCP/tool layer, memory/provenance, safety/evals, and deployment.
 
-It is currently one of the best **fit-for-purpose organizational control planes** for this estate because:
+</details>
 
-- it separates control from agent execution;
-- it has atomic work checkout, hierarchy, approvals and budgets;
-- it supports multiple agent runtimes through adapters;
-- Hermes integration is already upstream and built in;
-- it offers conventional TypeScript/React/PostgreSQL operations.
+## Local Agent Runtimes
 
-It is not a universal agent foundation and it is not yet proven mature enough to replace the existing Starlight control plane. Its young age, very high change rate, large trusted surface and overlapping scheduler/task state require a bounded pilot.
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) - local-first agent by Nous Research with profiles, tools, and a durable kanban-style multi-agent board.
+- [OpenClaw](https://github.com/openclaw/openclaw) - self-hosted gateway connecting chat apps and channel plugins to coding agents.
+- [Deep Agents Code](https://docs.langchain.com/oss/python/deepagents/code/overview) - terminal coding agent built on the DeepAgents SDK.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - open-source software development agent platform with browser, terminal, and coding capabilities.
+- [Agentic Creator OS](https://github.com/frankxai/agentic-creator-os) - ACOS: the operating system for autonomous creators, with multi-agent orchestration, structured memory, and self-improving loops.
+- [Starlight Swarm](https://github.com/frankxai/starlight-swarm) - Starlight dashboard and audit surface for local swarms.
+- [Paperclip](https://github.com/paperclipai/paperclip) - open-source orchestration server and UI dashboard for coordinating "zero-human companies" and AI agent teams.
 
-## Is there a better Rust alternative?
+## Coding Agents
 
-**No complete one.** Rust is strongest in execution and infrastructure:
+- [Codex](https://developers.openai.com/codex/) - OpenAI coding agent across CLI, app, cloud, GitHub, rules, skills, hooks, MCP, and worktrees.
+- [Claude Code](https://docs.claude.com/en/docs/claude-code/) - Anthropic coding agent with CLAUDE.md, skills, MCP, subagents, and team workflows.
+- [Aider](https://github.com/Aider-AI/aider) - terminal pair-programming agent.
+- [Cursor](https://cursor.com/) - AI code editor with agentic workflows.
+- [Continue](https://github.com/continuedev/continue) - open-source AI code assistant and IDE extension platform.
+- [Cline](https://github.com/cline/cline) - autonomous coding agent extension for VS Code.
 
-- Codex and Goose for coding/execution
-- Vibe Kanban for a lightweight software-agent fleet board
-- OpenFang and ZeroClaw for agent runtimes
-- agent-browser and CubeSandbox for action/isolation
-- Qdrant and memvid for state
-- Candle and mistral.rs for inference
-- Restate/Windmill-like systems for durable execution
-- Rig and BAML for agent application development
+## Orchestration And Agent Harnesses
 
-None combines Paperclip's company model, goals, approvals, budget enforcement, task checkout, adapters, secrets and operator UI. The pragmatic architecture is **TypeScript control plane + Rust execution edges**, not a rewrite for its own sake.
+- [DeepAgents](https://github.com/langchain-ai/deepagents) - LangChain's batteries-included agent harness.
+- [LangGraph](https://github.com/langchain-ai/langgraph) - graph runtime for durable agent workflows.
+- [AutoGen](https://github.com/microsoft/autogen) - Microsoft framework for multi-agent applications.
+- [CrewAI](https://github.com/crewAIInc/crewAI) - role-based multi-agent orchestration framework.
+- [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - SDK for building agentic systems.
+- [LlamaIndex Workflows](https://docs.llamaindex.ai/) - event-driven orchestration for retrieval and agents.
+- [Mastra](https://github.com/mastra-ai/mastra) - TypeScript-native agent framework for building stateful, lightweight agents with workflows, integrations, and tools.
+- [Agno](https://github.com/agno-agi/agno) - high-performance, lightweight Python framework for building agents with minimal overhead, supporting tools, semantic memory, and structured outputs.
 
-## Data and automation
+## Swarm Topology Design Standards
 
-The human curation source is [`data/catalog-seed.json`](data/catalog-seed.json). Public GitHub metadata and all derived artifacts are reproducible:
+As multi-agent systems mature from single-loop specialists to large corporate execution fleets (144+ agents), leading frameworks utilize the **Kings-Queens-Board-Council** swarm topology:
 
-```bash
-python scripts/refresh_catalog.py
-python scripts/build_knowledge_graph.py
-python scripts/render_catalog.py
-```
+- **Kings (Sovereign Intent Anchors / Policy Locks):** Immutable rules, cryptographic permission boundaries, or spending limits configured directly by the human owner. Agents cannot override these (e.g., direct main-branch push block, PII screening filters).
+- **Queens (Meta-Orchestrators):** Active loop controllers. A central Queen handles long-horizon self-improvement, context consolidation, and background dreaming, while Domain Queens run vertical-specific sub-stack loops.
+- **Starlight Board (Governance review):** A pressure-testing body checking high-stakes proposals using multiple challenge angles (Sovereign, Seer, Harmonizer, Strategist, Verifier, Overseer).
+- **Model Council (Multi-model consensus):** A verification loop routing critical proposals across a heterogeneous model lineup (Fable, Opus, Grok, Gemini). Actions are blocked unless consensus coefficient threshold ($C_c \ge 0.80$) is achieved.
 
-Generated outputs:
+## MCP And Tool Protocols
 
-- [`data/projects.json`](data/projects.json)
-- [`data/projects.csv`](data/projects.csv)
-- [`data/knowledge-graph.json`](data/knowledge-graph.json)
-- [`data/knowledge-graph-nodes.csv`](data/knowledge-graph-nodes.csv)
-- [`data/knowledge-graph-edges.csv`](data/knowledge-graph-edges.csv)
-- [`docs/catalog.md`](docs/catalog.md)
-- [`docs/rust-landscape.md`](docs/rust-landscape.md)
+- [Model Context Protocol](https://modelcontextprotocol.io/) - open protocol for connecting agents to tools and data.
+- [MCP servers](https://github.com/modelcontextprotocol/servers) - reference and community MCP servers.
+- [GitHub MCP Server](https://github.com/github/github-mcp-server) - official GitHub MCP server.
+- [mcp-doctor](https://github.com/frankxai/mcp-doctor) - local MCP and agent-environment audit tool.
 
-## Recommendation vocabulary
+## Skills, Rules, And Prompts
 
-| Status | Meaning |
-|---|---|
-| `adopt-core` | Existing core; protect and deepen |
-| `adopt-standard` | Interoperability convention to follow |
-| `adopt-adjacent` | Useful supporting primitive, added only where needed |
-| `pilot` | Bounded, measured evaluation with promotion gates |
-| `evaluate` | Strong candidate requiring architecture/security/license fit review |
-| `benchmark` | Important comparison baseline, not necessarily an adoption target |
-| `watch` | Relevant but no immediate gap justifies deployment |
-| `reference` | Educational or historical architecture reference |
-| `strategic-exception` | Below 10k stars but included for a specific architecture/Rust/durability reason |
+- [Claude Code skills](https://docs.claude.com/en/docs/claude-code/) - reusable workflows for Claude Code.
+- [Codex skills, rules, hooks, and AGENTS.md](https://developers.openai.com/codex/) - repo and user-level operating instructions for Codex.
+- [agents.md](https://github.com/agentsmd/agents.md) - cross-agent instruction-file convention.
+- [Vercel agent skills](https://github.com/vercel-labs/agent-skills) - coding-agent skill patterns from Vercel Labs.
+- [Starlight Agent Skills](https://github.com/frankxai/starlight-agent-skills) - Starlight-specific skill library.
+- [Claude Skills Library](https://github.com/frankxai/claude-skills-library) - Claude-oriented skill patterns.
 
-## What this repo will not become
+### Recommended Claude Code Skills & Safety Gates
 
-- a dump of every repository containing “agent”;
-- a ranking based only on stars;
-- a claim that source availability equals an OSI-approved license;
-- a collection of copied marketing text;
-- an instruction to install all listed systems;
-- a second task, memory or control-plane source of truth.
+| Skill / Reference | Primary Workflow | Security Posture & Safety Checkup | Status |
+| :--- | :--- | :--- | :--- |
+| **`gstack`** | Headless browser QA, visual regression audits, form validation | **Safe (Local Sandbox)**: Executes via Chromium page contexts. Restrict to localhost/staging; never input production passwords. | `Active` (Verified) |
+| **`ui-ux-design-expert`** | WCAG 2.2 / EAA accessibility auditing, layout & font pairings | **Read-Only**: Static code checks. No write permissions or network capability required. | `Active` (Recommended) |
+| **`mcp-architecture`** | Model Context Protocol server construction, routing, and tool design | **Architecture Gate**: Enforces standard read/write separation and limits shell command access. | `Active` (Developer Essential) |
+| **`verification-quality`** | Continuous truth scoring, validation rollbacks (0.95 accuracy target) | **ASPH Integration**: Automatically runs before commit phase. Quarantines non-passing code. | `Active` (Safety Gate) |
+| **`greek-philosopher`** | Stoic wisdom, assumptions testing, cognitive grounding | **Fully Sandboxed**: Text-level reflection helper. Zero system or network access. | `Active` (Free Tier) |
+| **`spartan-warrior`** | Discipline, goal execution, laconic brevity, effort gate | **Fully Sandboxed**: Cognitive guide for task prioritization. Zero system access. | `Active` (Free Tier) |
 
-## Contributing
+## Memory And Provenance
 
-Additions should update the seed, pass the 10k-star rule or justify a strategic exception, state the operational need, record the license signal and explain why the project changes an adoption decision. See [Inclusion Policy](docs/inclusion-policy.md).
+- [Letta](https://github.com/letta-ai/letta) - stateful agent memory platform.
+- [Zep](https://www.getzep.com/) - memory layer for AI agents.
+- [Mem0](https://github.com/mem0ai/mem0) - memory layer for personalized agents.
+- [LangSmith](https://www.langchain.com/langsmith) - traces, observability, datasets, and evals.
+- [Starlight Intelligence System](https://github.com/frankxai/Starlight-Intelligence-System) - Starlight memory, provenance, health, and operating substrate.
 
-## License
+## Dashboards And Cockpits
 
-Repository content is dedicated to the public domain under [CC0 1.0](LICENSE). Each linked project retains its own license and terms.
+- [Hermes Cockpit](https://github.com/frankxai/hermes-cockpit) - local operator cockpit for Hermes profiles.
+- [Deep Agents UI](https://github.com/langchain-ai/deep-agents-ui) - UI for DeepAgents workflows.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - includes a web UI for software agent work.
+- [Starlight Command Center](https://github.com/frankxai/starlight-command-center) - Starlight command surface.
+
+## Safety And Evaluation
+
+- [OpenAI Evals](https://github.com/openai/evals) - evaluation framework.
+- [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) - evaluation framework for large language models.
+- [promptfoo](https://github.com/promptfoo/promptfoo) - evals and red-teaming for prompts and agents.
+- [AgentOps](https://github.com/AgentOps-AI/agentops) - agent observability and debugging.
+- [agentic-ops](https://github.com/frankxai/agentic-ops) - central security and operations repository for prompt guardrails, secrets management, and ASPH lifecycle hooks.
+
+## Scale, GitOps & Multi-Worktree Hygiene at Scale
+
+Production patterns for running multi-agent harnesses (Hermes, Claude, Codex, Kilo, Antigravity) concurrently without crashing host machines or exhausting disk/RAM:
+
+- **Strict Physical SSOT**: Keep product code strictly inside canonical project directories (`starlight/repos/<repo>`); never allow autonomous agents to invent ad-hoc root folders or duplicated clones.
+- **Git Worktree Isolation**: Use isolated `git worktree` instances for parallel agent branches rather than cloning duplicate full repositories.
+- **Automated Worktree Garbage Collection**: Enforce automated reaping of clean/pushed worktrees after inactivity (>48h) to reclaim hundreds of thousands of orphaned files and duplicate build artifacts.
+- **Single Dev Server (SDS) & Transient Compute**: Enforce max 1 active local server with idle TTL; route browser reviews to preview URLs (e.g. Vercel) to avoid local port conflicts.
+- **Memory Guardian & CDP Hub**: Never launch isolated headless browser instances per agent; route all agentic browser automation through a single shared CDP Multiplexer Hub (`:9223`) to prevent WSL2 Out-of-Memory (OOM) failures.
+- **Maker ≠ Checker (Santa Loop)**: Consequential code produced by an implementation agent must be adversarially audited by an independent checker before reaching human review.
+
+## Deployment
+
+- [Vercel](https://vercel.com/docs) - web apps, APIs, workflows, storage, AI SDK, and deployment previews.
+- [Railway](https://docs.railway.com/) - always-on services, containers, and simple managed infrastructure.
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/) - edge compute, Workers, Durable Objects, and static docs/apps.
+- [LiteLLM](https://github.com/BerriAI/litellm) - model gateway, proxy, and provider routing layer.
+- [litellm-agent-platform](https://github.com/frankxai/litellm-agent-platform) - Starlight-aligned model proxy, budget control, and observability provider routing layer.
+- [Docker](https://docs.docker.com/) - container packaging and local service isolation.
+
+## Managed Offerings And Platforms
+
+- [Higgsfield](https://higgsfield.ai/) - managed creative AI platform; include here as a managed AI offering, not as a Hermes-based system unless upstream states that.
+- [Vercel v0](https://v0.dev/) - managed UI/app generation surface.
+- [Replit Agent](https://replit.com/ai) - managed agentic app-building environment.
+- [Cursor](https://cursor.com/) - managed AI code editor.
+- [Cognition Devin](https://devin.ai/) - managed software engineering agent.
+- [Lovable](https://lovable.dev/) - managed app generation platform.
+- [Bolt](https://bolt.new/) - managed browser-based app generation environment.
+
+## Inclusion Policy
+
+This list prefers projects that are useful for operating agents, not merely prompting models. See [inclusion policy](docs/inclusion-policy.md).
+
+Contribution rules:
+
+- Prefer official docs, GitHub repositories, or project-owned pages.
+- Say what the project is good for; do not imply endorsement or ownership.
+- Separate local-first runtimes from managed SaaS offerings.
+- Keep Starlight opinions in the companion playbook, not in this neutral index.

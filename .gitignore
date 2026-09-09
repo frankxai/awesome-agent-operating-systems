@@ -7,8 +7,8 @@
 temp-*.json
 link-checker-report.json
 link-checker-report.txt
-.pilot-cache/
 
 # Starlight/ACOS temporary files
 .starlight/
 .gemini/
+.pilot-cache/

@@ -166,6 +166,17 @@ query($owner:String!,$name:String!,$number:Int!){
     }
 
 
+def _normalize_npm_release_payload(payload: Any) -> dict[str, Any]:
+    """Normalize npm's single-record and multi-field JSON response shapes."""
+    if isinstance(payload, list):
+        if len(payload) != 1 or not isinstance(payload[0], dict):
+            raise ValueError("npm returned an unexpected release metadata shape")
+        payload = payload[0]
+    if not isinstance(payload, dict):
+        raise ValueError("npm returned an unexpected release metadata shape")
+    return payload
+
+
 def npm_release_snapshot(*, cwd: Path, env: dict[str, str]) -> dict[str, str]:
     result = run_command(
         ["npm", "view", "paperclipai@latest", "version", "dist.integrity", "--json"],
@@ -173,11 +184,36 @@ def npm_release_snapshot(*, cwd: Path, env: dict[str, str]) -> dict[str, str]:
         env=env,
         timeout=45,
     )
-    payload = json.loads(result.stdout)
-    version = str(payload["version"])
+    payload = _normalize_npm_release_payload(json.loads(result.stdout))
+    version_value = payload.get("version")
+    integrity_value = payload.get("dist.integrity")
+    if integrity_value is None and isinstance(payload.get("dist"), dict):
+        integrity_value = payload["dist"].get("integrity")
+    if not isinstance(version_value, str) or not isinstance(integrity_value, str):
+        raise ValueError("npm release metadata is missing version or dist.integrity")
+    version = version_value
     if not VERSION_PATTERN.fullmatch(version):
         raise ValueError("npm returned an unsafe Paperclip version string")
-    return {"version": version, "registryIntegrity": str(payload["dist.integrity"])}
+    return {"version": version, "registryIntegrity": integrity_value}
+
+
+def _normalize_npm_pack_payload(payload: Any) -> dict[str, Any]:
+    """Normalize npm pack's array and package-keyed JSON response shapes."""
+    if isinstance(payload, list):
+        if len(payload) != 1 or not isinstance(payload[0], dict):
+            raise RuntimeError("npm pack did not return exactly one artifact")
+        return payload[0]
+    if isinstance(payload, dict) and isinstance(payload.get("filename"), str):
+        return payload
+    if isinstance(payload, dict):
+        candidates = [
+            value
+            for value in payload.values()
+            if isinstance(value, dict) and isinstance(value.get("filename"), str)
+        ]
+        if len(candidates) == 1:
+            return candidates[0]
+    raise RuntimeError("npm pack did not return exactly one artifact")
 
 
 def collect_package_versions(node: Any, package_name: str, found: set[str]) -> None:
@@ -228,10 +264,7 @@ def audit_paperclip_release(
             env=npm_env,
             timeout=120,
         )
-        pack_payload = json.loads(packed.stdout)
-        if not isinstance(pack_payload, list) or len(pack_payload) != 1:
-            raise RuntimeError("npm pack did not return exactly one artifact")
-        pack_info = pack_payload[0]
+        pack_info = _normalize_npm_pack_payload(json.loads(packed.stdout))
         tarball = temp_root / pack_info["filename"]
         digest = base64.b64encode(hashlib.sha512(tarball.read_bytes()).digest()).decode("ascii")
         computed_integrity = f"sha512-{digest}"
