@@ -27,7 +27,7 @@ jobs:
             --timeout=20
             --max-retries=3
             --exclude https://github.com/frankxai/awesome-jarvis
-            ./**/*.md
+            './**/*.md'
           fail: true
           jobSummary: true
         env:
@@ -48,7 +48,7 @@ jobs:
             --timeout=20
             --max-retries=3
             --exclude https://github.com/frankxai/awesome-jarvis
-            ./**/*.md
+            './**/*.md'
           fail: false
           jobSummary: true
           output: ./lychee/out.md
