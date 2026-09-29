@@ -147,7 +147,7 @@ Tools and resources for building agents.
 
 - **[Agent Client Protocol (ACP)](https://devin.ai/desktop)** - Protocol for multi-model, multi-agent interoperability in Devin Desktop (formerly Windsurf). *Checked: 2026-08-16*
 
-- **[AgentPlaybooks](https://agentplaybooks.ai/)** - Independent agent storage: persona, instructions, skills, MCP, memory, and a secrets vault under your control. Point hosts at one playbook URL; change provider, keep your agents. MIT. *Checked: 2026-09-29*
+- **[AgentPlaybooks](https://github.com/matebenyovszky/agentplaybooks)** - Independent agent storage: one place for persona, instructions, skills, MCP, memory, and secrets vault under your control — portable across hosts. MIT. *Checked: 2026-09-29*
 
 ---
 
