@@ -4,7 +4,7 @@ A researched index of agent operating systems, coding-agent runtimes, MCP, memor
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Live URLs checked **2026-08-16**. Skills for those runtimes live in [awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills).
+> Base collection checked **2026-08-16**; October skill-catalog additions source-verified **2026-10-01**. Skills for those runtimes live in [awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills).
 
 ---
 
@@ -16,6 +16,8 @@ A researched index of agent operating systems, coding-agent runtimes, MCP, memor
 | [obra/superpowers](https://github.com/obra/superpowers) | TDD, debug, review methodology |
 | [garrytan/gstack](https://github.com/garrytan/gstack) | Product / design / QA operating loops |
 | [anthropics/skills](https://github.com/anthropics/skills) | Official named examples |
+| [openai/skills](https://github.com/openai/skills) | Official Codex catalog with named `SKILL.md` folders; select, inspect, and install one at a time |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Official web/frontend/deploy skills; inspect token-bearing deploy helpers and human-gate release actions |
 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Scan a skill before install |
 
 Do not treat a 1,000-skill catalog as an operating system. Safety gate: [QUALITY-AND-SAFETY.md](https://github.com/frankxai/awesome-hermes-agent-skills/blob/main/docs/QUALITY-AND-SAFETY.md).
@@ -148,6 +150,34 @@ Tools and resources for building agents.
 - **[Agent Client Protocol (ACP)](https://devin.ai/desktop)** - Protocol for multi-model, multi-agent interoperability in Devin Desktop (formerly Windsurf). *Checked: 2026-08-16*
 
 ---
+
+## 6-Pillar curation lens
+
+```mermaid
+mindmap
+  root((Curated agent system))
+    Strategy
+      fit and operating model
+    Governance
+      provenance and approval gates
+    Talent
+      operator review
+    Technology
+      runtime and integration
+    Data
+      evidence and memory
+    Ethics
+      safety and disclosure
+```
+
+The lens is editorial, not a claim that any linked project satisfies every pillar.
+
+## Explore the public FrankX awesome ecosystem
+
+- [awesome-hermes-agents](https://github.com/frankxai/awesome-hermes-agents) · [awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills) · [awesome-automation-agent-skills](https://github.com/frankxai/awesome-automation-agent-skills) · [awesome-ai-coe](https://github.com/frankxai/awesome-ai-coe)
+- [awesome-agentic-income](https://github.com/frankxai/awesome-agentic-income) · [awesome-payment-agent-skills](https://github.com/frankxai/awesome-payment-agent-skills) · [awesome-investor-agent-skills](https://github.com/frankxai/awesome-investor-agent-skills) · [awesome-wealth-agent-skills](https://github.com/frankxai/awesome-wealth-agent-skills)
+- [awesome-mind-agent-skills](https://github.com/frankxai/awesome-mind-agent-skills) · [awesome-manifestation-skills](https://github.com/frankxai/awesome-manifestation-skills) · [awesome-design-agent-skills](https://github.com/frankxai/awesome-design-agent-skills) · [awesome-motion-design-agent-skills](https://github.com/frankxai/awesome-motion-design-agent-skills)
+- [awesome-music-agent-skills](https://github.com/frankxai/awesome-music-agent-skills) · [awesome-cosmos-ai-agents](https://github.com/frankxai/awesome-cosmos-ai-agents) · [awesome-gamedev-agent-skills](https://github.com/frankxai/awesome-gamedev-agent-skills) · [awesome-gamification-agent-skills](https://github.com/frankxai/awesome-gamification-agent-skills)
 
 ## Contributing
 
