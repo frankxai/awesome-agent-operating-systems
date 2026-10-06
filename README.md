@@ -4,7 +4,7 @@ A researched index of agent operating systems, coding-agent runtimes, MCP, memor
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Live URLs checked **2026-08-16**. Skills for those runtimes live in [awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills).
+> Live URLs checked **2026-08-16**, catalog row checked **2026-10-06**. Skills for those runtimes live in [awesome-hermes-agent-skills](https://github.com/frankxai/awesome-hermes-agent-skills).
 
 ---
 
@@ -17,6 +17,7 @@ A researched index of agent operating systems, coding-agent runtimes, MCP, memor
 | [garrytan/gstack](https://github.com/garrytan/gstack) | Product / design / QA operating loops |
 | [anthropics/skills](https://github.com/anthropics/skills) | Official named examples |
 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Scan a skill before install |
+| [frankxai/claude-skills-library](https://github.com/frankxai/claude-skills-library) | Validated catalog and six runtime adapters. Curated cut: `npx skills add frankxai/skills` |
 
 Do not treat a 1,000-skill catalog as an operating system. Safety gate: [QUALITY-AND-SAFETY.md](https://github.com/frankxai/awesome-hermes-agent-skills/blob/main/docs/QUALITY-AND-SAFETY.md).
 
@@ -140,6 +141,8 @@ Platforms for running agents in production.
 ## Agent Development Tools
 
 Tools and resources for building agents.
+
+- **[frankxai/claude-skills-library](https://github.com/frankxai/claude-skills-library)** - Public catalog of validated Agent Skills. Mark, visual standard, and lane map live in the repo docs. *Checked: 2026-10-06*
 
 - **[frankxai/skills](https://github.com/frankxai/skills)** - AI agent skills for Claude Code, Cursor, and Codex. Install: `npx skills add frankxai/skills` *Checked: 2026-08-16*
 
